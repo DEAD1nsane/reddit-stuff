@@ -1,0 +1,38 @@
+---
+type: any
+title+body (includes, regex): ['(?i)\b(?:[bB8][iI1!][tT7][bB8][eE3][tT7][wWv][iI1!lL][nN]{1,3}|bit\s*bet\s*w(?:i1!l)?n{1,3}|b[iI1!][tT7][bB8][eE3][tT7]w(?:i1!l)?n{1,3}|bitbetw(?:[ei]n{1,3}|un{1,3}|in{1,3}|ynn?|ine|ln|rn)|b[iI1!][tT7][bB8][eE3][tT7]w(?:i1!l)?(?:n{1,3}|m|rn|ln|nm|ne))\b(?:\s*\.cc)?', "#1 casino to trust"]
+action: remove
+action_reason: "BitBetWin AI Bot Spam"
+message: |
+  Your {{kind}} has been removed. [REMOVE BRACKETS AND ADD TEXT OF YOUR LIKING]
+modmail: |
+  {{permalink}}
+
+  this {{kind}} by /u/{{author}} was removed for bitbetwin spam.
+---
+
+
+# What this does:
+# This regular expression targets variations of "bitbetwin" (and some misspellings) followed optionally by ".cc".  It's case-insensitive due to the (?i) flag.  It breaks down like this:
+
+# * \b: Word boundary, ensures it matches whole words, not parts of other words.
+
+# * (?: ... ): Non-capturing group, used for grouping without creating backreferences.
+
+# * Several Alternations (|): The regex checks for multiple possible spellings:
+
+#   * [bB8][iI1!][tT7][bB8][eE3][tT7][wWv][iI1!lL][nN]{1,3}:  Handles substitutions like "B1tB3tW1n", "bitbetwin", etc., allowing for number/symbol replacements of letters. {1,3} means one to three "n"s are allowed (e.g., "winn", "win").
+
+#   * bit\s*bet\s*w(?:i1!l)?n{1,3}: Matches "bit bet win" with optional whitespace (\s*) and handles "wi1l" variations.
+
+#   * b[iI1!][tT7][bB8][eE3][tT7]w(?:i1!l)?n{1,3}: Similar to the first, but allows for substitutions in the initial "bitbet".
+
+#   * bitbetw(?:[ei]n{1,3}|un{1,3}|in{1,3}|ynn?|ine|ln|rn): Matches "bitbetw" followed by various endings like "ein", "un", "in", "ynn", "ine", "ln", or "rn". This covers common misspellings.
+
+#   * b[iI1!][tT7][bB8][eE3][tT7]w(?:i1!l)?(?:n{1,3}|m|rn|ln|nm|ne): Combines substitutions with a broader range of allowed endings after "bitbetw".
+
+# * \b: Another word boundary.
+
+# * (?:\s*\.cc)?:  Optionally matches ".cc" preceded by zero or more whitespace characters.  The ? makes it optional.
+
+# In short, this regex tries to match the word "bitbetwin" (and common misspellings/variations) with optional ".cc" at the end, ensuring it's a whole word and not part of a larger string. It's designed to catch user input errors and variations.
