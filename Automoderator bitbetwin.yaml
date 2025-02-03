@@ -2,7 +2,7 @@
 type: any
 title+body (includes, regex): ['(?i)\b(?:[bB8][iI1!][tT7][bB8][eE3][tT7][wWv][iI1!lL][nN]{1,3}|bit\s*bet\s*w(?:i1!l)?n{1,3}|b[iI1!][tT7][bB8][eE3][tT7]w(?:i1!l)?n{1,3}|bitbetw(?:[ei]n{1,3}|un{1,3}|in{1,3}|ynn?|ine|ln|rn)|b[iI1!][tT7][bB8][eE3][tT7]w(?:i1!l)?(?:n{1,3}|m|rn|ln|nm|ne))\b(?:\s*\.cc)?', "#1 casino to trust"]
 action: remove
-action_reason: "BitBetWin AI Bot Spam"
+action_reason: "Possible BitBetWin AI Bot Spam"
 message: |
   Your {{kind}} has been removed. [REMOVE BRACKETS AND ADD TEXT OF YOUR LIKING]
 modmail: |
