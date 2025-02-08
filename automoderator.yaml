@@ -1,4 +1,16 @@
 ---
+# removes any post using new casino flair without including url to the casino
+type: submission
+priority: 1
+flair_template_id: "30c00a8a-93a5-11ef-aa15-9254882f18e9"
+is_self: false
+~body (regex): "(https?://|www\\.)"
+action: remove
+action_reason: "Flair w/o link"
+comment: |
+  Your post was removed because it included the correct flair but no URL, please re-submit with url to the casino **NOT REFERRAL URL** that you are posting about.
+---
+# Posts a caution about external links if giveaway post flair is used.
 type: submission
 flair_template_id: 33ea2762-707e-11ef-b23f-46b622795ce3
 comment: |
