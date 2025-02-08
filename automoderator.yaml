@@ -1,6 +1,7 @@
 ---
 # Removes any post using the "new casino" flair without including a URL to the casino
 type: submission
+moderators_exempt: false
 flair_template_id: 30c00a8a-93a5-11ef-aa15-9254882f18e9
 ~url+body (regex): "[(https?://|www\\.)]"
 action: remove
@@ -11,6 +12,7 @@ comment: |
 ---
 # comments on any submission using giveaway/stream post flair a caution about external links.
 type: submission
+moderators_exempt: false
 flair_template_id: 33ea2762-707e-11ef-b23f-46b622795ce3
 comment: |
   ### ATTENTION EVERYBODY:  
