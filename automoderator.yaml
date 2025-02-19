@@ -32,7 +32,7 @@ modmail: |
 # Automod comments in response to keywords about deposit to redeem, or if it's a scam with link to info hub & what FAQ to read
 type: any
 moderators_exempt: false
-title+body (includes-word): ["is this a scam", "purchase to redeem", "deposit to redeem", "pay to withdraw", "deposit to withdraw", "pay to redeem", "pay to pull out", "deposit in order to claim", "deposit in order to play", "deposit to play", "deposit to claim", "pay to claim", "spend to play", "pay to play", "is it a scam", "deposit to cash", "legit?"]
+title+body (includes-word): ["is this a scam", "purchase to redeem", "deposit to redeem", "pay to withdraw", "deposit to withdraw", "pay to redeem", "pay to pull out", "deposit in order to claim", "deposit in order to play", "deposit to play", "deposit to claim", "pay to claim", "spend to play", "pay to play", "is it a scam", "deposit to cash", "legit?", "a scam site?", "a scam?", "scam?", "scam site?", "scam site"]
 comment: |
   Excuse me /u/{{author}}\
   Did I hear you say `{{match}}`?
