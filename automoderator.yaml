@@ -315,14 +315,20 @@ modmail: |
   The above {{kind}} by /u/{{author}} with "{{title}}" was removed because of a Mod-only word.
 ---
   type: text submission
-  body (regex, full-text): ['(\[[^\]]*\]\()?https?://\S+\)?']
-  action: remove
-  action_reason: "Link-only self post"
+  body (regex, full-text): ['^(\[[^\]]*\]?\((https?://)?([^\s)]+)\)|(https?://)?([^\s)]+))$']
   comment_locked: true
+  moderators_exempt: true
   comment: |
-    Your post has been removed because it is only a link. please repost this using the &#x1f517; for your url. thank you.  
-
-    > editing will not work, must repost
+   /u/{{author}},  
+     
+   I noticed your post is just a link in the body of the post without any text, Next time you post a url without text:  
+     
+   ### Mobile Phones:  
+   Use the &#x1f517; for your url submissions. [Example](https://www.reddit.com/r/CasinoFreebies/comments/1gski6z/here_is_how_i_post_urls/?share_id=icl02NdIVw1MlMR_pOh_u&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1).  
+    - If you decide you need to add text to the body of the post you're able to do so while using the &#x1f517;.
+   ### Desktop:  
+   Use the link submission [img](https://i.imgur.com/sKBJg4n.jpeg).
+    - If you decide you need to add text to the body of the post you'll need to use the text submission and paste your URL in the body along with any text instead of Link submission. [img](https://i.imgur.com/yiB7S5g.jpeg).
 ---
 # Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.
 author:
