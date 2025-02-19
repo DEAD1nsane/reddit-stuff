@@ -65,6 +65,7 @@ comment: |
     ### ATTENTION EVERYBODY:  
     [Please report](https://www.reddit.com/r/CasinoFreebies/s/dixi8lNEJh) any rule breaking posts and posts that are not relevant to the subreddit. If you do not know how to do this, please follow the url embeded in this comment. Thank you :) (The embeded link above, not the one below)
 comment_locked: true
+comment_stickied: true
 ---
 type: comment
 author:
@@ -331,13 +332,13 @@ modmail: |
 ---
 # comments if user posts url and text in body of text submission
   type: text submission
-  body (regex, full-text): ['(?:\[[^\]]*\]\((https?://)?([^\s)]+)\)|(https?://)?([^\s)]+))']
+  body (regex): ['(?:\[[^\]]*\]\((https?://)?([^\s)]+)\)|(https?://)?([^\s)]+))']
   comment_locked: true
   moderators_exempt: true
   comment: |
    /u/{{author}},  
      
-   I noticed you submitted a post with a url in the body along with text, not as a link post, this is fine if you're using reddit on desktop, but if you're using a mobile device please in the future:
+   I noticed you submitted a post with a url in the body along with text, not as a link post, this is fine if you're using reddit on desktop, but if you're using a mobile device we ask that in the future:
     - Use the &#x1f517; for your url submissions. [Example](https://www.reddit.com/r/CasinoFreebies/comments/1gski6z/here_is_how_i_post_urls/?share_id=icl02NdIVw1MlMR_pOh_u&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1) and then add the text in the body.
    
    You're not in trouble and won't be banned or anything crazy it just helps when posts look cleaner.
