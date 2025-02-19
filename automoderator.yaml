@@ -17,7 +17,6 @@ flair_template_id: 33ea2762-707e-11ef-b23f-46b622795ce3
 comment: |
   ### ATTENTION EVERYBODY:  
   Use external links with caution and never share personal information or banking numbers on third party sites that are not reputable casinos
-comment_stickied: true
 comment_locked: true
 ---
 type: any
@@ -32,7 +31,7 @@ modmail: |
 # Automod comments in response to keywords about deposit to redeem, or if it's a scam with link to info hub & what FAQ to read
 type: any
 moderators_exempt: false
-title+body (includes-word): ["is this a scam", "purchase to redeem", "deposit to redeem", "pay to withdraw", "deposit to withdraw", "pay to redeem", "pay to pull out", "deposit in order to claim", "deposit in order to play", "deposit to play", "deposit to claim", "pay to claim", "spend to play", "pay to play", "is it a scam", "deposit to cash", "legit?", "a scam site?", "a scam?", "scam?", "scam site?", "scam site"]
+title+body (includes-word): ["is this a scam", "purchase to redeem", "deposit to redeem", "pay to withdraw", "deposit to withdraw", "pay to redeem", "pay to pull out", "deposit in order to claim", "deposit in order to play", "deposit to play", "deposit to claim", "pay to claim", "spend to play", "pay to play", "is it a scam", "deposit to cash", "legit?", "a scam site?", "a scam?", "scam?", "scam site?", "scam site", "legit"]
 comment: |
   Excuse me /u/{{author}}\
   Did I hear you say `{{match}}`?
@@ -65,7 +64,6 @@ author:
 comment: |
     ### ATTENTION EVERYBODY:  
     [Please report](https://www.reddit.com/r/CasinoFreebies/s/dixi8lNEJh) any rule breaking posts and posts that are not relevant to the subreddit. If you do not know how to do this, please follow the url embeded in this comment. Thank you :) (The embeded link above, not the one below)
-comment_stickied: true
 comment_locked: true
 ---
 type: comment
@@ -116,30 +114,30 @@ comment: |
 comment_locked: true
 ---
 # This will send a modmail whenever a post or comment gets 3 reports and will automatically remove it.
-reports: 2
-action: filter
-modmail_subject: Automatic Removal | 2 Reports
+reports: 3
+action: remove
+modmail_subject: Automatic Removal | 3 Reports
 modmail: |
     {{permalink}}
-    The above {{kind}} by /u/{{author}} was removed because it received 2 reports. Please investigate and ensure that this action was correct.
+    The above {{kind}} by /u/{{author}} was removed because it received 3 reports. Please investigate and ensure that this action was correct.
 comment: |
     Thank you for your post in r/{{subreddit}}.
-    Unfortunately, your post has been automatically removed because it has received 2 reports.
+    Unfortunately, your post has been automatically removed because it has received an undisclosed number of reports.
     The moderators of r/{{subreddit}} will investigate if this action was taken correctly.
 comment_locked: true
 ---
-# removes posts & comments from accounts less than 2 days old and sends user a message.
+# removes posts & comments from accounts less than 3 days old and sends user a message.
 type: any
 priority: 0
 author:
-    account_age: "< 2 days"
+    account_age: "< 3 days"
 moderators_exempt: true
 action: remove
 action_reason: "New Account - possibly spam"
 message: |
     {{permalink}}
 
-    Your {{kind}} has been removed because your account is less than 2 days old. This policy is in place to reduce spam and ensure genuine participation in r/CasinoFreebies.
+    Your {{kind}} has been removed because your account is less than 3 days old. This policy is in place to reduce spam and ensure genuine participation in r/CasinoFreebies.
 
     You are encouraged to engage with the community, comment on posts, and revisit posting once your account meets the minimum age requirement. Thank you for your understanding!
 ---
@@ -166,7 +164,7 @@ modmail: |
   The above {{kind}} by /u/{{author}} was removed because it contained a possible IPv4 address. Please investigate immediately.
 
 
-  If the user is doxxing, [ban them](/r/{{subreddit}}/about/banned) and [report them to the Reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&subject=Doxxing%20Report:%20%2Fu%2F{{author}}) immediately.
+  If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&subject=Doxxing%20Report:%20%2Fu%2F{{author}}) immediately.
 ---
 type: any
 title+body (regex):
@@ -181,7 +179,7 @@ modmail: |
   The above {{kind}} by /u/{{author}} was removed because it contained a possible credit card number. Please investigate immediately.
 
 
-  If the user is doxxing, [ban them](/r/{{subreddit}}/about/banned) and [report them to the Reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&subject=Doxxing%20Report:%20%2Fu%2F{{author}}) immediately.
+  If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&subject=Doxxing%20Report:%20%2Fu%2F{{author}}) immediately.
 ---
 type: any
 title+body (regex):
@@ -199,7 +197,7 @@ modmail: |
   The above {{kind}} by /u/{{author}} was removed because it contained a possible email address. Please investigate immediately.
 
 
-  If the user is doxxing, [ban them](/r/{{subreddit}}/about/banned) and [report them to the Reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&subject=Doxxing%20Report:%20%2Fu%2F{{author}}) immediately.
+  If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&subject=Doxxing%20Report:%20%2Fu%2F{{author}}) immediately.
 ---
 type: any
 title+body (regex, includes):
@@ -238,7 +236,7 @@ modmail: |
   The above {{kind}} by /u/{{author}} was removed because it contained a possible phone number. Please investigate immediately.
 
 
-  If the user is doxxing, [ban them](/r/{{subreddit}}/about/banned) and [report them to the Reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&subject=Doxxing%20Report:%20%2Fu%2F{{author}}) immediately.
+  If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&subject=Doxxing%20Report:%20%2Fu%2F{{author}}) immediately.
 ---
 type: any
 body+domain+title+url:
@@ -292,19 +290,20 @@ body+domain+title+url:
   - youcaring.com
   - youcaring.net
   - youcaring.org
-action: filter
+action: remove
 action_reason: Crowdfunding [{{match}}]
+comment: |
+  Crowdfunding on a casino subreddit? you're crazy. not happening.
 ---
 type: submission
 title (regex):
   - admin(istrator)?s?
   - announcements?
-  - mega\W?(post|thread)s?
   - mod(erator)?(\W?post)?s?
 action: remove
 action_reason: Moderator-only title [{{match}}]
 comment: |
-  Your {{kind}} has been automatically removed because you used a keyword
+  Your {{kind}} has been automatically removed because you used a keyword {{match}}
   which is reserved for the subreddit moderators.
 comment_locked: true
 modmail_subject: Moderator-only title [{{match}}]
@@ -314,6 +313,7 @@ modmail: |
 
   The above {{kind}} by /u/{{author}} with "{{title}}" was removed because of a Mod-only word.
 ---
+# comments if user posts url only in text submission.
   type: text submission
   body (regex, full-text): ['^(\[[^\]]*\]?\((https?://)?([^\s)]+)\)|(https?://)?([^\s)]+))$']
   comment_locked: true
@@ -321,18 +321,30 @@ modmail: |
   comment: |
    /u/{{author}},  
      
-   I noticed your post is just a link in the body of the post without any text, Next time you post a url without text:  
-     
+   I noticed your post is just a link in the body without any text, next time please submit as a link post. heres how:  
    ### Mobile Phones:  
-   Use the &#x1f517; for your url submissions. [Example](https://www.reddit.com/r/CasinoFreebies/comments/1gski6z/here_is_how_i_post_urls/?share_id=icl02NdIVw1MlMR_pOh_u&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1).  
-    - If you decide you need to add text to the body of the post you're able to do so while using the &#x1f517;.
+    Use the &#x1f517; for your url submissions. [Example](https://www.reddit.com/r/CasinoFreebies/comments/1gski6z/here_is_how_i_post_urls/?share_id=icl02NdIVw1MlMR_pOh_u&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1).  
+     - If you decide you need to add text to the body of the post you're able to do so while using the &#x1f517;.
    ### Desktop:  
-   Use the link submission [img](https://i.imgur.com/sKBJg4n.jpeg).
-    - If you decide you need to add text to the body of the post you'll need to use the text submission and paste your URL in the body along with any text instead of Link submission. [img](https://i.imgur.com/yiB7S5g.jpeg).
+    Use the link submission [img](https://i.imgur.com/sKBJg4n.jpeg).
+     - If you decide you need to add text to the body of the post you'll need to use the text submission and paste your URL in the body along with any text instead of Link submission. [img](https://i.imgur.com/yiB7S5g.jpeg).
+---
+# comments if user posts url and text in body of text submission
+  type: text submission
+  body (regex, full-text): ['(?:\[[^\]]*\]\((https?://)?([^\s)]+)\)|(https?://)?([^\s)]+))']
+  comment_locked: true
+  moderators_exempt: true
+  comment: |
+   /u/{{author}},  
+     
+   I noticed you submitted a post with a url in the body along with text, not as a link post, this is fine if you're using reddit on desktop, but if you're using a mobile device please in the future:
+    - Use the &#x1f517; for your url submissions. [Example](https://www.reddit.com/r/CasinoFreebies/comments/1gski6z/here_is_how_i_post_urls/?share_id=icl02NdIVw1MlMR_pOh_u&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1) and then add the text in the body.
+   
+   You're not in trouble and won't be banned or anything crazy it just helps when posts look cleaner.
 ---
 # Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.
 author:
-    name: [ "AutoModerator", "evasion-guard", "TheInsane1990", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "BabaCasino"]
+    name: [ "AutoModerator", "evasion-guard", "TheInsane1990", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "OriginalBabaCasino"]
 reports: 1
 moderators_exempt: false
 action: approve
