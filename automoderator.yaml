@@ -17,6 +17,7 @@ flair_template_id: 33ea2762-707e-11ef-b23f-46b622795ce3
 comment: |
   ### ATTENTION EVERYBODY:  
   Use external links with caution and never share personal information or banking numbers on third party sites that are not reputable casinos
+comment_stickied: true
 comment_locked: true
 ---
 type: any
@@ -64,8 +65,8 @@ author:
 comment: |
     ### ATTENTION EVERYBODY:  
     [Please report](https://www.reddit.com/r/CasinoFreebies/s/dixi8lNEJh) any rule breaking posts and posts that are not relevant to the subreddit. If you do not know how to do this, please follow the url embeded in this comment. Thank you :) (The embeded link above, not the one below)
-comment_locked: true
 comment_stickied: true
+comment_locked: true
 ---
 type: comment
 author:
@@ -138,7 +139,7 @@ action_reason: "New Account - possibly spam"
 message: |
     {{permalink}}
 
-    Your {{kind}} has been removed because your account is less than 3 days old. This policy is in place to reduce spam and ensure genuine participation in r/CasinoFreebies.
+    Your {{kind}} has been removed because your account is less than 2 days old. This policy is in place to reduce spam and ensure genuine participation in r/CasinoFreebies.
 
     You are encouraged to engage with the community, comment on posts, and revisit posting once your account meets the minimum age requirement. Thank you for your understanding!
 ---
@@ -291,20 +292,19 @@ body+domain+title+url:
   - youcaring.com
   - youcaring.net
   - youcaring.org
-action: remove
+action: filter
 action_reason: Crowdfunding [{{match}}]
-comment: |
-  Crowdfunding on a casino subreddit? you're crazy. not happening.
 ---
 type: submission
 title (regex):
   - admin(istrator)?s?
   - announcements?
+  - mega\W?(post|thread)s?
   - mod(erator)?(\W?post)?s?
 action: remove
 action_reason: Moderator-only title [{{match}}]
 comment: |
-  Your {{kind}} has been automatically removed because you used a keyword {{match}}
+  Your {{kind}} has been automatically removed because you used a keyword, [{{match}}]
   which is reserved for the subreddit moderators.
 comment_locked: true
 modmail_subject: Moderator-only title [{{match}}]
@@ -314,39 +314,40 @@ modmail: |
 
   The above {{kind}} by /u/{{author}} with "{{title}}" was removed because of a Mod-only word.
 ---
-# comments if user posts url only in text submission.
   type: text submission
-  body (regex, full-text): ['^(\[[^\]]*\]?\((https?://)?([^\s)]+)\)|(https?://)?([^\s)]+))$']
+  body (regex): ['^(?:\[([^\]]+)\]\((https?:\/\/)?(www\.)?[^\s]+(\.[^\s]+)+\)$|(https?:\/\/)?(www\.)?[^\s]+(\.[^\s]+)+)$']
   comment_locked: true
   moderators_exempt: true
   comment: |
-   /u/{{author}},  
+   ##### /u/{{author}},  
      
-   I noticed your post is just a link in the body without any text, next time please submit as a link post. heres how:  
+   I noticed you only posted a link without any text, Next time you post a url without text please do it like this:  
+     
    ### Mobile Phones:  
-    Use the &#x1f517; for your url submissions. [Example](https://www.reddit.com/r/CasinoFreebies/comments/1gski6z/here_is_how_i_post_urls/?share_id=icl02NdIVw1MlMR_pOh_u&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1).  
-     - If you decide you need to add text to the body of the post you're able to do so while using the &#x1f517;.
+   Use the &#x1f517; for your url submissions. [Example](https://www.reddit.com/r/CasinoFreebies/comments/1gski6z/here_is_how_i_post_urls/?share_id=icl02NdIVw1MlMR_pOh_u&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1).  
+    - If you decide you need to add text to the body of the post you're able to do so while using the &#x1f517;.
    ### Desktop:  
-    Use the link submission [img](https://i.imgur.com/sKBJg4n.jpeg).
-     - If you decide you need to add text to the body of the post you'll need to use the text submission and paste your URL in the body along with any text instead of Link submission. [img](https://i.imgur.com/yiB7S5g.jpeg).
----
-# comments if user posts url and text in body of text submission
-  type: text submission
-  body (regex): ['(?:\[[^\]]*\]\((https?://)?([^\s)]+)\)|(https?://)?([^\s)]+))']
-  comment_locked: true
-  moderators_exempt: true
-  comment: |
-   /u/{{author}},  
-     
-   I noticed you submitted a post with a url in the body along with text, not as a link post, this is fine if you're using reddit on desktop, but if you're using a mobile device we ask that in the future:
-    - Use the &#x1f517; for your url submissions. [Example](https://www.reddit.com/r/CasinoFreebies/comments/1gski6z/here_is_how_i_post_urls/?share_id=icl02NdIVw1MlMR_pOh_u&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1) and then add the text in the body.
-   
-   You're not in trouble and won't be banned or anything crazy it just helps when posts look cleaner.
+   Use the link submission [img](https://i.imgur.com/sKBJg4n.jpeg).
+    - If you decide you need to add text to the body of the post you'll need to use the text submission and paste your URL in the body along with any text instead of Link submission. [img](https://i.imgur.com/yiB7S5g.jpeg).
 ---
 # Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.
 author:
-    name: [ "AutoModerator", "evasion-guard", "TheInsane1990", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "OriginalBabaCasino"]
+    name: [ "AutoModerator", "evasion-guard", "TheInsane1990", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "OfficialBabaCasino"]
 reports: 1
 moderators_exempt: false
 action: approve
+---
+  type: text submission
+  body (regex): ['^(?=.*(?:https?://|www\.)[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&//=]*)).*(?=.*\b\w+\b).*$']
+  comment_locked: true
+  moderators_exempt: true
+  comment: |
+   ##### /u/{{author}},  
+     
+   I noticed you didn't submit a link post, instead you just posted a url and text, This is fine if you're posting on reddit from **desktop**.
+
+   If you're posting from **mobile device** it's best if you submit like this:
+     - Use the &#x1f517; for your url submissions. [Example](https://www.reddit.com/r/CasinoFreebies/comments/1gski6z/here_is_how_i_post_urls/?share_id=icl02NdIVw1MlMR_pOh_u&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1) and then add the text in the body.
+
+   You're not in trouble and won't be banned or anything crazy it just helps when posts look cleaner.
 ---
