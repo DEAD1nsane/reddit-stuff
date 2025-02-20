@@ -32,7 +32,7 @@ modmail: |
 # Automod comments in response to keywords about deposit to redeem, or if it's a scam with link to info hub & what FAQ to read
 type: any
 moderators_exempt: false
-title+body (includes-word): ["is this a scam", "purchase to redeem", "deposit to redeem", "pay to withdraw", "deposit to withdraw", "pay to redeem", "pay to pull out", "deposit in order to claim", "deposit in order to play", "deposit to play", "deposit to claim", "pay to claim", "spend to play", "pay to play", "is it a scam", "deposit to cash", "legit?", "a scam site?", "a scam?", "scam?", "scam site?", "scam site", "legit"]
+title+body (includes-word): ["is this a scam", "purchase to redeem", "deposit to redeem", "pay to withdraw", "deposit to withdraw", "pay to redeem", "pay to pull out", "deposit in order to claim", "deposit in order to play", "deposit to play", "deposit to claim", "pay to claim", "spend to play", "pay to play", "is it a scam", "deposit to cash", "legit?", "a scam site?", "a scam?", "scam?", "scam site?", "scam site"]
 comment: |
   Excuse me /u/{{author}}\
   Did I hear you say `{{match}}`?
@@ -112,7 +112,10 @@ parent_submission:
   set_flair:
     template_id: 53626cb8-8dec-11ef-8d85-82a49f0e1ed2
 comment: |
-  ###### Post flair changed to expired by /u/{{author}}.
+  **Post flair changed to expired by MOD /u/{{author}}.**
+  
+  #### ⚠️￫ Hey OP ￩⚠️
+  ^(**In the future, you can do this yourself! just type the same command the MOD did.**)
 comment_locked: true
 ---
 # This will send a modmail whenever a post or comment gets 3 reports and will automatically remove it.
