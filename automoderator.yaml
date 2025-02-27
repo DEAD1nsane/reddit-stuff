@@ -356,7 +356,7 @@ action: approve
 ---
 # removes any funrize, funzcity, nolimitcoins, jackpotrabbit, taofortune,fortunewheelz,casino.click if its more than just the domain
 type: any
-title+body (regex): ['(?:\b(?:url=|redirect=|link=))?(https?:\/\/|www\.)?(funrize\.com|funzcity\.com|nolimitcoins\.com|jackpotrabbit\.com|taofortune\.com|fortunewheelz\.com|casino\.click)\/[^\s]+']
+title+body (regex): ['(?:\b(?:url=|redirect=|link=))?(https%3A%2F%2F|https:\/\/)(www\.)?(funrize\.com|funczity\.com|olimitcoins\.com|jackpotrabbits\.com|taofortune\.com|fortunewheelz\.com|casino\.click)(%2F|\/)']
 action: remove
 action_reason: "security risk url"
 message: |
