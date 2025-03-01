@@ -365,4 +365,4 @@ message: |
   Your {{kind}} has been removed because these links have been glitchy and a security risk. if you wish to post about this site you must repost with just the website. nothing more.
   
   example: www.example.com not www.example.com/path/to/page.html?param1=value1&param2=value2
----
+---  
