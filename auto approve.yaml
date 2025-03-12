@@ -1,0 +1,8 @@
+---
+# Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.
+author:
+    name: [ "AutoModerator", "mod1", "mod2", "mod3"]
+reports: 1
+moderators_exempt: false
+action: approve
+---
