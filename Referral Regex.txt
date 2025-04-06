@@ -5,7 +5,7 @@
 
 (?:(?:https?:\/\/)?(?:\w+\.)?(?:referral|invite|promo|partner|affiliate|bonus|reward|code|signup|track|campaign|source|id|uid|user|customer|member|friend|earn|ref|ref_code|refer|r|mid|referralCode|referred_by_id|c)\.(?:[a-z]{2,})\/[\w-]+)|
 (?:\/(?:ref(?:=|\/)?|referral|invite|promo|partner|affiliate|bonus|reward|code|signup|track|campaign|source|id|uid|user|customer|member|friend|earn|ref|ref_code|refer|r|mid|referralCode|referred_by_id|c)\/[\w-]+(?:(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)|$))|
-(?:\?(?:ref|ref_code|invite|refer|r|c|id|refid|referralCode|referred_by_id|promo|partner|affiliate|bonus|reward|code|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup)=[\w-]+)|
+(?:\?(?:ref|ref_code|invite|refer|r|c|id|refid|referralCode|referred_by_id|promo|partner|affiliate|bonus|reward|code|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by)=[\w-]+)|
 (?:\#(?:ref|invite|refer)=[\w-]+)
 
 
