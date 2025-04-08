@@ -1,23 +1,35 @@
 ---
 # Removes any post using the "new casino" flair without including a URL to the casino
 type: submission
-moderators_exempt: false
+moderators_exempt: true
 flair_template_id: 30c00a8a-93a5-11ef-aa15-9254882f18e9
 ~url+body (regex): "[(https?://|www\\.)]"
 action: remove
 action_reason: "Flair without link"
 comment: |
-  Your post was removed because it included the correct flair but did not contain a URL to the casino.  
+  Your {kind} was removed because it included the correct flair but did not contain a URL to the casino.  
   Please re-submit with a direct link to the casino **(NOT A REFERRAL URL)** you are posting about.
 ---
 # comments on any submission using giveaway/stream post flair a caution about external links.
 type: submission
-moderators_exempt: false
+moderators_exempt: true
 flair_template_id: 33ea2762-707e-11ef-b23f-46b622795ce3
 comment: |
-  ### ATTENTION EVERYBODY:  
+  # ATTENTION EVERYBODY:  
   Use external links with caution and never share personal information or banking numbers on third party sites that are not reputable casinos
-comment_stickied: true
+comment_locked: true
+---
+# comments on any submission using giveaway/stream post flair a caution about external links.
+type: submission
+moderators_exempt: true
+flair_template_id: 751c650c-49ae-11ef-8db1-16f9fa17ff35
+comment: |
+  # Hey /u/{{author}},  
+  > You’re currently using the **Discussion|Q&A flair**,  so this is a quick reminder about the helpful tool /u/answeredbot. If your post is a **question** and someone provides a **satisfactory answer**, you can acknowledge it by replying to their comment with `!answered` — exact as you see it, all lowercase, no spaces.  
+  >  
+  > This makes it easier for others with the same question to find the solution quickly and efficiently.  
+  >  
+  > If your post is intended purely for **discussion** and not seeking a specific answer, feel free to disregard this message and continue the conversation. 
 comment_locked: true
 ---
 type: any
@@ -38,6 +50,8 @@ comment: |
   Did I hear you say `{{match}}`?
 
   Please have a look at our [Information Hub > FAQ](https://www.reddit.com/r/CasinoFreebies/comments/1hxk6n8/hey_all_if_youre_having_issues_viewing_this_hub/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) and read **Deposit to Redeem?** &#x1F6AB;
+  
+  You can also look it up on https://www.scam-detector.com.
 comment_locked: true
 ---
 # Emoji(s) in Title
@@ -58,12 +72,10 @@ comment: |
   ^(&#x2005;)
 ---
 type: submission
-author:
-    is_moderator: false
+moderators_exempt: true
 comment: |
-    ### ATTENTION EVERYBODY:  
-    [Please report](https://www.reddit.com/r/CasinoFreebies/s/dixi8lNEJh) any rule breaking posts and posts that are not relevant to the subreddit. If you do not know how to do this, please follow the url embeded in this comment. Thank you :) (The embeded link above, not the one below)
-comment_stickied: true
+    # ATTENTION EVERYBODY:  
+    **[Please report](https://www.reddit.com/r/CasinoFreebies/s/dixi8lNEJh)** any rule breaking posts and posts that are not relevant to the subreddit. If you do not know how to do this, please follow the url embeded in this comment. Thank you :) (The embeded link above, not the one below)
 comment_locked: true
 ---
 type: comment
@@ -71,11 +83,11 @@ author:
   is_submitter: true
 parent_submission:
   set_locked: true
-body: "!lock", "! lock"
+body: "!lock"
 comment: |
   ###### This post has been locked by /u/{{author}}.
 
-  ^(⚠️￫ to unlock simply edit your {{kind}}, change **!lock**/**! lock** to **!unlock**/**! unlock** ￩⚠️)
+  ^(⚠️￫ to unlock simply edit your {{kind}}, change **!lock** to **!unlock** ￩⚠️)
 comment_locked: true
 ---
 type: any
@@ -83,7 +95,7 @@ author:
   is_submitter: true
 parent_submission:
   set_locked: false
-body: "!unlock", "! unlock"
+body: "!unlock"
 comment: |
   ###### This post has been unlocked by /u/{{author}}.
 comment_locked: true
@@ -92,7 +104,7 @@ type: comment
 author:
   is_submitter: true
   is_moderator: false
-body: "!expired", "! expired"
+body: "!expired"
 parent_submission:
   overwrite_flair: true
   set_flair:
@@ -104,7 +116,7 @@ comment_locked: true
 type: comment
 author:
   is_moderator: true
-body: "!expired", "! expired"
+body: "!expired"
 parent_submission:
   overwrite_flair: true
   set_flair:
@@ -320,7 +332,7 @@ modmail: |
   comment_locked: true
   moderators_exempt: true
   comment: |
-   ##### /u/{{author}},  
+   # /u/{{author}},  
      
    I noticed you only posted a link without any text, Next time you post a url without text please do it like this:  
      
@@ -333,7 +345,7 @@ modmail: |
 ---
 # Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.
 author:
-    name: [ "AutoModerator", "evasion-guard", "TheInsane1990", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot"]
+    name: [ "AutoModerator", "evasion-guard", "TheInsane1990", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answerebot"]
 reports: 1
 moderators_exempt: false
 action: approve
@@ -343,7 +355,7 @@ action: approve
   comment_locked: true
   moderators_exempt: true
   comment: |
-   ##### /u/{{author}},  
+   # /u/{{author}},  
      
    I noticed you didn't submit a link post, instead you just posted a url and text, This is fine if you're posting on reddit from **desktop**, or posting multiple links (DDD for example)
 
