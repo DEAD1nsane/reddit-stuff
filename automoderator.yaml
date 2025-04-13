@@ -109,6 +109,7 @@ author:
   is_moderator: false
 body: ["!expired", "! expired"]
 parent_submission:
+  set_locked: true
   overwrite_flair: true
   set_flair:
     template_id: 53626cb8-8dec-11ef-8d85-82a49f0e1ed2
@@ -121,6 +122,7 @@ author:
   is_moderator: true
 body: ["!expired", "! expired"]
 parent_submission:
+  set_locked: true
   overwrite_flair: true
   set_flair:
     template_id: 53626cb8-8dec-11ef-8d85-82a49f0e1ed2
