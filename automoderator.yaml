@@ -348,7 +348,7 @@ modmail: |
 ---
 # Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.
 author:
-    name: [ "AutoModerator", "evasion-guard", "TheInsane1990", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot"]
+    name: [ "AutoModerator", "evasion-guard", "TheInsane1990", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot", "drawing-app"]
 reports: 1
 moderators_exempt: false
 action: approve
