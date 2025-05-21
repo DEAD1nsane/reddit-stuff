@@ -388,3 +388,25 @@ message: |
   
   example: www.example.com not www.example.com/path/to/page.html?param1=value1&param2=value2
 ---
+type: any
+~title (regex): ['^(?:[^\s]+[.,!?]*\s+){4,}[^\s]+[.,!?]*$']
+action: remove
+action_reason: "Less than 5 word title"
+message: |
+  {{permalink}}
+
+  your {{kind}} by was removed because somehow you were able to submit a post with less than 5 words which is the minimum required to post.
+  
+  please repost with a title of no less than 5 words and no more than 10.
+---
+type: any
+title (regex): ['^(?:[^\s]+[.,!?]*\s+){10,}[^\s]+[.,!?]*$']
+action: remove
+action_reason: "more than 10 word title"
+message: |
+  {{permalink}}
+
+  your {{kind}} by was removed because somehow you were able to submit a post with more than 10 words which is the maximum amount of words in title required to post.
+  
+  please repost with a title of no less than 5 words and no more than 10.
+---
