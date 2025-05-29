@@ -377,17 +377,6 @@ action: approve
 
    You're not in trouble and won't be banned or anything crazy it just helps when posts look cleaner.
 ---
-# removes any funrize, funzcity, nolimitcoins, jackpotrabbit, taofortune,fortunewheelz,casino.click if its more than just the domain
-type: any
-action: remove
-action_reason: "security risk url"
-message: |
-  {{permalink}}
-  
-  Your {{kind}} has been removed because these links have been glitchy and a security risk. if you wish to post about this site you must repost with just the website. nothing more.
-  
-  example: www.example.com not www.example.com/path/to/page.html?param1=value1&param2=value2
----
 type: any
 ~title (regex): ['^(?:[^\s]+[.,!?]*\s+){4,}[^\s]+[.,!?]*$']
 action: remove
