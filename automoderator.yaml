@@ -319,7 +319,6 @@ body+domain+title+url:
 action: filter
 action_reason: Crowdfunding [{{match}}]
 ---
-#share mod
 type: submission
 title (regex):
   - admin(istrator)?s?
