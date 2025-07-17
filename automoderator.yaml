@@ -398,3 +398,17 @@ message: |
   
   please repost with a title of no less than 5 words and no more than 10.
 ---
+type: any
+title+body (regex, includes): ['(?i)\b(?:https?:\/\/)?(?:[\W_]*e[\W_]*m[\W_]*a[\W_]*i[\W_]*l[\W_]*)(?:%2E|\.)[^\s\/]+(?:\/[^\s]*)?']
+action: remove
+action_reason: email url
+moderators_exempt: true
+message: |
+  {{permalink}}
+
+  your {{kind}} by was removed because urls beginning with email are usually tailored, or targeted and are not allowed in this subreddit.  
+  
+  You can try to use https://redirectdetective.com, sorry for the inconvenience, thank you for understanding!  
+  
+  –The /r/CasinoFreebies Moderators
+‐--
