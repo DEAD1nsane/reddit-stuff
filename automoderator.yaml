@@ -408,3 +408,10 @@ message: |
   
   –The /r/CasinoFreebies Moderators
 ---
+type: submission 
+url+body+domain (regex, includes): ['bit.ly']
+author:
+  is_contributor: true
+moderators_exempt: false
+action: approve 
+---
