@@ -350,7 +350,7 @@ modmail: |
 ---
 # Did not submit url via link post submission
 # posted url & some type of message in body
-# explains how to do a link post submissioni
+# explains how to do a link post submission
   type: text submission
   body (regex): ['^(?=.*(?:https?://|www\.)[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&//=]*))(?=.*[a-zA-Z0-9])(?!^(?:https?://|www\.)[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&//=]*)$).*$']
   comment_locked: true
