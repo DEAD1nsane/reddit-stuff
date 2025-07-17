@@ -329,6 +329,9 @@ modmail: |
 
   The above {{kind}} by /u/{{author}} with "{{title}}" was removed because of a Mod-only word.
 ---
+# did not submit a link post
+# submitted url in body alone (nothing else)
+# explains how to do link post submission
   type: text submission
   body (regex): ['^(?:\[([^\]]+)\]\((https?:\/\/)?(www\.)?[^\s]+(\.[^\s]+)+\)$|(https?:\/\/)?(www\.)?[^\s]+(\.[^\s]+)+)$']
   comment_locked: true
@@ -345,13 +348,9 @@ modmail: |
    Use the link submission [img](https://i.imgur.com/sKBJg4n.jpeg).
     - If you decide you need to add text to the body of the post you'll need to use the text submission and paste your URL in the body along with any text instead of Link submission. [img](https://i.imgur.com/yiB7S5g.jpeg).
 ---
-# Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.
-author:
-    name: [ "AutoModerator", "evasion-guard", "TheInsane1990", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot", "drawing-app"]
-reports: 1
-moderators_exempt: false
-action: approve
----
+# Did not submit url via link post submission
+# posted url & some type of message in body
+# explains how to do a link post submissioni
   type: text submission
   body (regex): ['^(?=.*(?:https?://|www\.)[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&//=]*))(?=.*[a-zA-Z0-9])(?!^(?:https?://|www\.)[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&//=]*)$).*$']
   comment_locked: true
@@ -365,6 +364,13 @@ action: approve
      - Use the &#x1f517; for your url submissions. [Example](https://www.reddit.com/r/CasinoFreebies/comments/1gski6z/here_is_how_i_post_urls/?share_id=icl02NdIVw1MlMR_pOh_u&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1) and then add the text in the body.
 
    You're not in trouble and won't be banned or anything crazy it just helps when posts look cleaner.
+---
+# Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.
+author:
+    name: [ "AutoModerator", "evasion-guard", "TheInsane1990", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot", "drawing-app"]
+reports: 1
+moderators_exempt: false
+action: approve
 ---
 type: any
 ~title (regex): ['^(?:[^\s]+[.,!?]*\s+){4,}[^\s]+[.,!?]*$']
