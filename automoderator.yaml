@@ -361,7 +361,7 @@ modmail: |
    I noticed you didn't submit a link post, instead you just posted a url and text, This is fine if you're posting on reddit from **desktop**, or posting multiple links.
 
    If you're posting from **mobile device** it's best if you submit like this:
-     - Use the &#x1f517; for your url submissions. [Example](https://www.reddit.com/r/CasinoFreebies/comments/1gski6z/here_is_how_i_post_urls/?share_id=icl02NdIVw1MlMR_pOh_u&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1) and then add the text in the body.
+     - Use the &#x1f517; for your link submissions. [Example](https://www.reddit.com/r/CasinoFreebies/comments/1gski6z/here_is_how_i_post_urls/?share_id=icl02NdIVw1MlMR_pOh_u&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1) and then add the text in the body.
 
    You're not in trouble and won't be banned or anything crazy it just helps when posts look cleaner.
 ---
@@ -409,9 +409,47 @@ message: |
   –The /r/CasinoFreebies Moderators
 ---
 type: submission 
-url+body+domain (regex, includes): ['bit.ly']
+url+body+domain (includes):
+  - bit.ly
 author:
   is_contributor: true
 moderators_exempt: false
 action: approve 
+---
+# removes any non-link submissions for carnival citi free sc codes OR if its a text post without the carnivalciti.com in the body
+type: submission
+title (regex):
+  - (?i)carnival\s?citi
+  - (?i)\bsc\b
+  - (?i)\bfree\b
+  - (?i)\bcode\b
+~domain+body: carnivalciti.com
+action: remove
+message: |
+  {{permalink}}
+  
+  Hey {{author}},
+
+  We're trying something new at /r/CasinoFreebies for Carnival Citi posts that include a free SC code.  
+  Simply **repost using the URL below**, placing the code directly after the final `/`:
+
+  `https://www.carnivalciti.com/home/bonusing/code/`
+
+  If you're unsure how to do a link submission, check out the examples below.
+
+  ### Mobile Phones:  
+  Use the &#x1f517; icon when submitting your link.  
+  ➤ [&#x1f4f7;](https://www.reddit.com/r/CasinoFreebies/comments/1gski6z/here_is_how_i_post_urls/?share_id=icl02NdIVw1MlMR_pOh_u&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1)
+
+  - You **can** add text to the body when using the &#x1f517; method.
+
+  ### Desktop:  
+  Use the link submission option.
+  ➤ [&#x1f4f7;](https://i.imgur.com/sKBJg4n.jpeg)  
+  - If you want to include body text, use a **text post** instead, and paste the full URL along with your text.
+  ➤ [&#x1f4f7;](https://i.imgur.com/yiB7S5g.jpeg)
+
+  We appreciate you sharing freebies with the community and look forward to your next submission!
+
+  –The /r/CasinoFreebies Moderation Team
 ---
