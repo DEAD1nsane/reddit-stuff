@@ -425,6 +425,7 @@ title (regex):
   - (?i)\bcode\b
 ~domain+body: carnivalciti.com
 action: remove
+moderators_exempt: false
 message: |
   {{permalink}}
   
