@@ -181,7 +181,7 @@ modmail: |
 
   The above {{kind}} by /u/{{author}} was removed because it contained a possible IPv4 address. Please investigate immediately.
 
-  If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&subject=Doxxing%20Report:%20%2Fu%2F{{author}}) immediately.
+  If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](https://www.reddit.com/report) immediately, select content > submit url to the post from desktop mode in browser if on mobile > sharing personal info > select yourself or someone else > describe that they were doxxing.
 ---
 type: any
 title+body (regex):
@@ -196,7 +196,7 @@ modmail: |
   The above {{kind}} by /u/{{author}} was removed because it contained a possible credit card number. Please investigate immediately.
 
 
-  If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&subject=Doxxing%20Report:%20%2Fu%2F{{author}}) immediately.
+  If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](https://www.reddit.com/report) immediately, select content > submit url to the post from desktop mode in browser if on mobile > sharing personal info > select yourself or someone else > describe that they were doxxing.
 ---
 type: any
 title+body (regex):
@@ -214,7 +214,7 @@ modmail: |
   The above {{kind}} by /u/{{author}} was removed because it contained a possible email address. Please investigate immediately.
 
 
-  If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&subject=Doxxing%20Report:%20%2Fu%2F{{author}}) immediately.
+  If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](https://www.reddit.com/report) immediately, select content > submit url to the post from desktop mode in browser if on mobile > sharing personal info > select yourself or someone else > describe that they were doxxing.
 ---
 type: any
 title+body (regex, includes):
@@ -253,7 +253,7 @@ modmail: |
   The above {{kind}} by /u/{{author}} was removed because it contained a possible phone number. Please investigate immediately.
 
 
-  If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&subject=Doxxing%20Report:%20%2Fu%2F{{author}}) immediately.
+  If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](https://www.reddit.com/report) immediately, select content > submit url to the post from desktop mode in browser if on mobile > sharing personal info > select yourself or someone else > describe that they were doxxing.
 ---
 type: any
 body+domain+title+url:
