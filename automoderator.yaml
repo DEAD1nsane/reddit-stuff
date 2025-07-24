@@ -367,7 +367,7 @@ modmail: |
 ---
 # Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.
 author:
-    name: [ "AutoModerator", "evasion-guard", "TheInsane1990", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot", "drawing-app"]
+    name: [ "AutoModerator", "evasion-guard", "TheInsane1990", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot"]
 reports: 1
 moderators_exempt: false
 action: approve
@@ -376,7 +376,7 @@ type: any
 ~title (regex): ['^(?:[^\s]+[.,!?]*\s+){4,}[^\s]+[.,!?]*$']
 action: remove
 action_reason: "Less than 5 word title"
-comment: check your inbox for why this post got removed.
+comment: check your direct messages for why this post got removed.
 comment_locked: true
 message: |
   {{permalink}}
@@ -389,7 +389,7 @@ type: any
 title (regex): ['^(?:[^\s]+[.,!?]*\s+){10,}[^\s]+[.,!?]*$']
 action: remove
 action_reason: "more than 10 word title"
-comment: check your inbox on why this post got removed.
+comment: check your direct messages for why this post got removed.
 comment_locked: true
 message: |
   {{permalink}}
@@ -403,6 +403,7 @@ body+url (regex, includes): ['(?i)\b(?:https?:\/\/)?(?:[\W_]*e[\W_]*m[\W_]*a[\W_
 action: remove
 action_reason: email url
 moderators_exempt: true
+comment: check your direct messages for why this post was removed.
 message: |
   {{permalink}}
 
@@ -456,4 +457,26 @@ message: |
   We appreciate you sharing freebies with the community and look forward to your next submission!
 
   –The /r/CasinoFreebies Moderation Team
+---
+type: submission
+title (regex):
+  - remove(d|r|s)?
+  - delet(e|ed|ion)?
+  - tak(en|e)?\s*down
+  - tried?\s+to\s+post
+  - (won[’']?t|can[’']?t|cannot|not\s+able\s+to)\s+(post|submit)
+  - tried?\s+to
+action: remove
+action_reason: posting about not being able to post [{{match}}]
+comment: |
+  instead of spamming the subreddit with a offtopic post about why your post keeps getting removed, you should  
+  1. check your direct messages for any messages from /u/automoderator.
+  2. if there isn't anything from /u/automoderator in your direct messages,  **[contact the moderators of this subreddit](/message/compose/?to=/r/CasinoFreebies)** so the issue can be addressed accordingly and fixed if needed.
+comment_locked: true
+message: |
+  {{permalink}}
+  hello /u/{{author}}, your {{kind}} was removed because it is unnecessary and posts are automatically removed for specific reasons.  
+  if you are unsure as to why it was removed, or feel something might not be working correctly, please  [contact the moderators of this subreddit](/message/compose/?to=/r/CasinoFreebies) directly so the issue can be addressed accordingly.
+  
+  who knows, it might be a error that needs to be fixed in the automoderator code and there is no way for the moderators to know about these errors unless you speak up.
 ---
