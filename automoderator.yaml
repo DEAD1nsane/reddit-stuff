@@ -376,23 +376,27 @@ type: any
 ~title (regex): ['^(?:[^\s]+[.,!?]*\s+){4,}[^\s]+[.,!?]*$']
 action: remove
 action_reason: "Less than 5 word title"
+comment: check your inbox for why this post got removed.
+comment_locked: true
 message: |
   {{permalink}}
 
-  your {{kind}} by was removed because somehow you were able to submit a post with less than 5 words which is the minimum required to post.
+  your {{kind}} by was removed because somehow you were able to submit a post with less than **5 words** which is the **minimum** requirement to post.
   
-  please repost with a title of no less than 5 words and no more than 10.
+  please repost with a title of no less than **5 words** and no more than **10 words**.
 ---
 type: any
 title (regex): ['^(?:[^\s]+[.,!?]*\s+){10,}[^\s]+[.,!?]*$']
 action: remove
 action_reason: "more than 10 word title"
+comment: check your inbox on why this post got removed.
+comment_locked: true
 message: |
   {{permalink}}
 
-  your {{kind}} by was removed because somehow you were able to submit a post with more than 10 words which is the maximum amount of words in title required to post.
+  your {{kind}} by was removed because somehow you were able to submit a post with more than **10 words** which is the **maximum** amount of words in title required to post.
   
-  please repost with a title of no less than 5 words and no more than 10.
+  please repost with a title of no less than 5 words and no more than **10 words**.
 ---
 type: any
 body+url (regex, includes): ['(?i)\b(?:https?:\/\/)?(?:[\W_]*e[\W_]*m[\W_]*a[\W_]*i[\W_]*l[\W_]*)(?:%2E|\.)[^\s\/]+(?:\/[^\s]*)?']
