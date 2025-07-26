@@ -338,7 +338,7 @@ modmail: |
   comment_locked: true
   moderators_exempt: true
   comment: |
-   ##### /u/{{author}},  
+   # /u/{{author}},  
      
    I noticed you only posted a link without any text, Next time you post a url without text please do it like this:  
      
@@ -357,7 +357,7 @@ modmail: |
   comment_locked: true
   moderators_exempt: true
   comment: |
-   ##### /u/{{author}},  
+   # /u/{{author}},  
      
    I noticed you didn't submit a link post, instead you just posted a url and text, This is fine if you're posting on reddit from **desktop**, or posting multiple links.
 
