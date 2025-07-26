@@ -481,3 +481,16 @@ message: |
   
   who knows, it might be a error that needs to be fixed in the automoderator code and there is no way for the moderators to know about these errors unless you speak up.
 ---
+type: any
+body+url (regex):
+  - /(https?:\/\/)?(www\.)?(discord(app)?\.com|discord\.gg)\/[^\s\/]+(?:\/[^\s]*)?/gi
+moderators_exempt: true
+action: remove
+action_reason: discord url
+comment: looks like you're attempting to share a social. {{kind}} was removed.
+modmail_subject: discord url
+modmail: |
+  {{permalink}}
+  
+  a discord url {{match}} was attempted to be posted by /u/{{author}}.
+---
