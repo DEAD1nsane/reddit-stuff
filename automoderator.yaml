@@ -418,8 +418,7 @@ type: submission
 url+body+domain (includes):
   - bit.ly
 author:
-  is_contributor: true
-moderators_exempt: false
+  is_moderator: true
 action: approve 
 ---
 # removes any non-link submissions for carnival citi free sc codes OR if its a text post without the carnivalciti.com in the body
