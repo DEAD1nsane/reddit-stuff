@@ -150,14 +150,14 @@ comment_locked: true
 type: any
 priority: 0
 author:
-    account_age: "< 3 days"
+    account_age: "< 7days"
 moderators_exempt: true
 action: remove
 action_reason: "New Account - possibly spam"
 message: |
     {{permalink}}
 
-    Your {{kind}} has been removed because your account is less than 2 days old. This policy is in place to reduce spam and ensure genuine participation in r/CasinoFreebies.
+    Your {{kind}} has been removed because your account is less than 7 days old. This policy is in place to reduce spam and ensure genuine participation in r/CasinoFreebies.
 
     You are encouraged to engage with the community, comment on posts, and revisit posting once your account meets the minimum age requirement. Thank you for your understanding!
 ---
