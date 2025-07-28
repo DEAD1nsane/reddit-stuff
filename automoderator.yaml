@@ -21,7 +21,7 @@ comment_locked: true
 ---
 # comments on any submission using Discussion|Q&A
 type: submission
-moderators_exempt: false
+moderators_exempt: true
 flair_template_id: 751c650c-49ae-11ef-8db1-16f9fa17ff35
 comment: |
   # Hey /u/{{author}},  
