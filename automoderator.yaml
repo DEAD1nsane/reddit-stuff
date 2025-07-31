@@ -375,7 +375,6 @@ action: approve
 ---
 type: any
 ~title (regex): ['^(?:[^\s]+[.,!?]*\s+){4,}[^\s]+[.,!?]*$']
-moderators_exempt: false
 action: remove
 action_reason: "Less than 5 word title"
 comment: check your direct messages for why this post got removed.
@@ -389,7 +388,6 @@ message: |
 ---
 type: any
 title (regex): ['^(?:[^\s]+[.,!?]*\s+){10,}[^\s]+[.,!?]*$']
-moderators_exempt: false
 action: remove
 action_reason: "more than 10 word title"
 comment: check your direct messages for why this post got removed.
