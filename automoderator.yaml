@@ -484,7 +484,7 @@ message: |
 ---
 type: any
 body+url (regex):
-  - /(https?:\/\/)?(www\.)?(discord(app)?\.com|discord\.gg)\/[^\s\/]+(?:\/[^\s]*)?/gi
+  - /(https?:\/\/)?(www\.)?(discord(?:app)?\.com\/\S+|discord\.gg\/\S+)/gi
 moderators_exempt: true
 action: remove
 action_reason: discord url
