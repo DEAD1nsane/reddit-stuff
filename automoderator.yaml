@@ -484,11 +484,12 @@ message: |
 ---
 type: any
 body+url (regex):
-  - /(https?:\/\/)?(www\.)?(discord(?:app)?\.com\/\S+|discord\.gg\/\S+)/gi
+  - (?:https?:\/\/)?(?:[a-z0-9-]+\.)?(?:discord(?:\.com|\.gg|\.gift|\.new)|discordapp\.com)\/[^\s"']+
 moderators_exempt: true
 action: remove
 action_reason: discord url
 comment: looks like you're attempting to share a social. {{kind}} was removed.
+comment_locked: true
 modmail_subject: discord url
 modmail: |
   {{permalink}}
