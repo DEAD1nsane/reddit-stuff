@@ -427,7 +427,8 @@ action: approve
 type: submission
 title (regex): 
   - (?i)carnival.*citi.*\b(sc|free|code)\b
-~domain+body: carnivalciti.com
+~url+body (regex): 
+  - 'carnivalciti\.com/home/bonusing/code/'
 action: remove
 moderators_exempt: false
 message: |
