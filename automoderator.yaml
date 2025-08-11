@@ -2,8 +2,7 @@
 type: submission
 moderators_exempt: false
 flair_template_id: 30c00a8a-93a5-11ef-aa15-9254882f18e9
-~url+body (regex):
-  - (https?:\/\/|www\.)
+~url+body (regex): '(https?:\/\/|www\.)'
 action: remove
 action_reason: "Flair without link"
 comment: |
@@ -12,7 +11,8 @@ comment: |
 ---
 # comments on any submission using giveaway/stream post flair a caution about external links.
 type: submission
-moderators_exempt: false
+author:
+  is_moderator: false
 flair_template_id: 33ea2762-707e-11ef-b23f-46b622795ce3
 comment: |
   ### ATTENTION EVERYBODY:  
@@ -85,13 +85,13 @@ comment_locked: true
 type: submission
 moderators_exempt: true
 title (regex, includes):
-  - (?#Zero Width Joiner)[\u200d]
-  - (?#Box Drawing)[\u2500-\u257f]
-  - (?#Miscellaneous Symbols)[\u2600-\u26ff]
-  - (?#Dingbats)[\u2700-\u27ff]
-  - (?#Braille)[\u2800-\u28ff]
-  - (?#!Katakana Letter Tu)[\u30c4]
-  - (?#Various Emoji)[\U0001F000-\U0001FAFF]
+  - [\u200d] # Zero Width Joiner
+  - [\u2500-\u257f] # Box Drawing
+  - [\u2600-\u26ff] # Miscellaneous Symbols
+  - [\u2700-\u27ff] # Dingbats
+  - [\u2800-\u28ff] # Braille
+  - [\u30c4] # Katakana Letter Tu
+  - [\U0001F000-\U0001FAFF] # Various Emoji
 action: remove
 action_reason: emoji(s) in title - /u/{{author}}
 comment: |
@@ -104,7 +104,10 @@ comment: |
 comment_locked: true
 ---
 type: submission
+author:
+  is_moderator: false
 moderators_exempt: true
+title (regex): '.*'
 comment: |
   ### ATTENTION EVERYBODY:  
   [Please report](https://www.reddit.com/r/CasinoFreebies/s/qGMcLftOP7) any rule breaking posts and posts that are not relevant to the subreddit. If you do not know how to do this, please follow the url embeded in this comment. Thank you :) (The embeded link above, not the one below)
@@ -165,10 +168,10 @@ comment: |
   ^(**In the future, you can do this yourself! just type the same command the MOD did.**)
 comment_locked: true
 ---
-# This will send a modmail whenever a post or comment gets 3 reports and will automatically remove it.
-reports: 2
-action: remove
-modmail_subject: Automatic Removal | 2 Reports
+# This will send a modmail whenever a post or comment gets 3 reports and will automatically filter it.
+reports: 3
+action: filter
+modmail_subject: Automatic Removal | 3 Reports
 modmail: |
   {{permalink}}
   The above {{kind}} by /u/{{author}} was removed because it received 3 reports. Please investigate and ensure that this action was correct.
@@ -178,10 +181,10 @@ comment: |
   The moderators of r/{{subreddit}} will investigate if this action was taken correctly.
 comment_locked: true
 ---
-# removes posts & comments from accounts less than 3 days old and sends user a message.
+# removes posts & comments from accounts less than 7 days old and sends user a message.
 type: any
 author:
-  account_age: "< 7days"
+  account_age: "< 7 days"
 moderators_exempt: true
 action: remove
 action_reason: "New Account - 7 days or below"
@@ -192,6 +195,7 @@ message: |
 
   You are encouraged to engage with the community, comment on posts, and revisit posting once your account meets the minimum age requirement. Thank you for your understanding!
 ---
+# this is disabled intentionally
 # removes posts & comments with negative combined karma and sends user a message.
 # type: any
 # author:
@@ -462,6 +466,7 @@ author:
   is_moderator: true
 action: approve 
 ---
+#gnore
 # removes any non-link submissions for carnival citi free sc codes OR if its a text post without the carnivalciti.com in the body
 type: submission
 title (regex): 
@@ -567,7 +572,7 @@ author:
 action: filter
 action_reason: "lowest CQS user"
 message: |
-  Thank you for submitting a {{kind}} to r/CasinoFreebies. Unfortunately, your account gas the lowest rank of reputation risk and is not visible to anybody.  
+  Thank you for submitting a {{kind}} to r/CasinoFreebies. Unfortunately, your account has the lowest rank of reputation risk and is not visible to anybody.  
      
   The moderators will review and make a decision on to allow or keep the decision as is.
 ---
