@@ -439,7 +439,8 @@ body+url (regex, includes):
 action: remove
 action_reason: email url
 moderators_exempt: true
-comment: check your direct messages for why this post was removed.
+comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
+comment_locked: true
 message: |
   {{permalink}}
 
@@ -447,6 +448,26 @@ message: |
   
   You can try to use https://redirectdetective.com, sorry for the inconvenience, thank you for understanding!  
   
+  —The /r/CasinoFreebies Moderators
+---
+type: any
+title+body+url (regex): 
+  - (?i)\b(?:https?:\/\/)?(?:www\.)?(100[\s\-_\.]?Plus|7[\s\-_\.]?Cali[\s\-_\.]?Casino|Ace[\s\-_\.]?Reveal[\s\-_\.]?Casino|Admiral|Betcoin|BitBetWin|bitofgold|BucksJet|Cash[\s\-_\.]?Bridge|Casino[\s\-_\.]?Royale|Chicago[\s\-_\.]?Sweeps|Circle[\s\-_\.]?Sweeps|Classic[\s\-_\.]?Evolution[\s\-_\.]?Casino|Chip[\s\-_\.]?n[\s\-_\.]?Win|Chipnwin|Coin[\s\-_\.]?Keeper|CoinsBucks|CosmoSlots|Dollar[\s\-_\.]?Mills|Enchanted[\s\-_\.]?Casino|Fire[\s\-_\.]?Phoenix|Fish[\s\-_\.]?Glory|Flamingo7|Fortune[\s\-_\.]?Slots|Fortune[\s\-_\.]?Wave|fortunewheelz|funcity|funrize|funzpoints|Galaxy[\s\-_\.]?World|Gamesroom777|Gemini|Gold[\s\-_\.]?Star|Golden[\s\-_\.]?Dragon|Golden[\s\-_\.]?Reel|Golden[\s\-_\.]?Treasure|Ice8|JLTD|Joker[\s\-_\.]?Gaming[\s\-_\.]?USA|lonestar\.pro|Lucky[\s\-_\.]?6[\s\-_\.]?Casino|Lucky[\s\-_\.]?777[\s\-_\.]?Casino|Lucky[\s\-_\.]?Charms[\s\-_\.]?Casino|Lucky[\s\-_\.]?Plinko|Magic[\s\-_\.]?City|Mega[\s\-_\.]?Win|Moozi|MrAllInOne|Noble[\s\-_\.]?Casino|NutCracker|No[\s\-_\.]?Limit[\s\-_\.]?Coins|NoLimitCoins|one[\s\-_\.]?slots|Paradise[\s\-_\.]?Casino|PayDay[\s\-_\.]?Sweeps|PlayNet[\s\-_\.]?Fun[\s\-_\.]?Casino|Pot[\s\-_\.]?of[\s\-_\.]?Gold|Riches[\s\-_\.]?Flow|River[\s\-_\.]?Dragon|Riversweeps|Roll[\s\-_\.]?Royale|Scrooge[\s\-_\.]?Casino|Shamrock[\s\-_\.]?Games[\s\-_\.]?Online|Sidepot|Sixty6|Skill[\s\-_\.]?Quest|SkillMachine\.net|SkillMine|Skills[\s\-_\.]?and[\s\-_\.]?Slots|Sky[\s\-_\.]?Sweeps[\s\-_\.]?Casino|Spinpals|Slackr|Sunshine[\s\-_\.]?Sweeps|SweepSlots|Sweepstakes\.mobi|SweepShark|Threelz|Tiger[\s\-_\.]?Is[\s\-_\.]?Home|Tora[\s\-_\.]?Tora[\s\-_\.]?Casino|Ultrapower[\s\-_\.]?Games|Vegas[\s\-_\.]?X|VPower|WebSweeps[\s\-_\.]?Casino|Wild[\s\-_\.]?World|yaycasino)(\.[a-z]{2,})?
+action: remove
+action_reason: bypassing Restrictions [{{match}}]
+moderators_exempt: true
+comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
+comment_locked: true
+message: |
+  {{permalink}}
+
+  your {{kind}} by was removed because you bypassed a word ({{match}}) on the **[BLACKLISTED CASINOS LIST](https://www.reddit.com/r/CasinoFreebies/wiki/blacklisted_casinos)**. breaking **[Rule #2](https://reddit.com/r/CasinoFreebies/w/the_rules/2)**
+  
+  If this is your first violation, it's only a temp (7 day), ban.
+  
+  If you violate a 2nd time, you're going to get permanently banned.
+  
+  Thank you for understanding, 
   —The /r/CasinoFreebies Moderators
 ---
 type: submission
@@ -537,11 +558,17 @@ author:
   combined_subreddit_karma: "< 0"
   contributor_quality: "< low"
 action: filter
-action_reason: "CQS Filter"
+action_reason: "Low CQS Filter - could be risky"
+comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
+comment_locked: true
 message: |
-  Thank you for submitting a {{kind}} to r/CasinoFreebies. Unfortunately, your combined karma (your comment karma added to your post karma) is negative and your account has the lowest/worst ranking possible for reputation filters on reddit. :( This subreddit does not allow posts from users with negative combined karma or risky users.
+  {{permalink}}
+  Thank you for being apart of /r/CasinoFreebies. Your {{kind}} is currently not visible because of your **[CQS Ranking being Low](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)**, meaning your close to possibly getting [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion) & are labeled as a reputation risk.
      
-  But the moderators will review this and then a decision will be made to allow the {{kind}}, or keep it as is.
+  But the moderators will review this and either remove it officially, or reapprove it.
+  
+  Thank you for understanding, 
+  /r/CasinoFreebies Moderation Team
 ---
 #Exclude CQS users at or above "moderate" from existing karma or account age minimums. In this rule, anything will filter if the user has a combined karma of less than 20, and a contributor_quality score below "moderate".
 type: any
@@ -549,20 +576,43 @@ author:
   combined_karma: "< 20"
   contributor_quality: "< moderate"
 action: filter
-action_reason: "karma minimum"
+action_reason: "karma minimum - should be okay"
+comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
+comment_locked: true
 message: |
-  Thank you for submitting a {{kind}} to r/CasinoFreebies. Unfortunately, your combined karma (your comment karma added to your post karma) is only the bare minimum. :(  
+  {{permalink)}
+  Thank you for being apart of /r/CasinoFreebies. Your {{kind}} is currently not visible because of your **[CQS Ranking being the Moderate](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)**.
      
-  The moderators will review this and then a decision will be made to allow the {{kind}}, or keep it as is.
+  The moderators will review this and then a decision will be made to allow the {{kind}}, or officially remove it. More than not, Moderate users are reapproved. but but always.
+  
+  Thank you for understanding, 
+  /r/CasinoFreebies Moderation Team
 ---
-#Filter all posts posted by a user with "lowest" CQS, regardless of karma.
+#Remove all posts posted by a user with "lowest" CQS, regardless of karma.
 type: any
 author:
   contributor_quality: "= lowest"
-action: filter
-action_reason: "lowest CQS user"
+action: remove
+action_reason: "lowest CQS user - Ban!"
+comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
+comment_locked: true
 message: |
-  Thank you for submitting a {{kind}} to r/CasinoFreebies. Unfortunately, your account has the lowest rank of reputation risk and is not visible to anybody.  
-     
-  The moderators will review and make a decision on to allow or keep the decision as is.
+  Thank you for being apart of /r/CasinoFreebies.
+  
+  We hate to be bearer of bad news but your account has the lowest **[CQS Ranking](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)** possible &/or your account is [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion). your {{kind}} has bbeen permanently removed.  
+  
+  For the safety of our community we are going to have to ban you. All this means is you will not be able to post or comment anymore. you can still continue to collect all the freebies from the subreddit like normal.
+  
+  Thank you for understanding, 
+  /r/CasinoFreebies Moderation Team
+modmail_subject: "LOWEST CQS USER - BAN!"
+modmail: |
+  {{permalink}}
+  /u/{{author}} has been flagged as lowest CQS user.
+  
+  Ban immediately (if they're shadowbanned it'll say removed by reddit systems and you won't be able to ban them like you do normally..
+    - in this situation you need to manually go to mod tools > banned and add them manually.
+    - select rule Harassment/bullying then you can select ban message.
+    
+    but don't worry about muting, we wanna hear their cries and excuses lol. 
 --- 
