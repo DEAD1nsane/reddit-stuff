@@ -461,7 +461,7 @@ comment_locked: true
 message: |
   {{permalink}}
 
-  your {{kind}} by was removed because you bypassed a word ({{match}}) on the **[BLACKLISTED CASINOS LIST](https://www.reddit.com/r/CasinoFreebies/wiki/blacklisted_casinos)**. breaking **[Rule #2](https://reddit.com/r/CasinoFreebies/w/the_rules/2)**
+  your {{kind}} by was removed because you bypassed a word ({{match}}) on the **[Blacklisted Casino List](https://www.reddit.com/r/CasinoFreebies/wiki/the_list)**. breaking **[Rule #2](https://reddit.com/r/CasinoFreebies/w/the_rules/2)**
   
   If this is your first violation, it's only a temp (7 day), ban.
   
@@ -621,7 +621,7 @@ type: any
 body (regex): 
   - (?i)casino\s*blacklist|blacklisted\s*casino|blacklist|blacklisted|why\s+(is|are)\s+casino(s)?\s+blacklisted|what(\'?s| is) the blacklist
 comment: |
-  Hello! Thanks for your interest in the [casino blacklist](https://reddit.com/r/CasinoFreebies/w/blacklisted_casinos?utm_medium=android_app&utm_source=share).
+  Hello! Thanks for your interest in the [casino blacklist](https://www.reddit.com/r/CasinoFreebies/wiki/blacklisted_casinos/the_list).
 
   Please know that this list is created to protect the community based on credible evidence and player safety. While some players may have had good experiences, the list reflects broader patterns of issues such as withdrawal delays, unfair terms, or unresolved complaints.
 

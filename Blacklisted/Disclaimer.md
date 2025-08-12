@@ -1,5 +1,4 @@
-### Blacklist Disclaimer  
-> *(Casinos on this list aren’t here because of personal preference—they’re here because I’ve reviewed enough credible evidence to believe they may be unsafe. I don’t share all that evidence on demand, as I expect everyone to do their own due diligence. A single successful cashout doesn’t guarantee a casino is trustworthy. My decisions are made with the community’s safety in mind, and I ask that you trust that my only goal is to protect everyone’s best interests.**  
+> **Casinos on this list aren’t here because of personal preference—they’re here because I’ve reviewed enough credible evidence to believe they may be unsafe. I don’t share all that evidence on demand, as I expect everyone to do their own due diligence. A single successful cashout doesn’t guarantee a casino is trustworthy. My decisions are made with the community’s safety in mind, and I ask that you trust that my only goal is to protect everyone’s best interests.**  
   
 ---  
   
@@ -29,4 +28,8 @@ These issues can exist even if a player manages to cash out successfully once or
   
   
 **Q: Does a successful cashout mean a casino is safe?**    
-> A: No. Some casinos pay out occasionally to maintain appearances but may have systemic issues that harm players in the long run.  
+> A: No. Some casinos pay out occasionally to maintain appearances but may have systemic issues that harm players in the long run.
+
+---
+
+# [Blacklisted Casinos](https://www.reddit.com/r/CasinoFreebies/wiki/blacklisted_casinos/the_list)

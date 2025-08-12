@@ -20,8 +20,10 @@ THE CHART SLIDES TO THE LEFT
 |Sweepstakes&#46;mobi|SweepShark|TaoFortune|Threelz|TigerIsHome|ToraTora|
 |Ultrapower-Games|Vegas&nbsp;X|VPower|WebSweeps&nbsp;Casino|Wild&nbsp;World|YayCasino&#46;us&#47;com|
 
+# [Blacklist Disclaimer](https://www.reddit.com/r/CasinoFreebies/wiki/blacklisted_casinos/disclaimer)
+
 ---
 
 **These are subject to change, posting about them or bypassing post restrictions is subject to temporary ban and it continued permanent ban. these are blacklisted for your safety**
 
->^(this list started off with using) [^(SweepKings Blacklist)](https://sweepskings.com/untrustworthy) ^(as a template/source)
+^(this list started off with using) [^(SweepKings Blacklist)](https://sweepskings.com/untrustworthy) ^(as a template/source)
