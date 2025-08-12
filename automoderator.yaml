@@ -11,8 +11,7 @@ comment: |
 ---
 # comments on any submission using giveaway/stream post flair a caution about external links.
 type: submission
-author:
-  is_moderator: false
+title (regex): '.*' 
 flair_template_id: 33ea2762-707e-11ef-b23f-46b622795ce3
 comment: |
   ### ATTENTION EVERYBODY:  
@@ -22,6 +21,7 @@ comment_locked: true
 ---
 # comments on any submission using Discussion|Q&A
 type: submission
+title (regex): '.*'
 moderators_exempt: true
 flair_template_id: 751c650c-49ae-11ef-8db1-16f9fa17ff35
 comment: |
@@ -84,23 +84,13 @@ comment_locked: true
 # Using unicode syntax, automod will remove posts that have emojis in the title and/or unicode symbols
 type: submission
 moderators_exempt: true
-title (regex, includes):
-  - [\u200d] # Zero Width Joiner
-  - [\u2500-\u257f] # Box Drawing
-  - [\u2600-\u26ff] # Miscellaneous Symbols
-  - [\u2700-\u27ff] # Dingbats
-  - [\u2800-\u28ff] # Braille
-  - [\u30c4] # Katakana Letter Tu
-  - [\U0001F000-\U0001FAFF] # Various Emoji
+title (regex, includes): ["(?#Zero Width Joiner)[\u200d]", "(?#Box Drawing)[\u2500-\u257f]+", "(?#Miscellaneous Symbols)[\u2600-\u26ff]", "(?#Dingbats)[\u2700-\u27ff]", "(?#Braille)[\u2800-\u28ff]", "(?#!Katakana Letter Tu)[\u30c4]", "(?#Various Emoji)[\U0001F000-\U0001FAFF]"]
 action: remove
 action_reason: emoji(s) in title - /u/{{author}}
 comment: |
-  ***Your submission has been automatically removed due to the following:***  
-  ^(&#x2005;)
-  
-  - **Emoji detected:** *r/{{subreddit}} does not allow emojis in the title.* &#129300;  
-  ^(&#x2005;)  
-  ^(&#x2005;)
+  {{match}}
+  **your submission has been automatically removed due to the following:**
+  - **Emoji detected:** *r/{{subreddit}} does not allow emojis in the title.* &#129300;
 comment_locked: true
 ---
 type: submission
