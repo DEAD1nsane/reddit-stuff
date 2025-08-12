@@ -616,3 +616,19 @@ modmail: |
     
     but don't worry about muting, we wanna hear their cries and excuses lol. 
 --- 
+# comments whenever someone mentions blacklist
+type: any
+body (regex): 
+  - (?i)casino\s*blacklist|blacklisted\s*casino|blacklist|blacklisted|why\s+(is|are)\s+casino(s)?\s+blacklisted|what(\'?s| is) the blacklist
+comment: |
+  Hello! Thanks for your interest in the [casino blacklist](https://reddit.com/r/CasinoFreebies/w/blacklisted_casinos?utm_medium=android_app&utm_source=share).
+
+  Please know that this list is created to protect the community based on credible evidence and player safety. While some players may have had good experiences, the list reflects broader patterns of issues such as withdrawal delays, unfair terms, or unresolved complaints.
+
+  We do not share all evidence publicly to respect privacy and avoid confusion. If you have concerns or specific evidence about a casino, please use the official reporting template or contact the moderators.
+
+  Your understanding helps us keep this community safe and trustworthy!
+
+  — /r/CasinoFreebies Moderation Team
+comment_locked: true
+---
