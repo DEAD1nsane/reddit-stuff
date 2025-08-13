@@ -1,6 +1,6 @@
 **Message from the /r/CasinoFreebies Moderation Team:**  
          
-> **Casinos on this list aren’t here because of personal preference—they’re here because I’ve reviewed enough credible evidence to believe they may be unsafe. we don’t share all that evidence on demand, as we expect everyone to do their own due diligence. A single successful cashout doesn’t guarantee a casino is trustworthy. Our decisions are made with the community’s safety in mind, and we ask that you trust that our only goal is to protect everyone’s best interests, and watch to all get rich!**      
+> Casinos on this list aren’t here because of personal preference—they’re here because I’ve reviewed enough credible evidence to believe they may be unsafe. we don’t share all that evidence on demand, as we expect everyone to do their own due diligence. A single successful cashout doesn’t guarantee a casino is trustworthy. Our decisions are made with the community’s safety in mind, and we ask that you trust that our only goal is to protect everyone’s best interests, and watch to all get rich!      
       
 ---      
       
@@ -17,22 +17,22 @@
 - **Targeting Vulnerable Players** – Aggressive retention tactics, constant unsolicited offers, or ignoring responsible gambling requests.        
 - **Security Concerns** – Poor data protection practices, suspicious payment processors, or lack of secure website encryption.        
       
-**These issues can exist even if a player manages to cash out successfully once or twice. A single payout does not erase systemic problems or remove long-term risk.**      
+- These issues can exist even if a player manages to cash out successfully once or twice. A single payout does not erase systemic problems or remove long-term risk.      
     
 ---      
       
 **Frequently Asked Questions:**      
       
 **Q: Can a casino be removed from the list?**      
-> A: *Yes. If new credible evidence shows a casino operates fairly and safely, it will be reviewed and potentially removed.*        
+- A: *Yes. If new credible evidence shows a casino operates fairly and safely, it will be reviewed and potentially removed.*        
       
       
 **Q: Why don’t you share all the evidence publicly?**        
-> A: *To protect user privacy, avoid unnecessary drama, and because I expect everyone to do their own research. I’m happy to discuss concerns but won’t do the research for everyone.*        
+- A: *To protect user privacy, avoid unnecessary drama, and because I expect everyone to do their own research. I’m happy to discuss concerns but won’t do the research for everyone.*        
       
       
 **Q: Does a successful cashout mean a casino is safe?**        
-> A: *No. Some casinos pay out occasionally to maintain appearances but may have systemic issues that harm players in the long run.*    
+- A: *No. Some casinos pay out occasionally to maintain appearances but may have systemic issues that harm players in the long run.*    
     
 ---    
     
