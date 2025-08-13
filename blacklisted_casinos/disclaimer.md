@@ -20,7 +20,8 @@ These issues can exist even if a player manages to cash out successfully once or
 ---  
   
 **Frequently Asked Questions**  
-**Q: Can a casino be removed from the list?**   > A: Yes. If new credible evidence shows a casino operates fairly and safely, it will be reviewed and potentially removed.    
+**Q: Can a casino be removed from the list?**  
+> A: Yes. If new credible evidence shows a casino operates fairly and safely, it will be reviewed and potentially removed.    
   
   
 **Q: Why don’t you share all the evidence publicly?**    
