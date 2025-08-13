@@ -1,8 +1,11 @@
->**MOBILE USERS:**  
+**MOBILE USERS:**  
 THE CHART SLIDES TO THE LEFT
 
 ---
 
+# Blacklisted Casinos  
+^(**These are subject to change, posting about them or bypassing post restrictions is subject to temporary ban and it continued permanent ban. these are blacklisted for your safety**)  
+  
 |**DO**|**NOT**|**TALK**|**ABOUT**|**THESE**|**CASINOS**|  
 |:-|:-|:-|:-|:-|:-|  
 |100&nbsp;Plus|7&nbsp;Cali|Ace&nbsp;Reveal|Admiral|Betcoin&#46;social|BitBetWin|  
@@ -18,12 +21,10 @@ THE CHART SLIDES TO THE LEFT
 |Shamrock&nbsp;Games|SidePot&#46;us|Sixty6|Skill&nbsp;Quest|SkillMachine&#46;net|SkillMine&#46;net|  
 |Skills&nbsp;and&nbsp;Slots|Sky&nbsp;Sweeps|Stackr|SunshineSweeps|SweepSlots|  
 |Sweepstakes&#46;mobi|SweepShark|TaoFortune|Threelz|TigerIsHome|ToraTora|  
-|Ultrapower-Games|Vegas&nbsp;X|VPower|WebSweeps|Wild&nbsp;World|YayCasino&#46;us&#47;com|
-
-# [Blacklist Disclaimer](https://www.reddit.com/r/CasinoFreebies/wiki/blacklisted_casinos/disclaimer)
+|Ultrapower-Games|Vegas&nbsp;X|VPower|WebSweeps|Wild&nbsp;World|YayCasino&#46;us&#47;com|  
 
 ---
 
-**These are subject to change, posting about them or bypassing post restrictions is subject to temporary ban and it continued permanent ban. these are blacklisted for your safety**
+# [Blacklist Disclaimer](https://www.reddit.com/r/CasinoFreebies/wiki/blacklisted_casinos/disclaimer)  
 
 ^(this list started off with using) [^(SweepKings Blacklist)](https://sweepskings.com/untrustworthy) ^(as a template/source)
