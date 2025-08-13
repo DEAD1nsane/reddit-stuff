@@ -23,16 +23,16 @@
       
 **Frequently Asked Questions:**      
       
-**Q: Can a casino be removed from the list?**      
-- A: *Yes. If new credible evidence shows a casino operates fairly and safely, it will be reviewed and potentially removed.*        
+**Q: Does a successful cashout mean a casino is safe?**        
+- A: *No. Some casinos pay out occasionally to maintain appearances but may have systemic issues that harm players in the long run.*        
       
       
 **Q: Why don’t you share all the evidence publicly?**        
 - A: *To protect user privacy, avoid unnecessary drama, and because I expect everyone to do their own research. I’m happy to discuss concerns but won’t do the research for everyone.*        
       
       
-**Q: Does a successful cashout mean a casino is safe?**        
-- A: *No. Some casinos pay out occasionally to maintain appearances but may have systemic issues that harm players in the long run.*    
+**Q: Can a casino be removed from the list?**      
+- A: *Yes. If new credible evidence shows a casino operates fairly and safely, it will be reviewed and potentially removed.*    
     
 ---    
     
