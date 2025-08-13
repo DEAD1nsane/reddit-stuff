@@ -618,8 +618,8 @@ modmail: |
 --- 
 # comments whenever someone mentions blacklist
 type: any
-title+body (regex): 
-  - (?i)casino\s*blacklist|blacklisted\s*casino|blacklist|blacklisted|why\s+(is|are)\s+casino(s)?\s+blacklisted|what(\'?s| is) the blacklist
+title+body (regex):
+  - (?i)(casino\s+(blacklist|blacklisted)|blacklist(ed)?\s+casino|why\s+(is|are)\s+casino(s)?\s+blacklisted|is\s+casino\s+blacklisted|what(\'?s| is) the blacklist|where\s+is\s+the blacklist|how\s+does\s+the blacklist\s+work)
 moderators_exempt: true
 comment: |
   Hello! Thanks for your interest in the [casino blacklist](https://www.reddit.com/r/CasinoFreebies/wiki/blacklisted_casinos/the_list).
