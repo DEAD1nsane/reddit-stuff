@@ -414,7 +414,7 @@ message: |
 ---
 type: any
 title (regex):
-  - ^(?!.*\d+\s+[a-zA-Z])([^\s]+[.,!?]*\s+){10,}[^\s]+[.,!?]*$
+  - ^(?:[^\s]+[.,!?]*\s+){10,}[^\s]+[.,!?]*$
 author: 
   ~name: ["Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "automoderator"]
 moderators_exempt: false
