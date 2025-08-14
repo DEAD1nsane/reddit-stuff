@@ -397,7 +397,7 @@ action_reason: "Approved reported post [{{author}}]"
 ---
 type: any
 ~title (regex):
-  - ^(?:(?:\d+[A-Za-z]{2,}|[^\s\d]+)[.,!?]*\s+){4,}(?:\d+[A-Za-z]{2,}|[^\s\d]+)[.,!?]*$
+  - ^(?!.*\b\d+\s+[a-zA-Z]+\b)(?:[^\s]+[.,!?]*\s+){4,}[^\s]+[.,!?]*$
 author: 
   ~name: ["Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "automoderator"]
 moderators_exempt: false
@@ -414,7 +414,7 @@ message: |
 ---
 type: any
 title (regex):
-  - ^(?:(?:\d+[A-Za-z]{2,}|[^\s\d]+)[.,!?]*\s+){10,}(?:\d+[A-Za-z]{2,}|[^\s\d]+)[.,!?]*
+  - ^(?!.*\b\d+\s+[a-zA-Z])(?:[^\s]+[.,!?]*\s+){10,}[^\s]+[.,!?]*$
 author: 
   ~name: ["Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "automoderator"]
 moderators_exempt: false
