@@ -765,3 +765,17 @@ comment: |
   Hey /u/{{author}}, this command only works for the OP.
 comment_locked: true
 ---
+type: submission
+title+body (regex): 
+  - (?i)\b(?:(?:rea[l1][\s\-_]*pri[zs][e3]?)[\s\-_]+(redemption|document[s]?|verification|verify|redeem|claim|paperwork|forms?|approval|submission|processing|form completion)|(redemption|document[s]?|verification|verify|redeem|claim|paperwork|forms?|approval|submission|processing|form completion)[\s\-_]+(?:rea[l1][\s\-_]*pri[zs][e3]?))\b
+action: remove
+action_reason: "Realprize [{{match}}]"
+comment: |
+  so you won't believe how many questions we get about this exact thing. 
+  
+  # [How to use reddit search filters](https://support.reddithelp.com/hc/en-us/articles/19696541895316-Available-search-features)  
+  
+  `title:realprize [{{match}}]` 
+  
+  make sure to look in the comment section too, if you really can't find the answer, and i mean you really took the time to search it, **[contact the moderators of this subreddit](/message/compose/?to=/r/CasinoFreebies)**.
+---
