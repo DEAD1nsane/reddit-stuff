@@ -327,7 +327,7 @@ body+domain+title+url:
   - youcaring.com
   - youcaring.net
   - youcaring.org
-action: filter
+action: remove
 action_reason: "Crowdfunding [{{match}}]"
 ---
 type: submission
