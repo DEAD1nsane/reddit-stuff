@@ -35,14 +35,13 @@
   - (?#GoldenReel)(?i)golden[\s\-_\.]*reel(?:\.com|\.us)?\b
   - (?#GoldenTreasure)(?i)golden[\s\-_\.]*treasure(?:\.com|\.us)?\b
   - (?#Ice8)(?i)ice8(?:\.com|\.us)?\b
-  - (?#JLTD)(?i)jltd\b
   - (?#JokerGamingUSA)(?i)joker[\s\-_\.]*gaming[\s\-_\.]*usa(?:\.com|\.us)?\b
   - (?#Lonestar)(?i)lonestar\.pro\b
   - (?#Lucky6)(?i)luck[y1][\s\-_\.]*6(?:[\s\-_\.]*casino)?\b
   - (?#Lucky777)(?i)luck[y1][\s\-_\.]*777(?:[\s\-_\.]*casino)?\b
   - (?#LuckyCharms)(?i)luck[y1][\s\-_\.]*charms(?:[\s\-_\.]*casino)?\b
   - (?#LuckyPlinko)(?i)luck[y1][\s\-_\.]*plinko(?:\.com|\.us)?\b
-  - (?#LuckyMe)(?i)luck[y1]\.me\b
+  - (?#LuckyMe)(?i)lucky\.me\b
   - (?#MagicCity)(?i)magic[\s\-_\.]*city(?:\.com|\.us)?\b
   - (?#MegaWin)(?i)mega[\s\-_\.]*win(?:\.com|\.us)?\b
   - (?#Moozi)(?i)moozi(?:\.com|\.us)?\b

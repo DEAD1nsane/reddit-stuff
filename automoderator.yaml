@@ -336,18 +336,14 @@ title (regex):
   - announcements?
   - mega\W?(post|thread)s?
   - mod(erator)?(\W?post)?s?
-action: remove
+action: report
 action_reason: "Moderator-only title [{{match}}]"
-comment: |
-  Your {{kind}} has been automatically removed because you used a keyword, [{{match}}]
-  which is reserved for the subreddit moderators.
-comment_locked: true
 modmail_subject: Moderator-only title [{{match}}]
 modmail: |
   {{permalink}}
 
 
-  The above {{kind}} by {{author}} with "{{title}}" was removed because of a Mod-only word.
+  The above {{kind}} by {{author}} with "{{title}}" was reported because of a Mod-only word.
 ---
 # did not submit a link post
 # submitted url in body alone (nothing else)
@@ -485,14 +481,13 @@ title+body+url (regex):
   - (?#GoldenReel)(?i)golden[\s\-_\.]*reel(?:\.com|\.us)?\b
   - (?#GoldenTreasure)(?i)golden[\s\-_\.]*treasure(?:\.com|\.us)?\b
   - (?#Ice8)(?i)ice8(?:\.com|\.us)?\b
-  - (?#JLTD)(?i)jltd\b
   - (?#JokerGamingUSA)(?i)joker[\s\-_\.]*gaming[\s\-_\.]*usa(?:\.com|\.us)?\b
   - (?#Lonestar)(?i)lonestar\.pro\b
   - (?#Lucky6)(?i)luck[y1][\s\-_\.]*6(?:[\s\-_\.]*casino)?\b
   - (?#Lucky777)(?i)luck[y1][\s\-_\.]*777(?:[\s\-_\.]*casino)?\b
   - (?#LuckyCharms)(?i)luck[y1][\s\-_\.]*charms(?:[\s\-_\.]*casino)?\b
   - (?#LuckyPlinko)(?i)luck[y1][\s\-_\.]*plinko(?:\.com|\.us)?\b
-  - (?#LuckyMe)(?i)luck[y1]\.me\b
+  - (?#LuckyMe)(?i)lucky\.me\b
   - (?#MagicCity)(?i)magic[\s\-_\.]*city(?:\.com|\.us)?\b
   - (?#MegaWin)(?i)mega[\s\-_\.]*win(?:\.com|\.us)?\b
   - (?#Moozi)(?i)moozi(?:\.com|\.us)?\b
@@ -534,7 +529,7 @@ title+body+url (regex):
   - (?#WildWorld)(?i)wild[\s\-_\.]*world(?:\.com|\.us)?\b
   - (?#YayCasino)(?i)yaycasino(?:\.com|\.us)?\b
 action: remove
-action_reason: "bypassing Restrictions [{{match}}]"
+action_reason: "[{{author}}] bypassing [{{match}}]"
 moderators_exempt: true
 comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
 comment_locked: true
@@ -605,20 +600,14 @@ title (regex):
   - tried?\s+to\s+post
   - (won[’']?t|can[’']?t|cannot|not\s+able\s+to)\s+(post|submit)
   - tried?\s+to
-action: remove
+action: report
 action_reason: "posting about not being able to post [{{match}}]"
 comment: |
   instead of spamming the subreddit with a offtopic post about why your post keeps getting removed, you should  
-  1. check your direct messages for any messages from /u/automoderator.
+  1. check your direct messages for any messages from /u/automoderator.  
+
   2. if there isn't anything from /u/automoderator in your direct messages,  **[contact the moderators of this subreddit](/message/compose/?to=/r/CasinoFreebies)** so the issue can be addressed accordingly and fixed if needed.
 comment_locked: true
-message: |
-  {{permalink}}
-  
-  hello /u/{{author}}, your {{kind}} was removed because it is unnecessary and posts are automatically removed for specific reasons.  
-  if you are unsure as to why it was removed, or feel something might not be working correctly, please  [contact the moderators of this subreddit](/message/compose/?to=/r/CasinoFreebies) directly so the issue can be addressed accordingly.
-  
-  who knows, it might be a error that needs to be fixed in the automoderator code and there is no way for the moderators to know about these errors unless you speak up.
 ---
 type: any
 body+url (regex):
@@ -658,21 +647,21 @@ type: any
 author:
   combined_karma: "< 20"
   contributor_quality: "< moderate"
-action: filter
-action_reason: "karma minimum - not risky yet"
-comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
-comment_locked: true
-message: |
-  {{permalink}}
-  
-  Thank you for being apart of /r/CasinoFreebies. Your {{kind}} is currently not visible because of your **[CQS Ranking being the Moderate](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)**.
-     
-  The moderators will review this and then a decision will be made to allow the {{kind}}, or officially remove it. More than not, Moderate users are reapproved. but but always.
-  
-  Thank you for understanding, 
-  /r/CasinoFreebies Moderation Team
+action: report
+action_reason: "karma minimum - not tooo risky?"
+# comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
+# comment_locked: true
+# message: |
+#  {{permalink}}
+#  
+#  Thank you for being apart of /r/CasinoFreebies. Your {{kind}} is currently not visible because of your **[CQS Ranking being the Moderate](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)**.
+#     
+#  The moderators will review this and then a decision will be made to allow the {{kind}}, or officially remove it. More than not, Moderate users are reapproved. but but always.
+#  
+#  Thank you for understanding, 
+#  /r/CasinoFreebies Moderation Team
 ---
-#Remove all posts posted by a user with "lowest" CQS, regardless of karma.
+# Remove all posts posted by a user with "lowest" CQS, regardless of karma.
 type: any
 author:
   contributor_quality: "= lowest"
@@ -722,12 +711,12 @@ comment_stickied: true
 type: any
 title+body+url (regex): 
   - (?i)(?:(?:\[.*?\]\()?((?:(?:https?:\/\/)?(?:\w+\.)?(?:referral|invite|promo|partner|affiliate|ref|refer)\.(?:[a-z]{2,})\/[\w-]+)|(?:\/(?:ref(?:=|\/)?|referral|invite|promo|partner|affiliate|bonus|reward|code|signup|track|campaign|source|id|uid|user|customer|member|friend|earn|ref|ref_code|refer|r|mid|referralCode|referred_by_id|c|raf)\/[\w-]+(?:(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)|$))|(?:(?:https?:\/\/)?(?:[\w.-]+\.[a-z]{2,})(?:\/[\w\/-]*)?(?:\?(?:ref|ref_code|referral|invite|refer|r|c|id|refid|referralCode|referred_by_id|promo|partner|affiliate|bonus|reward|code|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf)=[\w-]+|\#(?:ref|invite|refer|raf)=[\w-]+)))\)?)(?i)(?:(?:\[.*?\]\()?((?:(?:https?:\/\/)?(?:\w+\.)?(?:referral|invite|promo|partner|affiliate|ref|refer)\.(?:[a-z]{2,})\/[\w-]+)|(?:\/(?:ref(?:=|\/)?|referral|invite|promo|partner|affiliate|bonus|reward|code|signup|track|campaign|source|id|uid|user|customer|member|friend|earn|ref|ref_code|refer|r|mid|referralCode|referred_by_id|c|raf)\/[\w-]+(?:(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)|$))|(?:(?:https?:\/\/)?(?:[\w.-]+\.[a-z]{2,})(?:\/[\w\/-]*)?(?:\?(?:ref|ref_code|referral|invite|refer|r|c|id|refid|referralCode|referred_by_id|promo|partner|affiliate|bonus|reward|code|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf)=[\w-]+|\#(?:ref|invite|refer|raf)=[\w-]+)))\)?)
-action: remove
-action_reason: "REFERRAL [{{author}}] - [{{match}}]"
+action: filter
+action_reason: "REFERRAL [{{author}}][{{match}}]"
 moderators_exempt: true
 comment: /u/{{author}}, Congratulations for breaking [Rule 1](https://www.reddit.com/r/CasinoFreebies/wiki/the_rules/1). But nobody got to see it. Enjoy your ban.
 comment_locked: true
-modmail_subject: "REFERRAL [{{author}}] - [{{match}}]"
+modmail_subject: "REFERRAL [{{author}}][{{match}}]"
 modmail: |
   {{permalink}}
   

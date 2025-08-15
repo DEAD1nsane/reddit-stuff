@@ -46,4 +46,4 @@
     
 ---    
     
-**[Blacklisted Casinos](https://www.reddit.com/r/CasinoFreebies/wiki/blacklisted_casinos/the_list)**
+**[❌️ Blacklisted Casinos](https://www.reddit.com/r/CasinoFreebies/wiki/blacklisted_casinos/the_list)**
