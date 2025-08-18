@@ -755,7 +755,7 @@ comment: |
 comment_locked: true
 ---
 type: submission
-title+body (regex): 
+title+body (regex, includes): 
   - (?i)\b(?:(?:(?:rea[l1][\s\-_]*pri[zs][e3]?(?:[\s\-_]*casino)?)|(?:lonestar(?:[\s\-_]*casino)?))[\s\-_]*(redemption|document[s]?|verification|verify|redeem|claim|paperwork|forms?|approval|submission|processing|form completion)|(redemption|document[s]?|verification|verify|redeem|claim|paperwork|forms?|approval|submission|processing|form completion)[\s\-_]*(?:(?:rea[l1][\s\-_]*pri[zs][e3]?(?:[\s\-_]*casino)?)|(?:lonestar(?:[\s\-_]*casino)?)))\b
 action: remove
 action_reason: "[{{match}}] ppl not searching"
