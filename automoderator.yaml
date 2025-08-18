@@ -768,3 +768,9 @@ comment: |
   
   make sure to look in the comment section too, if you really can't find the answer, and i mean you really took the time to search it, **[contact the moderators of this subreddit](/message/compose/?to=/r/CasinoFreebies)**.
 ---
+type: comment
+body (includes-word):
+  - thanks anyways
+action: remove
+action_reason: [{{match}}]
+---
