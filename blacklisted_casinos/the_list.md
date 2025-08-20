@@ -12,16 +12,16 @@ THE CHART SLIDES TO THE LEFT
 |BitOfGold&#46;cc|BucksJet|Cash&nbsp;Bridge|Casino&nbsp;Royale|Chicago&nbsp;Sweeps|Chip'N&nbsp;Win|  
 |Circle&nbsp;Sweeps|Classic&nbsp;Evolution|Coin&nbsp;Keeper|CoinsBucks|CosmoSlots|Dollar&nbsp;Mills|  
 |Enchanted|Fire&nbsp;Phoenix|Fish&nbsp;Glory|Flamingo7|Fortune&nbsp;Slots|Fortune&nbsp;Wave|  
-|FortuneWheelz|FunzCity|FunzPoints|FunRize|Galaxy&nbsp;World|Gamesroom777|  
+|FortuneWheelz|FunRize|FunzCity|FunzPoints|Galaxy&nbsp;World|Gamesroom777|  
 |Gemini|Gold&nbsp;Star|GoldRushCity|Golden&nbsp;Dragon|Golden&nbsp;Reel|Golden&nbsp;Treasure|  
-|Ice8|Joker&nbsp;Gaming&nbsp;USA|Lonestar&#46;pro|Lucky&nbsp;6|Lucky&nbsp;777|Lucky&nbsp;Charms|  
-|Lucky&#46;Me|Lucky&nbsp;Plinko|Magic&nbsp;City|Mega&nbsp;Win|Moozi|MrAllInOne|Noble|  
-|NoLimitCoins|NutCracker|one-slots&#46;top|Paradise|PayDay&nbsp;Sweeps|PlayNet&nbsp;Fun|  
-|Pot&nbsp;of&nbsp;Gold|Riches&nbsp;Flow|River&nbsp;Dragon|Riversweeps|Roll&nbsp;Royale|Scrooge|  
-|Shamrock&nbsp;Games|SidePot&#46;us|Sixty6|Skill&nbsp;Quest|SkillMachine&#46;net|SkillMine&#46;net|  
-|Skills&nbsp;and&nbsp;Slots|Sky&nbsp;Sweeps|Stackr|SunshineSweeps|SweepSlots|  
-|Sweepstakes&#46;mobi|SweepShark|TaoFortune|Threelz|TigerIsHome|ToraTora|  
-|Ultrapower-Games|Vegas&nbsp;X|VPower|WebSweeps|Wild&nbsp;World|YayCasino&#46;us&#47;com|  
+|Ice8|Joker&nbsp;Gaming&nbsp;USA|LivePlayCasino|Lonestar&#46;pro|Lucky&nbsp;6|Lucky&nbsp;777|  
+|Lucky&nbsp;Charms|Lucky&nbsp;Me|Lucky&nbsp;Plinko|Magic&nbsp;City|Mega&nbsp;Win|Moozi|  
+|MrAllInOne|Noble|NoLimitCoins|NutCracker|one-slots&#46;top|Paradise|PayDay&nbsp;Sweeps|  
+|PlayNet&nbsp;Fun|Pot&nbsp;of&nbsp;Gold|Riches&nbsp;Flow|River&nbsp;Dragon|Riversweeps|Roll&nbsp;Royale|  
+|Scrooge|Shamrock&nbsp;Games|SidePot&#46;us|Sixty6|Skill&nbsp;Quest|SkillMachine&#46;net|SkillMine&#46;net|  
+|Skills&nbsp;and&nbsp;Slots|Sky&nbsp;Sweeps|Stackr|SunshineSweeps|SweepSlots|SweepShark|  
+|Sweepstakes&#46;mobi|TaoFortune|Threelz|TigerIsHome|ToraTora|Ultrapower-Games|Vegas&nbsp;X|  
+|VPower|WebSweeps|Wild&nbsp;World|YayCasino&#46;us&#47;com|  
 
 ---
 

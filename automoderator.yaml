@@ -469,9 +469,9 @@ title+body+url (regex):
   - (?#FortuneSlots)(?i)fortune[\s\-_\.]*slots(?:\.com|\.us)?\b
   - (?#FortuneWave)(?i)fortune[\s\-_\.]*wave(?:\.com|\.us)?\b
   - (?#FortuneWheelz)(?i)fortun[e3][\s\-_\.]*wheelz(?:\.com|\.us)?\b
+  - (?#FunRize)(?i)funrize(?:\.com|\.us)?\b
   - (?#FunzCity)(?i)funz[\s\-_\.]*city(?:\.com|\.us)?\b
   - (?#FunzPoints)(?i)funz[\s\-_\.]*points(?:\.com|\.us)?\b
-  - (?#FunRize)(?i)funrize(?:\.com|\.us)?\b
   - (?#GalaxyWorld)(?i)galaxy[\s\-_\.]*world(?:\.com|\.us)?\b
   - (?#Gamesroom777)(?i)gamesroom777(?:\.com|\.us)?\b
   - (?#Gemini)(?i)gemini(?:\.com|\.us)?\b
@@ -482,12 +482,13 @@ title+body+url (regex):
   - (?#GoldenTreasure)(?i)golden[\s\-_\.]*treasure(?:\.com|\.us)?\b
   - (?#Ice8)(?i)ice8(?:\.com|\.us)?\b
   - (?#JokerGamingUSA)(?i)joker[\s\-_\.]*gaming[\s\-_\.]*usa(?:\.com|\.us)?\b
+  - (?#LivePlayCasino)(?i)live[\s\-_\.]*play[\s\-_\.]*casino\.com\b
   - (?#Lonestar)(?i)lonestar\.pro\b
   - (?#Lucky6)(?i)luck[y1][\s\-_\.]*6(?:[\s\-_\.]*casino)?\b
   - (?#Lucky777)(?i)luck[y1][\s\-_\.]*777(?:[\s\-_\.]*casino)?\b
   - (?#LuckyCharms)(?i)luck[y1][\s\-_\.]*charms(?:[\s\-_\.]*casino)?\b
-  - (?#LuckyPlinko)(?i)luck[y1][\s\-_\.]*plinko(?:\.com|\.us)?\b
   - (?#LuckyMe)(?i)lucky\.me\b
+  - (?#LuckyPlinko)(?i)luck[y1][\s\-_\.]*plinko(?:\.com|\.us)?\b
   - (?#MagicCity)(?i)magic[\s\-_\.]*city(?:\.com|\.us)?\b
   - (?#MegaWin)(?i)mega[\s\-_\.]*win(?:\.com|\.us)?\b
   - (?#Moozi)(?i)moozi(?:\.com|\.us)?\b
@@ -516,8 +517,8 @@ title+body+url (regex):
   - (?#StackrCasino)(?i)stackr(?:casino)?(?:\.com|\.us)?\b
   - (?#SunshineSweeps)(?i)sunshine[\s\-_\.]*sweeps(?:\.com|\.us)?\b
   - (?#SweepSlots)(?i)sweepslots(?:\.com|\.us)?\b
-  - (?#SweepstakesMobi)(?i)sweepstakes\.mobi\b
   - (?#SweepShark)(?i)sweep[\s\-_\.]*shark(?:\.com|\.us)?\b
+  - (?#SweepstakesMobi)(?i)sweepstakes\.mobi\b
   - (?#TaoFortune)(?i)taofortune(?:\.com|\.us)?\b
   - (?#Threelz)(?i)threelz(?:\.com|\.us)?\b
   - (?#TigerIsHome)(?i)tigerishome(?:\.com|\.us)?\b
@@ -756,7 +757,7 @@ comment_locked: true
 ---
 type: submission
 title+body (regex, includes): 
-  - (?i)\b(?:(?:(?:rea[l1][\s\-_]*pri[zs][e3]?(?:[\s\-_]*casino)?)|(?:lonestar(?:[\s\-_]*casino)?))[\s\-_]*(redemption|document[s]?|verification|verify|redeem|claim|paperwork|forms?|approval|submission|processing|form completion)|(redemption|document[s]?|verification|verify|redeem|claim|paperwork|forms?|approval|submission|processing|form completion)[\s\-_]*(?:(?:rea[l1][\s\-_]*pri[zs][e3]?(?:[\s\-_]*casino)?)|(?:lonestar(?:[\s\-_]*casino)?)))\b
+  - (?i)\b(?:(?:(?:rea[l1][\s\-_]*pri[zs][e3]?|real[\s\-_]*prize)(?:[\s\-_]*casino)?|(?:lone[\s\-_]*star|lonestar)(?:[\s\-_]*casino)?)[\s\-_]*(redemption[s]?|document[s]?|verification|verify|redeem|claim|paperwork|forms?|approval|submission|processing|form completion)|(redemption[s]?|document[s]?|verification|verify|redeem|claim|paperwork|forms?|approval|submission|processing|form completion)[\s\-_]*(?:(?:rea[l1][\s\-_]*pri[zs][e3]?|real[\s\-_]*prize)(?:[\s\-_]*casino)?|(?:lone[\s\-_]*star|lonestar)(?:[\s\-_]*casino)?))\b
 action: remove
 action_reason: "[{{match}}] ppl not searching"
 comment: |
@@ -769,8 +770,8 @@ comment: |
   make sure to look in the comment section too, if you really can't find the answer, and i mean you really took the time to search it, **[contact the moderators of this subreddit](/message/compose/?to=/r/CasinoFreebies)**.
 ---
 type: comment
-body (includes-word):
-  - thanks anyways
+body: 
+  - 'thanks anyways'
 action: remove
-action_reason: [{{match}}]
+action_reason: "thanks anyways"
 ---
