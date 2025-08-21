@@ -13,17 +13,22 @@ comment: |
 type: text submission
 title (regex): '.*'  
 flair_template_id: d529b846-4b70-11ef-90e6-e6ebf0b2d45c
+moderators_exempt: false
 action: remove
 action_reason: "Flex without media"
-comment: Hey /u/{{author}}, if you wanna flex you're going to need to repost this as either a picture submission, or video submission. if you want to flex the replay url, you can add the to the body of the picture or video post.
+comment: Hey /u/{{author}}, if you wanna flex you're going to need to repost this as either a picture submission, or video submission. if you want to flex the replay url, you can add the to the body. — **why you ask? because a flex should be visual.** 
 comment_locked: true
 ---
-type: submission
-url (regex): '(https?:\/\/|www\.)' 
+type: link submission
+~domain:
+  - i.redd.it
+  - v.redd.it
 flair_template_id: d529b846-4b70-11ef-90e6-e6ebf0b2d45c
+moderators_exempt: false
+is_gallery: false
 action: remove
 action_reason: "Flex as url"
-comment: Hey /u/{{author}}, if you wanna flex you're going to need to repost this as either a picture submission, or video submission. if you want to flex the replay url, you can add the to the body of the picture or video post.
+comment: Hey /u/{{author}}, if you wanna flex you're going to need to repost this as either a picture ssion, or video submission. if you want to flex the replay url, you can add the to the body. — **why you ask? because a flex should be visual.**
 comment_locked: true
 ---
 # comments on any submission using giveaway/stream post flair a caution about external links.
@@ -791,9 +796,9 @@ comment: |
   make sure to look in the comment section too, if you really can't find the answer, and i mean you really took the time to search it, **[contact the moderators of this subreddit](/message/compose/?to=/r/CasinoFreebies)**.
 ---
 type: comment
-body: 
-  - 'thanks anyways'
-  - 'but thanks'
+body (includes-word): 
+  - thanks anyways
+  - but thanks
 action: remove
 action_reason: "[{{match}}]"
 ---
