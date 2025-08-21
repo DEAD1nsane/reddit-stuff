@@ -188,7 +188,7 @@ modmail_subject: "3 Reports [{{match}}]"
 modmail: |
   {{permalink}}
   
-  The above {{kind}} by {{author}} was removed because it received 3 reports. Please investigate and ensure that this action was correct.
+  The above {{kind}} by /u/{{author}} was removed because it received 3 reports. Please investigate and ensure that this action was correct.
 comment: |
   Thank you for your post in r/{{subreddit}}.
   
@@ -217,11 +217,7 @@ title+body (regex):
 action: remove
 modmail_subject: "Doxxing Alert: IPv4 [{{match}}]"
 modmail: |
-  ```  
-  {{author}}  
-  ```  
-
-  The above {{kind}} by {{author}} was removed because it contained a possible IPv4 address. Please investigate immediately.
+  The above {{kind}} by /u/{{author}} was removed because it contained a possible IPv4 address. Please investigate immediately.
   
   If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](https://www.reddit.com/report) immediately, select content > submit url to the post from desktop mode in browser if on mobile > sharing personal info > select yourself or someone else > describe that they were doxxing.
 ---
@@ -232,11 +228,7 @@ action: remove
 action_reason: "Doxxing Alert: [{{match}}]"
 modmail_subject: "Doxxing Alert: Credit Card [{{match}}]"
 modmail: |
-  ```  
-  {{author}}  
-  ```  
-  
-  The above {{kind}} by {{author}} was removed because it contained a possible credit card number. Please investigate immediately.
+  The above {{kind}} by /u/{{author}} was removed because it contained a possible credit card number. Please investigate immediately.
   
   If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](https://www.reddit.com/report) immediately, select content > submit url to the post from desktop mode in browser if on mobile > sharing personal info > select yourself or someone else > describe that they were doxxing.
 ---
@@ -250,11 +242,7 @@ action: remove
 action_reason: "Doxxing Alert: Email  [{{match}}]"
 modmail_subject: "Doxxing Alert: Email [{{match}}]"
 modmail: |
-  ```  
-  {{author}}  
-  ```  
-  
-  The above {{kind}} by {{author}} was removed because it contained a possible email address. Please investigate immediately.
+  The above {{kind}} by /u/{{author}} was removed because it contained a possible email address. Please investigate immediately.
   
   If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](https://www.reddit.com/report) immediately, select content > submit url to the post from desktop mode in browser if on mobile > sharing personal info > select yourself or someone else > describe that they were doxxing.
 ---
@@ -289,11 +277,7 @@ action: remove
 action_reason: "Doxxing Alert: Phone Number [{{match}}]"
 modmail_subject: "Doxxing Alert: Phone Number [{{match}}]"
 modmail: |
-  ```  
-  {{author}}  
-  ```  
-    
-  The above {{kind}} by {{author}} was removed because it contained a possible phone number. Please investigate immediately.
+  The above {{kind}} by /u/{{author}} was removed because it contained a possible phone number. Please investigate immediately.
   
   If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](https://www.reddit.com/report) immediately, select content > submit url to the post from desktop mode in browser if on mobile > sharing personal info > select yourself or someone else > describe that they were doxxing.
 ---
@@ -362,7 +346,7 @@ action: report
 action_reason: "Moderator-only title [{{match}}]"
 modmail_subject: Moderator-only title [{{match}}]
 modmail: |
-  The above {{kind}} by {{author}} with "{{title}}" was reported because of a Mod-only word.
+  The above {{kind with "{{title}}" was reported because of a Mod-only word.
 ---
 # did not submit a link post
 # submitted url in body alone (nothing else)
@@ -700,10 +684,6 @@ message: |
   /r/CasinoFreebies Moderation Team
 modmail_subject: "LOWEST CQS BAN [{{author}}]"
 modmail: |
-  ```  
-  {{author}}  
-  ```  
-    
   /u/{{author}} has been flagged as lowest CQS user.
   
   Ban immediately (if they're shadowbanned it'll say removed by reddit systems and you won't be able to ban them like you do normally..
@@ -743,10 +723,6 @@ comment: /u/{{author}}, Congratulations for breaking [Rule 1](https://www.reddit
 comment_locked: true
 modmail_subject: "REFERRAL [{{author}}][{{match}}]"
 modmail: |
-  ```  
-  {{author}}  
-  ```  
-  
   /u/{{author}} is ready to be banned. for {{match}}
 ---
 # removes and shows how to correctly use !answered
