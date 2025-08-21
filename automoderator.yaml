@@ -11,10 +11,19 @@ comment: |
   Please re-submit as a link submission to the casino **(NOT A REFERRAL URL)** you are posting about.
 ---
 type: text submission
+title (regex): '.*' 
 flair_template_id: d529b846-4b70-11ef-90e6-e6ebf0b2d45c
 action: remove
 action_reason: "Flex without media"
-comment: Hey /u/{{author}}, if you wanna flex you're going to need to repost this with either images or a video.
+comment: Hey /u/{{author}}, if you wanna flex you're going to need to repost this as either a picture submission, or video submission. if you want to flex the replay url, you can add the to the body of the picture or video post.
+comment_locked: true
+---
+type: link submission
+title (regex): '.*' 
+flair_template_id: d529b846-4b70-11ef-90e6-e6ebf0b2d45c
+action: remove
+action_reason: "Flex as url"
+comment: Hey /u/{{author}}, if you wanna flex you're going to need to repost this as either a picture submission, or video submission. if you want to flex the replay url, you can add the to the body of the picture or video post.
 comment_locked: true
 ---
 # comments on any submission using giveaway/stream post flair a caution about external links.
