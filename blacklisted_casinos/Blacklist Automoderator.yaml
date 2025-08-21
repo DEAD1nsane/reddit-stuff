@@ -1,3 +1,4 @@
+title+body+url (regex):
   - (?#100Plus)(?i)100[\s\-_\.]*plu[s5]\b
   - (?#7Cali)(?i)7[\s\-_\.]*cali(?:[\s\-_\.]*casino)?\b
   - (?#AceReveal)(?i)ace[\s\-_\.]*revea[l1](?:[\s\-_\.]*casino)?\b
@@ -37,7 +38,6 @@
   - (?#Ice8)(?i)ice8(?:\.com|\.us)?\b
   - (?#JokerGamingUSA)(?i)joker[\s\-_\.]*gaming[\s\-_\.]*usa(?:\.com|\.us)?\b
   - (?#LivePlayCasino)(?i)live[\s\-_\.]*play[\s\-_\.]*casino\.com\b
-  - (?#Lonestar)(?i)lonestar\.pro\b
   - (?#Lucky6)(?i)luck[y1][\s\-_\.]*6(?:[\s\-_\.]*casino)?\b
   - (?#Lucky777)(?i)luck[y1][\s\-_\.]*777(?:[\s\-_\.]*casino)?\b
   - (?#LuckyCharms)(?i)luck[y1][\s\-_\.]*charms(?:[\s\-_\.]*casino)?\b
