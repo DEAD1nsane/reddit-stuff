@@ -482,12 +482,13 @@ title+body+url (regex):
   - (?#GoldenTreasure)(?i)golden[\s\-_\.]*treasure(?:\.com|\.us)?\b
   - (?#Ice8)(?i)ice8(?:\.com|\.us)?\b
   - (?#JokerGamingUSA)(?i)joker[\s\-_\.]*gaming[\s\-_\.]*usa(?:\.com|\.us)?\b
-  - (?#LivePlayCasino)(?i)live[\s\-_\.]*play[\s\-_\.]*casino\.com\b
-  - (?#Lucky6)(?i)luck[y1][\s\-_\.]*6(?:[\s\-_\.]*casino)?\b
-  - (?#Lucky777)(?i)luck[y1][\s\-_\.]*777(?:[\s\-_\.]*casino)?\b
-  - (?#LuckyCharms)(?i)luck[y1][\s\-_\.]*charms(?:[\s\-_\.]*casino)?\b
+  - (?#LonestarPro)(?i)lonestar\.pro\b
+  - (?#Lucky6)(?i)luck[y1][\s\-_\.]*6(?:[\s\-_\.]?casino)?\b
+  - (?#Lucky777)(?i)luck[y1][\s\-_\.]*777(?:[\s\-_\.]?casino)?\b
+  - (?#LuckyCharms)(?i)luck[y1][\s\-_\.]*charms(?:[\s\-_\.]?casino)?\b
   - (?#LuckyMe)(?i)lucky\.me\b
   - (?#LuckyPlinko)(?i)luck[y1][\s\-_\.]*plinko(?:\.com|\.us)?\b
+  - (?#LivePlayCasino)(?i)live[\s\-_\.]?play[\s\-_\.]?casino\.com\b
   - (?#MagicCity)(?i)magic[\s\-_\.]*city(?:\.com|\.us)?\b
   - (?#MegaWin)(?i)mega[\s\-_\.]*win(?:\.com|\.us)?\b
   - (?#Moozi)(?i)moozi(?:\.com|\.us)?\b
@@ -759,7 +760,7 @@ comment_locked: true
 ---
 type: submission
 title+body (regex, includes): 
-  - (?i)\b(?:(?:(?:rea[l1][\s\-_]*pri[zs][e3]?|real[\s\-_]*prize)(?:[\s\-_]*casino)?|(?:lone[\s\-_]*star|lonestar)(?:[\s\-_]*casino)?)[\s\-_]*(redemption[s]?|document[s]?|verification|verify|redeem|claim|paperwork|forms?|approval|submission|processing|form completion)|(redemption[s]?|document[s]?|verification|verify|redeem|claim|paperwork|forms?|approval|submission|processing|form completion)[\s\-_]*(?:(?:rea[l1][\s\-_]*pri[zs][e3]?|real[\s\-_]*prize)(?:[\s\-_]*casino)?|(?:lone[\s\-_]*star|lonestar)(?:[\s\-_]*casino)?))\b
+  - (?i)\b((?:rea[l1][\s\-_]*pri[zs][e3]?|real[\s\-_]*prize)(?:[\s\-_]*casino)?|(?:lone[\s\-_]*star|lonestar)(?:[\s\-_]*casino)?)[\s\-_]*(redemptions?|document[s]?|verification|verify|redeem|claim|paperwork|forms?|approval|submission|processing|form completion)\b
 action: remove
 action_reason: "[{{match}}] ppl not searching"
 comment: |
