@@ -212,7 +212,9 @@ title+body (regex):
 action: remove
 modmail_subject: "Doxxing Alert: IPv4 [{{match}}]"
 modmail: |
-  {{permalink}}
+  ```  
+  {{author}}  
+  ```  
 
   The above {{kind}} by {{author}} was removed because it contained a possible IPv4 address. Please investigate immediately.
   
@@ -225,7 +227,9 @@ action: remove
 action_reason: "Doxxing Alert: [{{match}}]"
 modmail_subject: "Doxxing Alert: Credit Card [{{match}}]"
 modmail: |
-  {{permalink}}
+  ```  
+  {{author}}  
+  ```  
   
   The above {{kind}} by {{author}} was removed because it contained a possible credit card number. Please investigate immediately.
   
@@ -241,7 +245,9 @@ action: remove
 action_reason: "Doxxing Alert: Email  [{{match}}]"
 modmail_subject: "Doxxing Alert: Email [{{match}}]"
 modmail: |
-  {{permalink}}
+  ```  
+  {{author}}  
+  ```  
   
   The above {{kind}} by {{author}} was removed because it contained a possible email address. Please investigate immediately.
   
@@ -278,8 +284,10 @@ action: remove
 action_reason: "Doxxing Alert: Phone Number [{{match}}]"
 modmail_subject: "Doxxing Alert: Phone Number [{{match}}]"
 modmail: |
-  {{permalink}}
-  
+  ```  
+  {{author}}  
+  ```  
+    
   The above {{kind}} by {{author}} was removed because it contained a possible phone number. Please investigate immediately.
   
   If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](https://www.reddit.com/report) immediately, select content > submit url to the post from desktop mode in browser if on mobile > sharing personal info > select yourself or someone else > describe that they were doxxing.
@@ -349,9 +357,6 @@ action: report
 action_reason: "Moderator-only title [{{match}}]"
 modmail_subject: Moderator-only title [{{match}}]
 modmail: |
-  {{permalink}}
-
-
   The above {{kind}} by {{author}} with "{{title}}" was reported because of a Mod-only word.
 ---
 # did not submit a link post
@@ -631,7 +636,7 @@ modmail_subject: discord url
 modmail: |
   {{permalink}}
   
-  a discord url {{match}} was attempted to be posted by {{author}}.
+  a discord url {{match}} was attempted to be posted by /u/{{author}}.
 ---
 #Basic rule filtering users with <0 subreddit karma and CQS scores of "lowest"
 type: any
@@ -658,7 +663,7 @@ author:
   combined_karma: "< 20"
   contributor_quality: "< moderate"
 action: report
-action_reason: "karma minimum - not tooo risky?"
+action_reason: "karma minimum - caution"
 # comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
 # comment_locked: true
 # message: |
@@ -676,7 +681,7 @@ type: any
 author:
   contributor_quality: "= lowest"
 action: remove
-action_reason: "lowest CQS user - Ban!"
+action_reason: "LOWEST CQS BAN [{{author}}]"
 comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
 comment_locked: true
 message: |
@@ -688,11 +693,13 @@ message: |
   
   Thank you for understanding, 
   /r/CasinoFreebies Moderation Team
-modmail_subject: "LOWEST CQS USER - BAN!"
+modmail_subject: "LOWEST CQS BAN [{{author}}]"
 modmail: |
-  {{permalink}}
-  
-  {{author}} has been flagged as lowest CQS user.
+  ```  
+  {{author}}  
+  ```  
+    
+  /u/{{author}} has been flagged as lowest CQS user.
   
   Ban immediately (if they're shadowbanned it'll say removed by reddit systems and you won't be able to ban them like you do normally..
     - in this situation you need to manually go to mod tools > banned and add them manually.
@@ -784,6 +791,7 @@ comment: |
 type: comment
 body: 
   - 'thanks anyways'
+  - 'but thanks'
 action: remove
-action_reason: "thanks anyways"
+action_reason: "[{{match}}]"
 ---
