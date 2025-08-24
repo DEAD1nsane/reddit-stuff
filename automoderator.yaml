@@ -646,26 +646,6 @@ message: |
   Thank you for understanding, 
   /r/CasinoFreebies Moderation Team
 ---
-#Exclude CQS users at or above "moderate" from existing karma or account age minimums. In this rule, anything will filter if the user has a combined karma of less than 20, and a contributor_quality score below "moderate".
-type: any
-author:
-  combined_karma: "< 20"
-  contributor_quality: "< moderate"
-action: report
-action_reason: "karma minimum - caution"
-# comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
-# comment_locked: true
-# message: |
-#  {{permalink}}
-#  
-#  Thank you for being apart of /r/CasinoFreebies. Your {{kind}} is currently not visible because of your **[CQS Ranking being the Moderate](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)**.
-#     
-#  The moderators will review this and then a decision will be made to allow the {{kind}}, or officially remove it. More than not, Moderate users are reapproved. but but always.
-#  
-#  Thank you for understanding, 
-#  /r/CasinoFreebies Moderation Team
----
-# Remove all posts posted by a user with "lowest" CQS, regardless of karma.
 type: any
 author:
   contributor_quality: "= lowest"
