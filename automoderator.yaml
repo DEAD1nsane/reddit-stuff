@@ -649,7 +649,7 @@ message: |
 type: any
 author:
   contributor_quality: "= lowest"
-action: remove
+action: filter
 action_reason: "LOWEST CQS BAN [{{author}}]"
 comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
 comment_locked: true
@@ -696,7 +696,7 @@ title+body+url (regex):
   - (?i)(?:\/(?:ref(?:=|\/)?|referral|invite|promo|partner|affiliate|bonus|reward|signup|track|campaign|source|id|uid|user|customer|member|friend|earn|ref|ref_code|refer|r|mid|referralCode|referred_by_id|c|raf)\/[\w-]+(?:(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)|$))
   - (?i)(?:(?:https?:\/\/)?[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?\?(?:ref|ref_code|referral|invite|refer|r|c|id|refid|referralCode|referred_by_id|promo|partner|affiliate|bonus|reward|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|sign-up\?code)=[\w-]+)
   - (?i)(?:(?:https?:\/\/)?[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref|invite|refer|raf)=[\w-]+)
-action: remove
+action: filter
 action_reason: "REFERRAL [{{author}}][{{match}}]"
 moderators_exempt: true
 comment: /u/{{author}}, Congratulations for breaking [Rule 1](https://www.reddit.com/r/CasinoFreebies/wiki/the_rules/1). But nobody got to see it. Enjoy your ban.
