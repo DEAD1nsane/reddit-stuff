@@ -477,7 +477,6 @@ title+body+url (regex):
   - (?#FunzPoints)(?i)funz[\s\-_\.]*points(?:\.com|\.us)?\b
   - (?#GalaxyWorld)(?i)galaxy[\s\-_\.]*world(?:\.com|\.us)?\b
   - (?#Gamesroom777)(?i)gamesroom777(?:\.com|\.us)?\b
-  - (?#Gemini)(?i)gemini(?:\.com|\.us)?\b
   - (?#GoldStar)(?i)gold[\s\-_\.]*star(?:\.com|\.us)?\b
   - (?#GoldRushCity)(?i)gold[\s\-_\.]*rush[\s\-_\.]*city(?:\.com|\.us)?\b
   - (?#GoldenDragon)(?i)golden[\s\-_\.]*dragon(?:\.com|\.us)?\b
