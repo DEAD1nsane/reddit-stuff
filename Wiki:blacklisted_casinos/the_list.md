@@ -21,7 +21,7 @@ THE CHART SLIDES TO THE LEFT
 |Scrooge|Shamrock&nbsp;Games|SidePot&#46;us|Sixty6|Skill&nbsp;Quest|SkillMachine&#46;net|SkillMine&#46;net|  
 |Skills&nbsp;and&nbsp;Slots|Sky&nbsp;Sweeps|Stackr|SunshineSweeps|SweepSlots|SweepShark|  
 |Sweepstakes&#46;mobi|TaoFortune|Threelz|TigerIsHome|ToraTora|Ultrapower-Games|Vegas&nbsp;X|  
-|VPower|WebSweeps|Wild&nbsp;World|YayCasino&#46;us&#47;com|  
+|VPower|WebSweeps|Wild&nbsp;World| 
 
 ---
 
