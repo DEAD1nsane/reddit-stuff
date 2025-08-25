@@ -757,14 +757,14 @@ action_reason: "[{{match}}] dismissive"
 ---
 type: any
 body (regex):  
-  - ^(?:\S+[.,!?]*[\s]+){124}\S+[.,!?]*(?: {0,2})$
+  - ^(\S+[.,!?]*\s+){124}\S+[.,!?]*$
 action: remove
 action_reason: more than 125 words.
 moderators_exempt: true
 comment: |
-  >### /u/Automoderator says: “Nope.”
-
-  /u/{{author}} Maybe you should try again when your post is slightly less rebellious otherwise Automoderator might start sending passive-aggressive emails. Consider yourself warned.
+  ### &#x1F916; /u/Automoderator says: “Nope.”
+  
+  > /u/{{author}} Maybe you should try again when your post is slightly less rebellious otherwise Automoderator might start sending passive-aggressive emails. Consider yourself warned.
   
   ^(125 words maximum)
 comment_locked: true
