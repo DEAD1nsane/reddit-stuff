@@ -1,5 +1,8 @@
 # Disclaimer  
-^(**Casinos on this list aren’t here because of personal preference—they’re here because I’ve reviewed enough credible evidence to believe they may be unsafe. we don’t share all that evidence on demand, as we expect everyone to do their own due diligence. A single successful cashout doesn’t guarantee a casino is trustworthy. Our decisions are made with the community’s safety in mind, and we ask that you trust that our only goal is to protect everyone’s best interests, and watch to all get rich!**)        
+^(**Casinos on this list aren’t here because of personal preference—they’re here because I’ve reviewed enough credible evidence to believe they may be unsafe. we don’t share all that evidence on demand, as we expect everyone to do their own due diligence. A single successful cashout doesn’t guarantee a casino is trustworthy. Our decisions are made with the community’s safety in mind, and we ask that you trust that our only goal is to protect everyone’s best interests, and watch to all get rich!**)  
+  
+  
+- ^(**These are subject to change, posting about them or bypassing post restrictions is subject to temporary ban and it continued permanent ban. these are blacklisted for your safety**)          
   
 ---      
       
@@ -46,4 +49,5 @@
     
 ---    
     
-**[❌️ Blacklisted Casinos](https://www.reddit.com/r/CasinoFreebies/wiki/blacklisted_casinos/the_list)**
+**[❌️ Blacklisted Casinos](https://www.reddit.com/r/CasinoFreebies/wiki/blacklisted_casinos/the_list)**  
+^(this list started off with using) [^(SweepKings Blacklist)](https://sweepskings.com/untrustworthy) ^(as a template/source)
