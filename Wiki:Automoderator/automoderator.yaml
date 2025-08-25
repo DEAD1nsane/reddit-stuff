@@ -531,7 +531,6 @@ title+body+url (regex):
   - (?#VPower)(?i)vpower(?:\.com|\.us)?\b
   - (?#WebSweeps)(?i)websweeps(?:\.com|\.us)?\b
   - (?#WildWorld)(?i)wild[\s\-_\.]*world(?:\.com|\.us)?\b
-  - (?#YayCasino)(?i)yaycasino(?:\.com|\.us)?\b
 action: remove
 action_reason: "[{{author}}] bypassing [{{match}}]"
 moderators_exempt: true
