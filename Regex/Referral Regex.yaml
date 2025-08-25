@@ -4,6 +4,6 @@
 # Automoderator
 title+body+url (regex):
   - (?i)(?:(?:https?:\/\/)?(?:\w+\.)?(?:referral|invite|promo|partner|affiliate|ref|refer)\.[a-z]{2,}\/[\w-]+)
-  - (?i)(?:\/(?:ref(?:=|\/)?|referral|invite|promo|partner|affiliate|bonus|reward|signup|track|campaign|source|id|uid|user|customer|member|friend|earn|ref|ref_code|refer|r|mid|referralCode|referred_by_id|c|raf)\/[\w-]+(?:(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)|$))
-  - (?i)(?:(?:https?:\/\/)?[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?\?(?:ref|ref_code|referral|invite|refer|r|c|id|refid|referralCode|referred_by_id|promo|partner|affiliate|bonus|reward|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|sign-up\?code)=[\w-]+)
-  - (?i)(?:(?:https?:\/\/)?[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref|invite|refer|raf)=[\w-]+)
+  - (?i)(?:\/(?:ref(?:=|\/)?|referral|invite|promo|partner|affiliate|bonus|reward|signup|track|campaign|source|id|uid|user|customer|member|friend|earn|ref|ref_code|refer|r|mid|referralCode|referred_by_id|c|raf|u)\/[\w-]+(?:(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)|$))
+  - (?i)(?:(?:https?:\/\/)?[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?\?(?:ref|ref_code|referral|invite|refer|r|c|id|refid|referralCode|referred_by_id|promo|partner|affiliate|bonus|reward|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|u)=[\w-]+)
+  - (?i)(?:(?:https?:\/\/)?[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref|invite|refer|raf|u)=[\w-]+)
