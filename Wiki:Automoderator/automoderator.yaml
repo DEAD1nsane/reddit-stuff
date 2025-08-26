@@ -19,7 +19,7 @@ action_reason: "Flex without media"
 comment: |
   # Hey /u/{{author}},
   
-  If you wanna flex you're going to need to repost this as either a picture submission, or video submission. if you want to flex the replay url, you can add the to the body. — **why you ask? because a flex should be visual.** 
+  If you wanna flex you're going to need to repost this as either a picture submission, or video submission. If you want to flex the replay URL, you can add it to the body. — **why you ask? because a flex should be visual.** 
 comment_locked: true
 ---
 type: link submission
@@ -34,7 +34,7 @@ action_reason: "Flex as url"
 comment: |
   # Hey /u/{{author}}, 
   
-  If you wanna flex you're going to need to repost this as either a picture submission, or video submission. if you want to flex the replay url, you can add the to the body. — **why you ask? because a flex should be visual.**
+  If you wanna flex you're going to need to repost this as either a picture submission, or video submission. If you want to flex the replay URL, you can add it to the body. — **why you ask? because a flex should be visual.**
 comment_locked: true
 ---
 # comments on any submission using giveaway/stream post flair a caution about external links.
@@ -43,7 +43,7 @@ title (regex): '.*'
 flair_template_id: 33ea2762-707e-11ef-b23f-46b622795ce3
 comment: |
   ### ATTENTION EVERYBODY:  
-  Use external links with caution and never share personal information or banking numbers on third party sites that are not reputable casinos
+  Use external links with caution and never share personal information or banking numbers on third-party sites that are not reputable casinos
 comment_stickied: true
 comment_locked: true
 ---
@@ -70,7 +70,7 @@ moderators_exempt: true
 action: remove
 action_reason: "Possible BitBetWin AI Bot Spam"
 modmail: |
-  This {{kind}} by /u/{{author}} was removed for bitbetwin spam. please check it out.
+  This {{kind}} by {{author}} was removed for bitbetwin spam. please check it.
 ---
 # Automod comments in response to keywords about deposit to redeem, or if it's a scam with link to info hub & what FAQ to read
 type: any
@@ -127,7 +127,7 @@ moderators_exempt: true
 title (regex): '.*'
 comment: |
   ### ATTENTION EVERYBODY:  
-  [Please report](https://www.reddit.com/r/CasinoFreebies/s/qGMcLftOP7) any rule breaking posts and posts that are not relevant to the subreddit. If you do not know how to do this, please follow the url embeded in this comment. Thank you :) (The embeded link above, not the one below)
+  [Please report](https://www.reddit.com/r/CasinoFreebies/s/qGMcLftOP7) any rule breaking posts and posts that are not relevant to the subreddit. If you do not know how to do this, please follow the URL embedded in this comment. Thank you :) (The embeded link above, not the one below)
 comment_stickied: true
 comment_locked: true
 ---
@@ -142,7 +142,7 @@ comment: |
 
   ^(⚠️￫ to unlock simply edit your {{kind}}, change **!lock**/**! lock** to **!unlock**/**! unlock** ￩⚠️)  
   
-  ^(the reason there are 2 lock and 2 unlock commands, is because now it will work with or without a space between ! and the command, due to auto correction issues I made it like this.)
+  ^(The reason there are 2 lock and 2 unlock commands is that it will now work with or without a space between ! and the command, due to auto correction issues I made it like this.)
 comment_locked: true
 ---
 type: any
@@ -191,7 +191,7 @@ action: filter
 action_reason: "3 Reports [{{match}}]"
 modmail_subject: "3 Reports [{{match}}]"
 modmail: |
-  The above {{kind}} by /u/{{author}} was removed because it received 3 reports. Please investigate and ensure that this action was correct.
+  The above {{kind}} by {{author}} was removed because it received 3 reports. Please investigate and ensure that this action was correct.
 comment: |
   Thank you for your post in r/{{subreddit}}.
   
@@ -220,7 +220,7 @@ title+body (regex):
 action: remove
 modmail_subject: "Doxxing Alert: IPv4 [{{match}}]"
 modmail: |
-  The above {{kind}} by /u/{{author}} was removed because it contained a possible IPv4 address. Please investigate immediately.
+  The above {{kind}} by {{author}} was removed because it contained a possible IPv4 address. Please investigate immediately.
   
   If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](https://www.reddit.com/report) immediately, select content > submit url to the post from desktop mode in browser if on mobile > sharing personal info > select yourself or someone else > describe that they were doxxing.
 ---
@@ -231,7 +231,7 @@ action: remove
 action_reason: "Doxxing Alert: [{{match}}]"
 modmail_subject: "Doxxing Alert: Credit Card [{{match}}]"
 modmail: |
-  The above {{kind}} by /u/{{author}} was removed because it contained a possible credit card number. Please investigate immediately.
+  The above {{kind}} by {{author}} was removed because it contained a possible credit card number. Please investigate immediately.
   
   If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](https://www.reddit.com/report) immediately, select content > submit url to the post from desktop mode in browser if on mobile > sharing personal info > select yourself or someone else > describe that they were doxxing.
 ---
@@ -245,7 +245,7 @@ action: remove
 action_reason: "Doxxing Alert: Email  [{{match}}]"
 modmail_subject: "Doxxing Alert: Email [{{match}}]"
 modmail: |
-  The above {{kind}} by /u/{{author}} was removed because it contained a possible email address. Please investigate immediately.
+  The above {{kind}} by {{author}} was removed because it contained a possible email address. Please investigate immediately.
   
   If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](https://www.reddit.com/report) immediately, select content > submit url to the post from desktop mode in browser if on mobile > sharing personal info > select yourself or someone else > describe that they were doxxing.
 ---
@@ -280,7 +280,7 @@ action: remove
 action_reason: "Doxxing Alert: Phone Number [{{match}}]"
 modmail_subject: "Doxxing Alert: Phone Number [{{match}}]"
 modmail: |
-  The above {{kind}} by /u/{{author}} was removed because it contained a possible phone number. Please investigate immediately.
+  The above {{kind}} by {{author}} was removed because it contained a possible phone number. Please investigate immediately.
   
   If the user is doxxing, [ban them](https://www.reddit.com/mod/CasinoFreebies/banned/) and [report them to the Reddit admins](https://www.reddit.com/report) immediately, select content > submit url to the post from desktop mode in browser if on mobile > sharing personal info > select yourself or someone else > describe that they were doxxing.
 ---
@@ -413,7 +413,7 @@ comment_locked: true
 message: |
   # Hey /u/{{author}},
   
-  Your {{kind}} by was removed because somehow you were able to submit a post with less than **5 words** which is the **minimum** requirement to post.
+  Your {{kind}} was removed because somehow you were able to submit a post with less than **5 words** which is the **minimum** requirement to post.
   
   please repost with a title of no less than **5 words** and no more than **10 words**.
 ---
@@ -435,7 +435,7 @@ message: |
   
   Your {{kind}} by was removed because somehow you were able to submit a post with more than **10 words** which is the **maximum** amount of words in title required to post.
   
-  please repost with a title of no less than 5 words and no more than **10 words**.
+  Please repost with a title of no fewer than 5 words and no more than **10 words**.
 ---
 type: any
 body+url (regex, includes):
@@ -451,7 +451,7 @@ comment_locked: true
 message: |
   # Hey /u/{{author}},
   
-  Your {{kind}} by was removed because urls beginning with email are usually tailored, or targeted and are not allowed in this subreddit.  
+  Your {{kind}} was removed because urls beginning with email are usually tailored, or targeted and are not allowed in this subreddit.  
   
   You can try to use https://redirectdetective.com, sorry for the inconvenience, thank you for understanding!  
   
@@ -553,7 +553,7 @@ comment_locked: true
 message: |
   # Hey /u/{{author}},
   
-  Your {{kind}} by was removed because you bypassed a word ({{match}}) on the **[Blacklisted Casino List](https://www.reddit.com/r/CasinoFreebies/wiki/the_list)**. breaking **[Rule #2](https://reddit.com/r/CasinoFreebies/w/the_rules/2)**
+  Your {{kind}} was removed because you bypassed a word ({{match}}) on the **[Blacklisted Casino List](https://www.reddit.com/r/CasinoFreebies/wiki/the_list)**. breaking **[Rule #2](https://reddit.com/r/CasinoFreebies/w/the_rules/2)**
   
   If this is your first violation, it's only a temp (7 day), ban.
   
@@ -636,7 +636,7 @@ comment: looks like you're attempting to share a social. {{kind}} was removed.
 comment_locked: true
 modmail_subject: discord url
 modmail: |
-  A discord url {{match}} was attempted to be posted by /u/{{author}}.
+  A discord url {{match}} was attempted to be posted by {{author}}.
 ---
 #Basic rule filtering users with <0 subreddit karma and CQS scores of "lowest"
 type: any
@@ -675,7 +675,7 @@ comment_locked: true
 message: |
   # Hey /u/{{author}}, thank you for being apart of /r/CasinoFreebies.
   
-  We hate to be bearer of bad news but your account has the lowest **[CQS Ranking](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)** possible &/or your account is [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion). your {{kind}} has been permanently removed.  
+  We hate to be the bearer of bad news but your account has the lowest **[CQS Ranking](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)** possible &/or your account is [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion). Your {{kind}} has been permanently removed.  
   
   For the safety of our community we are going to have to ban you. All this means is you will not be able to post or comment anymore. you can still continue to collect all the freebies from the subreddit like normal.
   
@@ -769,7 +769,7 @@ title+body (regex, includes):
 action: remove
 action_reason: "[{{match}}] ppl not searching"
 comment: |
-  so you won't believe how many questions we get about this exact thing. 
+  You wouldn’t believe how many questions we get about this exact thing. 
   
   # [How to use reddit search filters](https://support.reddithelp.com/hc/en-us/articles/19696541895316-Available-search-features)  
   
