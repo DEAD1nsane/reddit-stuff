@@ -595,14 +595,14 @@ message: |
   —The /r/CasinoFreebies Moderation Team
 ---
 type: submission
-title (regex):
+title+body (regex):
   - remove(d|r|s)?
   - delet(e|ed|ion)?
   - tak(en|e)?\s*down
   - tried?\s+to\s+post
   - (won[’']?t|can[’']?t|cannot|not\s+able\s+to)\s+(post|submit)
   - tried?\s+to
-action: report
+action: filter
 action_reason: "posting about not being able to post [{{match}}]"
 comment: |
   instead of spamming the subreddit with a offtopic post about why your post keeps getting removed, you should  
