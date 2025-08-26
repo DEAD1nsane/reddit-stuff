@@ -16,7 +16,10 @@ flair_template_id: d529b846-4b70-11ef-90e6-e6ebf0b2d45c
 moderators_exempt: false
 action: remove
 action_reason: "Flex without media"
-comment: Hey /u/{{author}}, if you wanna flex you're going to need to repost this as either a picture submission, or video submission. if you want to flex the replay url, you can add the to the body. — **why you ask? because a flex should be visual.** 
+comment: |
+  # Hey /u/{{author}},
+  
+  If you wanna flex you're going to need to repost this as either a picture submission, or video submission. if you want to flex the replay url, you can add the to the body. — **why you ask? because a flex should be visual.** 
 comment_locked: true
 ---
 type: link submission
@@ -28,7 +31,10 @@ moderators_exempt: false
 is_gallery: false
 action: remove
 action_reason: "Flex as url"
-comment: Hey /u/{{author}}, if you wanna flex you're going to need to repost this as either a picture ssion, or video submission. if you want to flex the replay url, you can add the to the body. — **why you ask? because a flex should be visual.**
+comment: |
+  # Hey /u/{{author}}, 
+  
+  If you wanna flex you're going to need to repost this as either a picture submission, or video submission. if you want to flex the replay url, you can add the to the body. — **why you ask? because a flex should be visual.**
 comment_locked: true
 ---
 # comments on any submission using giveaway/stream post flair a caution about external links.
@@ -48,11 +54,12 @@ moderators_exempt: true
 flair_template_id: 751c650c-49ae-11ef-8db1-16f9fa17ff35
 comment: |
   # Hey /u/{{author}},  
-  > You’re currently using the **Discussion|Q&A flair**,  so this is a quick reminder about the helpful tool /u/answeredbot. If your post is a **question** and someone provides a **satisfactory answer**, you can acknowledge it by replying to their comment with **!answered** ￩ exactly as you see it right here.
-  >  
-  > This makes it easier for others with the same question to find the solution quickly and efficiently.  
-  >  
-  > If your post is intended purely for **discussion** and not seeking a specific answer, feel free to disregard this message and continue the conversation. 
+  
+  You’re currently using the **Discussion|Q&A flair**,  so this is a quick reminder about the helpful tool /u/answeredbot. If your post is a **question** and someone provides a **satisfactory answer**, you can acknowledge it by replying to their comment with **!answered** ￩ exactly as you see it right here.
+  
+  This makes it easier for others with the same question to find the solution quickly and efficiently.
+  
+  If your post is intended purely for **discussion** and not seeking a specific answer, feel free to disregard this message and continue the conversation. 
 comment_locked: true
 ---
 type: any
@@ -63,9 +70,7 @@ moderators_exempt: true
 action: remove
 action_reason: "Possible BitBetWin AI Bot Spam"
 modmail: |
-  {{permalink}}
-
-  this {{kind}} by /u/{{author}} was removed for bitbetwin spam. please check it out.
+  This {{kind}} by /u/{{author}} was removed for bitbetwin spam. please check it out.
 ---
 # Automod comments in response to keywords about deposit to redeem, or if it's a scam with link to info hub & what FAQ to read
 type: any
@@ -96,8 +101,8 @@ title+body (includes-word):
   - scam site
   - is it legit
 comment: |
-  Excuse me /u/{{author}},  
-  Did I hear you say `{{match}}`?
+  Excuse me, /u/{{author}},  
+  Did I hear you say {{match}}?
 
   Please have a look at our [Information Hub > FAQ](https://www.reddit.com/r/CasinoFreebies/s/QPLACYwKt1) and read **Deposit to Redeem?** &#x1F6AB;
 comment_locked: true
@@ -186,8 +191,6 @@ action: filter
 action_reason: "3 Reports [{{match}}]"
 modmail_subject: "3 Reports [{{match}}]"
 modmail: |
-  {{permalink}}
-  
   The above {{kind}} by /u/{{author}} was removed because it received 3 reports. Please investigate and ensure that this action was correct.
 comment: |
   Thank you for your post in r/{{subreddit}}.
@@ -205,8 +208,8 @@ moderators_exempt: true
 action: remove
 action_reason: "New Account - 7 days or below"
 message: |
-  {{permalink}}
-
+  # Hey /u/{{author}},
+  
   Your {{kind}} has been removed because your account is less than 7 days old. This policy is in place to reduce spam and ensure genuine participation in r/CasinoFreebies.
 
   You are encouraged to engage with the community, comment on posts, and revisit posting once your account meets the minimum age requirement. Thank you for your understanding!
@@ -357,7 +360,7 @@ body (regex):
 comment_locked: true
 moderators_exempt: true
 comment: |
-  # /u/{{author}},  
+  # Hey /u/{{author}},  
      
   I noticed you only posted a link without any text, Next time you post a url without text please do it like this:  
      
@@ -377,7 +380,7 @@ body (regex):
 comment_locked: true
 moderators_exempt: true
 comment: |
-  # /u/{{author}},  
+  # Hey /u/{{author}},  
      
   I noticed you didn't submit a link post, instead you just posted a url and text, This is fine if you're posting on reddit from **desktop**, or posting multiple links.
 
@@ -402,12 +405,15 @@ author:
 moderators_exempt: false
 action: remove
 action_reason: "Less than 5 word title"
-comment: check your direct messages for why this post got removed.
+comment: |
+  # Hey /u/{{author}},
+  
+  Check your direct messages for why this post got removed.
 comment_locked: true
 message: |
-  {{permalink}}
-
-  your {{kind}} by was removed because somehow you were able to submit a post with less than **5 words** which is the **minimum** requirement to post.
+  # Hey /u/{{author}},
+  
+  Your {{kind}} by was removed because somehow you were able to submit a post with less than **5 words** which is the **minimum** requirement to post.
   
   please repost with a title of no less than **5 words** and no more than **10 words**.
 ---
@@ -419,12 +425,15 @@ author:
 moderators_exempt: false
 action: remove
 action_reason: "more than 10 word title"
-comment: check your direct messages for why this post got removed.
+comment: |
+  # Hey /u/{{author}},
+  
+  Check your direct messages for why this post got removed.
 comment_locked: true
 message: |
-  {{permalink}}
-
-  your {{kind}} by was removed because somehow you were able to submit a post with more than **10 words** which is the **maximum** amount of words in title required to post.
+  # Hey /u/{{author}},
+  
+  Your {{kind}} by was removed because somehow you were able to submit a post with more than **10 words** which is the **maximum** amount of words in title required to post.
   
   please repost with a title of no less than 5 words and no more than **10 words**.
 ---
@@ -434,12 +443,15 @@ body+url (regex, includes):
 action: remove
 action_reason: "email url"
 moderators_exempt: true
-comment: /u/{{author}}, check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.
+comment: |
+  # Hey /u/{{author}},
+  
+  Check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.
 comment_locked: true
 message: |
-  {{permalink}}
-
-  your {{kind}} by was removed because urls beginning with email are usually tailored, or targeted and are not allowed in this subreddit.  
+  # Hey /u/{{author}},
+  
+  Your {{kind}} by was removed because urls beginning with email are usually tailored, or targeted and are not allowed in this subreddit.  
   
   You can try to use https://redirectdetective.com, sorry for the inconvenience, thank you for understanding!  
   
@@ -533,12 +545,15 @@ title+body+url (regex):
 action: remove
 action_reason: "[{{author}}] bypassing [{{match}}]"
 moderators_exempt: true
-comment: /u/{{author}}, check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.
+comment: |
+  # Hey /u/{{author}},
+  
+  Check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.
 comment_locked: true
 message: |
-  {{permalink}}
-
-  your {{kind}} by was removed because you bypassed a word ({{match}}) on the **[Blacklisted Casino List](https://www.reddit.com/r/CasinoFreebies/wiki/the_list)**. breaking **[Rule #2](https://reddit.com/r/CasinoFreebies/w/the_rules/2)**
+  # Hey /u/{{author}},
+  
+  Your {{kind}} by was removed because you bypassed a word ({{match}}) on the **[Blacklisted Casino List](https://www.reddit.com/r/CasinoFreebies/wiki/the_list)**. breaking **[Rule #2](https://reddit.com/r/CasinoFreebies/w/the_rules/2)**
   
   If this is your first violation, it's only a temp (7 day), ban.
   
@@ -566,10 +581,10 @@ action: remove
 action_reason: "Carnivalciti code no url"
 moderators_exempt: false
 message: |
-  {{permalink}}
+  # Hey /u/{{author}},
   
-  Hey /u/{{author}},
   We're trying something new at /r/CasinoFreebies for Carnival Citi posts that include a free SC code.  
+  
   Simply **repost using the URL below**, placing the code directly after the final `/`:
 
   `https://www.carnivalciti.com/home/bonusing/code/`
@@ -621,9 +636,7 @@ comment: looks like you're attempting to share a social. {{kind}} was removed.
 comment_locked: true
 modmail_subject: discord url
 modmail: |
-  {{permalink}}
-  
-  a discord url {{match}} was attempted to be posted by /u/{{author}}.
+  A discord url {{match}} was attempted to be posted by /u/{{author}}.
 ---
 #Basic rule filtering users with <0 subreddit karma and CQS scores of "lowest"
 type: any
@@ -632,12 +645,15 @@ author:
   contributor_quality: "< low"
 action: filter
 action_reason: "Low CQS Filter - could be risky"
-comment: /u/{{author}}, check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.
+comment: |
+  # Hey /u/{{author}},
+  
+  Check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.
 comment_locked: true
 message: |
-  {{permalink}}
+  # Hey /u/{{author}}, thank you for being apart of /r/CasinoFreebies.
   
-  Thank you for being apart of /r/CasinoFreebies. Your {{kind}} is currently not visible because of your **[CQS Ranking being Low](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)**, meaning your close to possibly getting [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion) & are labeled as a reputation risk.
+  Your {{kind}} is currently not visible because of your **[CQS Ranking being Low](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)**, meaning your close to possibly getting [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion) & are labeled as a reputation risk.
      
   But the moderators will review this and either remove it officially, or reapprove it.
   
@@ -650,14 +666,14 @@ author:
 action: filter
 action_reason: "LOWEST CQS BAN [{{author}}]"
 comment: |
-  /u/{{author}}, 
+  # Hey /u/{{author}}, 
     
-  check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.  
+  Check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.  
     
     >!/u/DEAD1nsane, /u/itsunamipunani, /u/Due_Poetry9235, /u/RedHeadTheyThem, if you're online, please take care of this!<
 comment_locked: true
 message: |
-  Thank you for being apart of /r/CasinoFreebies.
+  # Hey /u/{{author}}, thank you for being apart of /r/CasinoFreebies.
   
   We hate to be bearer of bad news but your account has the lowest **[CQS Ranking](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)** possible &/or your account is [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion). your {{kind}} has been permanently removed.  
   
@@ -667,7 +683,7 @@ message: |
   /r/CasinoFreebies Moderation Team
 modmail_subject: "LOWEST CQS BAN [{{author}}]"
 modmail: |
-  /u/{{author}} has been flagged as lowest CQS user.
+  # /u/{{author}} has been flagged as lowest CQS user.
   
   Ban immediately (if they're shadowbanned it'll say removed by reddit systems and you won't be able to ban them like you do normally..
     - in this situation you need to manually go to mod tools > banned and add them manually.
@@ -702,11 +718,16 @@ title+body+url (regex):
 action: filter
 action_reason: "REFERRAL [{{author}}][{{match}}]"
 moderators_exempt: true
-comment: /u/{{author}}, Congratulations for breaking [Rule 1](https://www.reddit.com/r/CasinoFreebies/wiki/the_rules/1). But nobody got to see it. Enjoy your ban.
+comment: |
+  # Hey /u/{{author}},
+  
+  Congratulations for breaking [Rule 1](https://www.reddit.com/r/CasinoFreebies/wiki/the_rules/1). But nobody got to see it. 
+  
+  Enjoy your ban.
 comment_locked: true
 modmail_subject: "REFERRAL [{{author}}][{{match}}]"
 modmail: |
-  /u/{{author}} is ready to be banned. for {{match}}
+  # /u/{{author}} is ready to be banned. for {{match}}
 ---
 # removes and shows how to correctly use !answered
 type: comment
@@ -720,7 +741,9 @@ body (regex):
 action: remove
 action_reason: "[{{match}}] used wrong."
 comment: |
-  Hey /u/{{author}}, this isn't the right way to use {{match}}. You need to reply to the comment that you want to marked as the answer. 
+  # Hey /u/{{author}},
+  
+  This isn't the right way to use {{match}}. You need to reply to the comment that you want to marked as the answer. 
   
   Check out this image that shows the reply button you need to use before commenting `!answered`:
   ➤ [&#x1f4f7; Example Image](https://imgur.com/a/ZspdnE5#dCUIf8Q)
@@ -737,7 +760,7 @@ body (regex):
 action: remove
 action_reason: "non-OP used [{{match}}]"
 comment: |
-  Hey /u/{{author}}, this command only works for the OP.
+  # Hey /u/{{author}}, this command only works for the OP.
 comment_locked: true
 ---
 type: submission
