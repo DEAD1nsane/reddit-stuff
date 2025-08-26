@@ -434,7 +434,7 @@ body+url (regex, includes):
 action: remove
 action_reason: "email url"
 moderators_exempt: true
-comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
+comment: /u/{{author}}, check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.
 comment_locked: true
 message: |
   {{permalink}}
@@ -533,7 +533,7 @@ title+body+url (regex):
 action: remove
 action_reason: "[{{author}}] bypassing [{{match}}]"
 moderators_exempt: true
-comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
+comment: /u/{{author}}, check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.
 comment_locked: true
 message: |
   {{permalink}}
@@ -606,9 +606,9 @@ action: report
 action_reason: "posting about not being able to post [{{match}}]"
 comment: |
   instead of spamming the subreddit with a offtopic post about why your post keeps getting removed, you should  
-  1. check your direct messages for any messages from /u/automoderator.  
+  1. check your direct messages for any messages from Automoderator.  
 
-  2. if there isn't anything from /u/automoderator in your direct messages,  **[contact the moderators of this subreddit](/message/compose/?to=/r/CasinoFreebies)** so the issue can be addressed accordingly and fixed if needed.
+  2. if there isn't anything from Automoderator in your direct messages,  **[contact the moderators of this subreddit](/message/compose/?to=/r/CasinoFreebies)** so the issue can be addressed accordingly and fixed if needed.
 comment_locked: true
 ---
 type: any
@@ -632,7 +632,7 @@ author:
   contributor_quality: "< low"
 action: filter
 action_reason: "Low CQS Filter - could be risky"
-comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
+comment: /u/{{author}}, check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.
 comment_locked: true
 message: |
   {{permalink}}
@@ -649,12 +649,17 @@ author:
   contributor_quality: "= lowest"
 action: filter
 action_reason: "LOWEST CQS BAN [{{author}}]"
-comment: /u/{{author}}, check your messages for a message from /u/Automoderator on why this post was removed. You'll have a notification also from /u/Automoderator leading to that message.
+comment: |
+  /u/{{author}}, 
+    
+  check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.  
+    
+    >!/u/DEAD1nsane, /u/itsunamipunani, /u/Due_Poetry9235, /u/RedHeadTheyThem, if you're online, please take care of this!<
 comment_locked: true
 message: |
   Thank you for being apart of /r/CasinoFreebies.
   
-  We hate to be bearer of bad news but your account has the lowest **[CQS Ranking](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)** possible &/or your account is [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion). your {{kind}} has bbeen permanently removed.  
+  We hate to be bearer of bad news but your account has the lowest **[CQS Ranking](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)** possible &/or your account is [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion). your {{kind}} has been permanently removed.  
   
   For the safety of our community we are going to have to ban you. All this means is you will not be able to post or comment anymore. you can still continue to collect all the freebies from the subreddit like normal.
   
