@@ -4,7 +4,8 @@ THE CHART SLIDES TO THE LEFT
 
 ---
 
-# Blacklisted Casinos  
+# Blacklisted Casinos 
+
 |**DO**|**NOT**|**TALK**|**ABOUT**|**THESE**|**CASINOS**|
 |:-|:-|:-|:-|:-|:-|
 |100&nbsp;Plus|7&nbsp;Cali|Ace&nbsp;Reveal|Admiral|Betcoin&#46;social|BitBetWin|

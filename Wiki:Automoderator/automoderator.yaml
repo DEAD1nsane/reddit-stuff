@@ -489,8 +489,8 @@ title+body+url (regex):
   - (?#FunzPoints)(?i)funz[\s\-_\.]*points(?:\.com|\.us)?\b
   - (?#GalaxyWorld)(?i)galaxy[\s\-_\.]*world(?:\.com|\.us)?\b
   - (?#Gamesroom777)(?i)gamesroom777(?:\.com|\.us)?\b
-  - (?#GoldStar)(?i)gold[\s\-_\.]*star(?:\.com|\.us)?\b
   - (?#GoldRushCity)(?i)gold[\s\-_\.]*rush[\s\-_\.]*city(?:\.com|\.us)?\b
+  - (?#GoldStar)(?i)gold[\s\-_\.]*star(?:\.com|\.us)?\b
   - (?#GoldenDragon)(?i)golden[\s\-_\.]*dragon(?:\.com|\.us)?\b
   - (?#GoldenReel)(?i)golden[\s\-_\.]*reel(?:\.com|\.us)?\b
   - (?#GoldenTreasure)(?i)golden[\s\-_\.]*treasure(?:\.com|\.us)?\b
@@ -519,6 +519,7 @@ title+body+url (regex):
   - (?#RiverDragon)(?i)river[\s\-_\.]*dragon(?:\.com|\.us)?\b
   - (?#Riversweeps)(?i)riversweeps(?:\.com|\.us)?\b
   - (?#RollRoyale)(?i)roll[\s\-_\.]*royale(?:\.com|\.us)?\b
+  - (?#ScarletSands)(?i)scarlet[\s\-_\.]*sands(?:\.com|\.us)?\b
   - (?#Scrooge)(?i)scrooge(?:\.com|\.us)?\b
   - (?#ShamrockGames)(?i)shamrock[\s\-_\.]*games(?:\.com|\.us)?\b
   - (?#SidePot)(?i)sidepot\.us\b
@@ -529,19 +530,7 @@ title+body+url (regex):
   - (?#SkillsAndSlots)(?i)skills[\s\-_\.]*and[\s\-_\.]*slots(?:\.com|\.us)?\b
   - (?#SkySweeps)(?i)sky[\s\-_\.]*sweeps(?:\.com|\.us)?\b
   - (?#StackrCasino)(?i)stackr(?:casino)?(?:\.com|\.us)?\b
-  - (?#SunshineSweeps)(?i)sunshine[\s\-_\.]*sweeps(?:\.com|\.us)?\b
-  - (?#SweepSlots)(?i)sweepslots(?:\.com|\.us)?\b
-  - (?#SweepShark)(?i)sweep[\s\-_\.]*shark(?:\.com|\.us)?\b
-  - (?#SweepstakesMobi)(?i)sweepstakes\.mobi\b
-  - (?#TaoFortune)(?i)taofortune(?:\.com|\.us)?\b
-  - (?#Threelz)(?i)threelz(?:\.com|\.us)?\b
-  - (?#TigerIsHome)(?i)tigerishome(?:\.com|\.us)?\b
-  - (?#ToraToraCasino)(?i)toratora(?:casino)?(?:\.com|\.us)?\b
-  - (?#UltrapowerGames)(?i)ultrapower\-?games(?:\.com|\.us)?\b
-  - (?#VegasX)(?i)vegas[\s\-_\.]*x(?:\.com|\.us)?\b
-  - (?#VPower)(?i)vpower(?:\.com|\.us)?\b
-  - (?#WebSweeps)(?i)websweeps(?:\.com|\.us)?\b
-  - (?#WildWorld)(?i)wild[\s\-_\.]*world(?:\.com|\.us)?\b
+  - (?#SunshineSweeps)(?i)sunshine[\s\-_\.]*sweeps(?:\.com|\.us)?
 action: remove
 action_reason: "[{{author}}] bypassing [{{match}}]"
 moderators_exempt: true
@@ -715,6 +704,7 @@ title+body+url (regex):
   - (?i)(?:\/(?:ref(?:=|\/)?|referral|invite|promo|partner|affiliate|bonus|reward|signup|track|campaign|source|id|uid|user|customer|member|friend|earn|ref|ref_code|refer|r|mid|referralCode|referred_by_id|c|raf|u)\/[\w-]+(?:(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)|$))
   - (?i)(?:(?:https?:\/\/)?[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?\?(?:ref|ref_code|referral|invite|refer|r|c|id|refid|referralCode|referred_by_id|promo|partner|affiliate|bonus|reward|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|u|utm_campaign)=[\w-]+)
   - (?i)(?:(?:https?:\/\/)?[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref|invite|refer|raf|u)=[\w-]+)
+  - (?i)(?:\/\?utm_campaign=[\w-]+)
 action: filter
 action_reason: "REFERRAL [{{author}}][{{match}}]"
 moderators_exempt: true
