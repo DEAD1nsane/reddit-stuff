@@ -132,6 +132,7 @@ comment_stickied: true
 comment_locked: true
 ---
 type: comment
+moderators_exempt: true
 author:
   is_submitter: true
 parent_submission:
@@ -146,6 +147,7 @@ comment: |
 comment_locked: true
 ---
 type: any
+moderators_exempt: true
 author:
   is_submitter: true
 parent_submission:
