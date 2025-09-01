@@ -438,24 +438,24 @@ message: |
   Please repost with a title of no fewer than 5 words and no more than **10 words**.
 ---
 type: any
-body+url (regex, includes):
-  - (?i)\b(?:https?:\/\/)?(?:[\W_]*e[\W_]*m[\W_]*a[\W_]*i[\W_]*l[\W_]*)(?:%2E|\.)[^\s\/]+(?:\/[^\s]*)?
+~title (regex):
+  - ^(?:[^\s]+[.,!?]*\s+){4,}[^\s]+[.,!?]*$
+author: 
+  ~name: ["Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "automoderator"]
+moderators_exempt: false
 action: remove
-action_reason: "email url"
-moderators_exempt: true
+action_reason: "Less than 5 word title"
 comment: |
   # Hey /u/{{author}},
   
-  Check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.
+  Check your direct messages for why this post got removed.
 comment_locked: true
 message: |
   # Hey /u/{{author}},
   
-  Your {{kind}} was removed because urls beginning with email are usually tailored, or targeted and are not allowed in this subreddit.  
+  Your {{kind}} was removed because somehow you were able to submit a post with less than **5 words** which is the **minimum** requirement to post.
   
-  You can try to use https://redirectdetective.com, sorry for the inconvenience, thank you for understanding!  
-  
-  —The /r/CasinoFreebies Moderators
+  please repost with a title of no less than **5 words** and no more than **10 words**.
 ---
 type: any
 title+body+url (regex):
@@ -605,7 +605,6 @@ title+body (regex):
   - tak(en|e)?\s*down
   - tried?\s+to\s+post
   - (won[’']?t|can[’']?t|cannot|not\s+able\s+to)\s+(post|submit)
-  - tried?\s+to
 action: filter
 action_reason: "posting about not being able to post [{{match}}]"
 comment: |
@@ -775,7 +774,7 @@ action_reason: "[{{match}}] dismissive"
 ---
 type: any
 body (regex):  
-  - ^(\S+[.,!?]*\s+){124}\S+[.,!?]*$
+  - ^(?:\S+[.,!?]*\s+){124,}\S+[.,!?]*$
 action: remove
 action_reason: more than 125 words.
 moderators_exempt: true
