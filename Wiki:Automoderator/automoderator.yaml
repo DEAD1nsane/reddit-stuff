@@ -132,9 +132,9 @@ comment_stickied: true
 comment_locked: true
 ---
 type: comment
-moderators_exempt: true
 author:
   is_submitter: true
+  is_moderator: false
 parent_submission:
   set_locked: true
 body: ["!lock", "! lock"]
@@ -147,14 +147,38 @@ comment: |
 comment_locked: true
 ---
 type: any
-moderators_exempt: true
 author:
   is_submitter: true
+  is_moderator: false
 parent_submission:
   set_locked: false
 body: ["!unlock", "! unlock"]
 comment: |
   ###### This post has been unlocked by /u/{{author}}.
+comment_locked: true
+---
+type: comment
+author:
+  is_moderator: true
+parent_submission:
+  set_locked: true
+body: ["!lock", "! lock"]
+comment: |
+  ###### This post has been locked by MOD /u/{{author}}.
+
+  ^(⚠️￫ to unlock simply edit your {{kind}}, change **!lock**/**! lock** to **!unlock**/**! unlock** ￩⚠️)  
+  
+  ^(The reason there are 2 lock and 2 unlock commands is that it will now work with or without a space between ! and the command, due to auto correction issues I made it like this.)
+comment_locked: true
+---
+type: any
+author:
+  is_moderator: true
+parent_submission:
+  set_locked: false
+body: ["!unlock", "! unlock"]
+comment: |
+  ###### This post has been unlocked by MOD /u/{{author}}.
 comment_locked: true
 ---
 type: comment
