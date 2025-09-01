@@ -391,7 +391,7 @@ comment: |
 ---
 # Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.
 author:
-  name: ["AutoModerator", "evasion-guard", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot"]
+  name: ["AutoModerator", "evasion-guard", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot", "Jon_Gains", "Jon_GamerGains"]
 reports: 1
 moderators_exempt: false
 action: approve
@@ -631,6 +631,7 @@ type: any
 author:
   combined_subreddit_karma: "< 0"
   contributor_quality: "< low"
+  ~name: ["Jon_Gains", "Jon_GamerGains"]
 action: filter
 action_reason: "Low CQS Filter - could be risky"
 comment: |
@@ -651,6 +652,7 @@ message: |
 type: any
 author:
   contributor_quality: "= lowest"
+  ~name: ["Jon_Gains", "Jon_GamerGains"]
 action: filter
 action_reason: "LOWEST CQS BAN [{{author}}]"
 comment: |
@@ -742,8 +744,6 @@ comment_locked: true
 type: comment
 author:
   is_submitter: false
-parent_submission:
-  flair_template_id: 751c650c-49ae-11ef-8db1-16f9fa17ff35
 body (regex):
   - ^\s*!answered\s*$
 action: remove
@@ -784,5 +784,15 @@ comment: |
   > /u/{{author}} Maybe you should try again when your post is slightly less rebellious otherwise Automoderator might start sending passive-aggressive emails. Consider yourself warned.
   
   ^(125 words maximum)
+comment_locked: true
+---
+type: submission
+title (regex): '.*' 
+author:
+  name: ["Jon_Gains", "Jon_GamerGains"]
+comment: |
+  # ATTENTION EVERYBODY  
+  
+  ### /u/Jon_Gains is infact CEO of https://www.gains.com. This information has been vetted by the moderators of /r/CasinoFreebies
 comment_locked: true
 ---
