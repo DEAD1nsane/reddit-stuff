@@ -661,14 +661,14 @@ author:
 action: filter
 action_reason: "Low CQS Filter - could be risky"
 comment: |
-  # Hey /u/{{author}},
+  # Hey /u/{{author}},  you've been flagged by Reddit for having a Low CQS rating.  
   
-  Check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.
+  Check your messages for a message from Automoderator for more information regarding this removal. You'll have a notification also from Automoderator leading to that message.  
 comment_locked: true
 message: |
-  # Hey /u/{{author}}, thank you for being apart of /r/CasinoFreebies.
+  # Hey /u/{{author}}, thank you for being apart of /r/CasinoFreebies.  
   
-  Your {{kind}} is currently not visible because of your **[CQS Ranking being Low](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)**, meaning your close to possibly getting [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion) & are labeled as a reputation risk.
+  Your {{kind}} is currently not visible because of your **[CQS Ranking being Low](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)**, meaning your close to possibly getting [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion) & are labeled as a reputation risk. Please take the time to check out the hyperlinks so you understand more about this. This decision is not ours at /r/CasinoFreebies, it is Reddit alone that has flagged your account.  
      
   But the moderators will review this and either remove it officially, or reapprove it.
   
@@ -682,23 +682,27 @@ author:
 action: filter
 action_reason: "LOWEST CQS BAN [{{author}}]"
 comment: |
-  # Hey /u/{{author}}, 
+  # Hey /u/{{author}}, you've been flagged by Reddit for having the lowest possible CQS rating.  
     
-  Check your messages for a message from Automoderator on why this post was removed. You'll have a notification also from Automoderator leading to that message.  
-    
-    >!/u/DEAD1nsane, /u/itsunamipunani, /u/Due_Poetry9235, /u/RedHeadTheyThem, if you're online, please take care of this!<
+  Check your messages for a message from Automoderator for more information regarding this removal. You'll have a notification also from Automoderator leading to that message.  
 comment_locked: true
 message: |
   # Hey /u/{{author}}, thank you for being apart of /r/CasinoFreebies.
   
-  We hate to be the bearer of bad news but your account has the lowest **[CQS Ranking](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)** possible &/or your account is [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion). Your {{kind}} has been permanently removed.  
+  Your {{kind}} has been permanently removed.
   
-  For the safety of our community we are going to have to ban you. All this means is you will not be able to post or comment anymore. you can still continue to collect all the freebies from the subreddit like normal.
+  We hate to be the bearer of bad news but your account has the lowest **[CQS Ranking](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)** possible &/or your account is [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion), please check out these links so you understand. This decision is not ours at /r/CasinoFreebies, it is Reddit alone that has flagged your account.   
+  
+  For the safety of our community we are going to have to ban you, I myself as a bot cannot do this deed, the mods will when they get the chance.  
+  
+  All this means is you will not be able to post or comment anymore. you can still continue to collect all the freebies from the subreddit like normal.
   
   Thank you for understanding, 
   /r/CasinoFreebies Moderation Team
 modmail_subject: "LOWEST CQS BAN [{{author}}]"
 modmail: |
+  To the attention of: /u/DEAD1nsane, /u/itsunamipunani, /u/Due_Poetry9235, /u/RedHeadTheyThem  
+  
   # /u/{{author}} has been flagged as lowest CQS user.
   
   Ban immediately (if they're shadowbanned it'll say removed by reddit systems and you won't be able to ban them like you do normally..
@@ -794,7 +798,10 @@ comment: |
 ---
 type: comment
 body (regex):
-  - (?i)(?:[.,!?]\s*|but\s+)(?:thanks?|thank\s+you)(?:\s+(?:anyways?|though?|tho|regardless))\b
+  - (?i)(?:didn'?t\s+work|not\s+working|no\s+(?:luck|win|dice)|nothing\s+(?:worked|helped)|lost|fail(?:ed)?)[^\n\r]{0,40}?\b(?:thanks?|thank\s+you|thx|ty)(?:\s+(?:anyways?|anyway|tho|though|regardless))?\b
+  - (?i)(?:but|no|not|none|didn'?t|doesn'?t|don['’]t|won['’]t)[^\n\r]{0,40}?\b(?:thanks?|thank\s+you|thx|ty)(?:\s+(?:anyways?|anyway|tho|though|regardless))?\b
+  - (?i)\b(?:thanks?|thank\s+you|thx|ty)\s+(?:anyways?|anyway|tho|though|regardless)\b
+  - (?i)\banyways?[.,!]*\s+(?:thanks?|thank\s+you|thx|ty)\b
 action: remove
 action_reason: "[{{match}}] dismissive"
 ---
