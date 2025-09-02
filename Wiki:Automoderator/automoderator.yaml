@@ -214,8 +214,8 @@ comment_locked: true
 # This will send a modmail whenever a post or comment gets 3 reports and will automatically filter it.
 reports: 3
 action: filter
-action_reason: "3 Reports [{{match}}]"
-modmail_subject: "3 Reports [{{match}}]"
+action_reason: "3 Reports"
+modmail_subject: "3 Reports"
 modmail: |
   The above {{kind}} by {{author}} was removed because it received 3 reports. Please investigate and ensure that this action was correct.
 comment: |
