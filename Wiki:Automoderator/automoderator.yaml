@@ -784,7 +784,7 @@ comment: |
   # Hey /u/{{author}}, this command only works for the OP.
 comment_locked: true
 ---
-type: submission
+type: any
 title+body (regex, includes): 
   - (?i)\b(redemp?t(io?n)?s?|redems?|verif(y|icat(e|ion))|verifying|verfication|verficashun|verfy|verifys?|doc(uments?|umentation)?|paper[\s\-_\.]*work|forms?|formz|frms?|form completion|approv(al|ed|e)?|submiss(ion|n)?|process(ing|ed)?|claims?|claimed|claiming)\b
 action: remove
