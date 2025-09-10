@@ -515,11 +515,11 @@ title+body+url (regex):
   - (?#FunzPoints)(?i)funz[\s\-_\.]*points(?:\.com|\.us)?\b
   - (?#GalaxyWorld)(?i)galaxy[\s\-_\.]*world(?:\.com|\.us)?\b
   - (?#Gamesroom777)(?i)gamesroom777(?:\.com|\.us)?\b
-  - (?#GoldRushCity)(?i)gold[\s\-_\.]*rush[\s\-_\.]*city(?:\.com|\.us)?\b
-  - (?#GoldStar)(?i)gold[\s\-_\.]*star(?:\.com|\.us)?\b
-  - (?#GoldenDragon)(?i)golden[\s\-_\.]*dragon(?:\.com|\.us)?\b
-  - (?#GoldenReel)(?i)golden[\s\-_\.]*reel(?:\.com|\.us)?\b
-  - (?#GoldenTreasure)(?i)golden[\s\-_\.]*treasure(?:\.com|\.us)?\b
+  - (?#GoldRushCity)(?i)gold[\s\-_\.]*rush[\s\-_\.]*city(?:\.com|\.us)\b
+  - (?#GoldStar)(?i)gold[\s\-_\.]*star(?:\.com|\.us)\b
+  - (?#GoldenDragon)(?i)golden[\s\-_\.]*dragon(?:\.com|\.us)\b
+  - (?#GoldenReel)(?i)golden[\s\-_\.]*reel(?:\.com|\.us)\b
+  - (?#GoldenTreasure)(?i)golden[\s\-_\.]*treasure(?:\.com|\.us)\b
   - (?#Ice8)(?i)ice8(?:\.com|\.us)?\b
   - (?#JokerGamingUSA)(?i)joker[\s\-_\.]*gaming[\s\-_\.]*usa(?:\.com|\.us)?\b
   - (?#LonestarPro)(?i)lonestar\.pro\b
@@ -556,7 +556,7 @@ title+body+url (regex):
   - (?#SkillsAndSlots)(?i)skills[\s\-_\.]*and[\s\-_\.]*slots(?:\.com|\.us)?\b
   - (?#SkySweeps)(?i)sky[\s\-_\.]*sweeps(?:\.com|\.us)?\b
   - (?#StackrCasino)(?i)stackr(?:casino)?(?:\.com|\.us)?\b
-  - (?#SunshineSweeps)(?i)sunshine[\s\-_\.]*sweeps(?:\.com|\.us)?
+  - (?#SunshineSweeps)(?i)sunshine[\s\-_\.]*sweeps(?:\.com|\.us)?\b
 action: remove
 action_reason: "[{{author}}] bypassing [{{match}}]"
 moderators_exempt: true
@@ -732,23 +732,25 @@ comment_stickied: true
 type: any
 title+body+url (regex):
   - (?i)(?:(?:https?:\/\/)?(?:\w+\.)?(?:referral|invite|promo|partner|affiliate|ref|refer)\.[a-z]{2,}\/[\w-]+)
-  - (?i)(?:\/(?:ref(?:=|\/)?|referral|invite|promo|partner|affiliate|bonus|reward|signup|track|campaign|source|id|uid|user|customer|member|friend|earn|ref|ref_code|refer|r|mid|referralCode|referred_by_id|c|raf|u)\/[\w-]+(?:(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)|$))
+  - (?i)(?:\/(?:ref(?:=|\/)?|referral|invite|promo|partner|affiliate|bonus|reward|signup|track|campaign|source|id|uid|user|customer|member|friend|earn|ref_code|refer|r|mid|referralCode|referred_by_id|raf|u)\/[\w-]+(?:(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)|$))
   - (?i)(?:(?:https?:\/\/)?[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?\?(?:ref|ref_code|referral|invite|refer|r|c|id|refid|referralCode|referred_by_id|promo|partner|affiliate|bonus|reward|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|u|utm_campaign)=[\w-]+)
   - (?i)(?:(?:https?:\/\/)?[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref|invite|refer|raf|u)=[\w-]+)
   - (?i)(?:\/\?utm_campaign=[\w-]+)
 action: filter
-action_reason: "REFERRAL [{{author}}][{{match}}]"
+action_reason: "REFERRAL [{{author}}]"
 moderators_exempt: true
 comment: |
   # Hey /u/{{author}},
   
-  Congratulations for breaking [Rule 1](https://www.reddit.com/r/CasinoFreebies/wiki/the_rules/1). But nobody got to see it. 
+  Congratulations for breaking [Rule 1](https://www.reddit.com/r/CasinoFreebies/wiki/the_rules/1). {{match}} is not allowed and nobody got to see it. 
   
   Enjoy your ban.
 comment_locked: true
-modmail_subject: "REFERRAL [{{author}}][{{match}}]"
+modmail_subject: "REFERRAL [{{author}}]"
 modmail: |
-  # /u/{{author}} is ready to be banned. for {{match}}
+  # /u/{{author}} is ready to be banned!  
+  
+  {{match}}
 ---
 # removes and shows how to correctly use !answered
 type: comment
@@ -758,7 +760,7 @@ is_top_level: true
 parent_submission:
   flair_template_id: 751c650c-49ae-11ef-8db1-16f9fa17ff35
 body (regex):
-  - ^\s*!answered\s*$
+  - ^\s*!?\s*answers?ed?\s*$
 action: remove
 action_reason: "[{{match}}] used wrong."
 comment: |
@@ -775,7 +777,7 @@ type: comment
 author:
   is_submitter: false
 body (regex):
-  - ^\s*!answered\s*$
+  - ^\s*!?\s*answers?ed?\s*$
 action: remove
 action_reason: "non-OP used [{{match}}]"
 comment: |
