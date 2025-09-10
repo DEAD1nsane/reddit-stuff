@@ -786,7 +786,7 @@ comment_locked: true
 ---
 type: submission
 title+body (regex, includes): 
-  - (?i)\b((?:rea[l1][\s\-_]*pri[zs][e3]?|real[\s\-_]*prize)(?:[\s\-_]*casino)?|(?:lone[\s\-_]*star|lonestar)(?:[\s\-_]*casino)?)[\s\-_]*(redemptions?|document[s]?|verification|verify|redeem|claim|paperwork|forms?|approval|submission|processing|form completion)\b
+  - (?i)\b(redemp?t(io?n)?s?|redems?|verif(y|icat(e|ion))|verifying|verfication|verficashun|verfy|verifys?|doc(uments?|umentation)?|paper[\s\-_\.]*work|forms?|formz|frms?|form completion|approv(al|ed|e)?|submiss(ion|n)?|process(ing|ed)?|claims?|claimed|claiming)\b
 action: remove
 action_reason: "[{{match}}] ppl not searching"
 comment: |
