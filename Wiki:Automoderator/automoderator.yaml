@@ -785,25 +785,18 @@ comment: |
 comment_locked: true
 ---
 type: any
-title+body (regex, includes): 
-  - (?i)\b(redemp?t(io?n)?s?|redems?|verif(y|icat(e|ion))|verifying|verfication|verficashun|verfy|verifys?|doc(uments?|umentation)?|paper[\s\-_\.]*work|forms?|formz|frms?|form completion|approv(al|ed|e)?|submiss(ion|n)?|process(ing|ed)?|claims?|claimed|claiming)\b
+title+body (regex, includes):   
+  - (?i)\b(redemp?t(io?n)?s?|redems?|verif(y|icat(e|ion))|verifying|verfication|verficashun|verfy|verifys?|doc(uments?|umentation)?|paper[\s\-_\.]*work|approv(al|ed|e)?|submiss(ion|n)?|process(ing|ed)?|claims?|claimed|claiming)\b
+  - (?i)\bcollect(?:ing|ed|s)?\s+(?:my|their|the)\s+winnings?\b
 action: remove
-action_reason: "[{{match}}] ppl not searching"
-comment: |
-  You wouldn’t believe how many questions we get about this exact thing. 
-  
-  # [How to use reddit search filters](https://support.reddithelp.com/hc/en-us/articles/19696541895316-Available-search-features)  
-  
-  `title:[{{match}}]` 
-  
-  make sure to look in the comment section too, if you really can't find the answer, and i mean you really took the time to search it, **[contact the moderators of this subreddit](/message/compose/?to=/r/CasinoFreebies)**.
+action_reason: "Redemptions/verification stuff"
 ---
 type: comment
 body (regex):
-  - (?i)(?:didn'?t\s+work|not\s+working|no\s+(?:luck|win|dice)|nothing\s+(?:worked|helped)|lost|fail(?:ed)?)[^\n\r]{0,40}?\b(?:thanks?|thank\s+you|thx|ty)(?:\s+(?:anyways?|anyway|tho|though|regardless))?\b
-  - (?i)(?:but|no|not|none|didn'?t|doesn'?t|don['’]t|won['’]t)[^\n\r]{0,40}?\b(?:thanks?|thank\s+you|thx|ty)(?:\s+(?:anyways?|anyway|tho|though|regardless))?\b
-  - (?i)\b(?:thanks?|thank\s+you|thx|ty)\s+(?:anyways?|anyway|tho|though|regardless)\b
-  - (?i)\banyways?[.,!]*\s+(?:thanks?|thank\s+you|thx|ty)\b
+  - (?i)(?:didn'?t\s+work|not\s+working|no\s+(?:luck|win|dice)|nothing\s+(?:worked|helped)|lost|fail(?:ed)?)[^\n\r]{0,40}?\b(?!no\s+thanks?\b)(?:thanks?|thank\s+you|thx|ty)(?:\s+(?:anyways?|anyway|tho|though|regardless))?\b
+  - (?i)(?:but|no|not|none|didn'?t|doesn'?t|don['’]t|won['’]t)[^\n\r]{0,40}?\b(?!no\s+thanks?\b)(?:thanks?|thank\s+you|thx|ty)(?:\s+(?:anyways?|anyway|tho|though|regardless))?\b
+  - (?i)\b(?!no\s+thanks?\b)(?:thanks?|thank\s+you|thx|ty)\s+(?:anyways?|anyway|tho|though|regardless)\b
+  - (?i)\banyways?[.,!]*\s+(?!no\s+thanks?\b)(?:thanks?|thank\s+you|thx|ty)\b
 action: remove
 action_reason: "[{{match}}] dismissive"
 ---
