@@ -417,7 +417,7 @@ comment: |
 ---
 # Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.
 author:
-  name: ["AutoModerator", "evasion-guard", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot", "Jon_Gains", "Jon_GamerGains"]
+  name: ["AutoModerator", "evasion-guard", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot", "Jon_Gains", "Jon_GamerGains", "spotlight-app"]
 reports: 1
 moderators_exempt: false
 action: approve
