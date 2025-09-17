@@ -268,7 +268,7 @@ title+body (regex):
 #  - okay.address1@example.com
 #  - okay.address2@example.com
 action: remove
-action_reason: "Doxxing Alert: Email  [{{match}}]"
+action_reason: "Doxxing  [{{match}}]"
 modmail_subject: "Doxxing Alert: Email [{{match}}]"
 modmail: |
   The above {{kind}} by {{author}} was removed because it contained a possible email address. Please investigate immediately.
@@ -823,4 +823,11 @@ comment: |
   
   ### /u/Jon_Gains is infact CEO of https://www.gains.com. This information has been vetted by the moderators of /r/CasinoFreebies
 comment_locked: true
+---
+type: any
+body+url (regex):
+  - (?i)^\s*https?:\/\/email\.mail\.
+action: remove
+action_reason: "email.mail"
+comment: Check out [This Post](https://www.reddit.com/r/CasinoFreebies/s/C4XtZZIZ) and youll understand why this {{kind}} was removed. please use https://www.redirectdetective.com to get the exact url.
 ---
