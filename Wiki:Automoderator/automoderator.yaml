@@ -826,7 +826,7 @@ comment_locked: true
 ---
 type: any
 body+url (regex):
-  - (?i)^\s*https?:\/\/email\.mail\.
+  - (?i)^\s*https?:\/\/email\.(?:mail\.|)[a-z0-9.-]+
 action: remove
 action_reason: "email.mail"
 comment: Check out [This Post](https://www.reddit.com/r/CasinoFreebies/s/C4XtZZIZ) and youll understand why this {{kind}} was removed. please use https://www.redirectdetective.com to get the exact url.
