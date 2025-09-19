@@ -785,9 +785,10 @@ comment: |
 comment_locked: true
 ---
 type: any
-title+body (regex, includes):   
-  - (?i)\b(redemp?t(io?n)?s?|redems?|verif(y|icat(e|ion))|verifying|verfication|verficashun|verfy|verifys?|doc(uments?|umentation)?|paper[\s\-_\.]*work|approv(al|ed|e)?|submiss(ion|n)?|process(ing|ed)?|claims?|claimed|claiming)\b
-  - (?i)\bcollect(?:ing|ed|s)?\s+(?:my|their|the)\s+winnings?\b
+title+body (regex, includes):
+  - (?i)how\s+long.*\b(?:redemp?t(?:ion|s)?|verif(?:y|ication|ing|s|cashun|fy)|doc(?:uments?|umentation)?|paper[\s\-_\.]*work|approv(?:al|ed|e)?|submiss(?:ion|n)?|process(?:ing|ed)?|claim(?:s?|ed|ing)?|collect(?:ing|ed|s)?\s+(?:my|their|the)\s+winnings?)\b
+  - (?i)when\s+(?:will|does|do).*?\b(?:redemp?t(?:ion|s)?|verif(?:y|ication|ing|s|cashun|fy)|doc(?:uments?|umentation)?|paper[\s\-_\.]*work|approv(?:al|ed|e)?|submiss(?:ion|n)?|process(?:ing|ed)?|claim(?:s?|ed|ing)?|collect(?:ing|ed|s)?\s+(?:my|their|the)\s+winnings?)\b
+  - (?i)time\s+it\s+(?:takes?|took).*?\b(?:redemp?t(?:ion|s)?|verif(?:y|ication|ing|s|cashun|fy)|doc(?:uments?|umentation)?|paper[\s\-_\.]*work|approv(?:al|ed|e)?|submiss(?:ion|n)?|process(?:ing|ed)?|claim(?:s?|ed|ing)?|collect(?:ing|ed|s)?\s+(?:my|their|the)\s+winnings?)\b
 action: remove
 action_reason: "Redemptions/verification stuff"
 ---
