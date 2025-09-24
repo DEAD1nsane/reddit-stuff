@@ -417,7 +417,7 @@ comment: |
 ---
 # Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.
 author:
-  name: ["AutoModerator", "evasion-guard", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot", "Jon_Gains", "Jon_GamerGains", "spotlight-app"]
+  name: ["AutoModerator", "evasion-guard", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot", "Jon_Gains", "Jon_GamerGains", "spotlight-app", "drawing-app"]
 reports: 1
 moderators_exempt: false
 action: approve
@@ -490,6 +490,7 @@ title+body+url (regex):
   - (?#AceReveal)(?i)ace[\s\-_\.]*revea[l1](?:[\s\-_\.]*casino)?\b
   - (?#Admiral)(?i)admiral(?:\.com|\.us)?\b
   - (?#BetcoinSocial)(?i)betcoin[\s\-_\.]*social\b
+  - (?#BigCashSweeps)(?i)bigcashsweeps(?:\.com|\.us)?\b
   - (?#BitBetWin)(?i)b[i1!][t7][b8][e3][t7][wv][i1!l]n(?:\.com|\.us)?\b
   - (?#BitOfGold)(?i)bit[\s\-_\.]*of[\s\-_\.]*gold(?:\.cc)?\b
   - (?#BucksJet)(?i)bucks[\s\-_\.]*jet(?:\.com|\.us)?\b
@@ -522,13 +523,13 @@ title+body+url (regex):
   - (?#GoldenTreasure)(?i)golden[\s\-_\.]*treasure(?:\.com|\.us)\b
   - (?#Ice8)(?i)ice8(?:\.com|\.us)?\b
   - (?#JokerGamingUSA)(?i)joker[\s\-_\.]*gaming[\s\-_\.]*usa(?:\.com|\.us)?\b
+  - (?#LivePlayCasino)(?i)live[\s\-_\.]?play[\s\-_\.]?casino\.com\b
   - (?#LonestarPro)(?i)lonestar\.pro\b
   - (?#Lucky6)(?i)luck[y1][\s\-_\.]*6(?:[\s\-_\.]?casino)?\b
   - (?#Lucky777)(?i)luck[y1][\s\-_\.]*777(?:[\s\-_\.]?casino)?\b
   - (?#LuckyCharms)(?i)luck[y1][\s\-_\.]*charms(?:[\s\-_\.]?casino)?\b
   - (?#LuckyMe)(?i)lucky\.me\b
   - (?#LuckyPlinko)(?i)luck[y1][\s\-_\.]*plinko(?:\.com|\.us)?\b
-  - (?#LivePlayCasino)(?i)live[\s\-_\.]?play[\s\-_\.]?casino\.com\b
   - (?#MagicCity)(?i)magic[\s\-_\.]*city(?:\.com|\.us)?\b
   - (?#MegaWin)(?i)mega[\s\-_\.]*win(?:\.com|\.us)?\b
   - (?#Moozi)(?i)moozi(?:\.com|\.us)?\b
@@ -557,6 +558,18 @@ title+body+url (regex):
   - (?#SkySweeps)(?i)sky[\s\-_\.]*sweeps(?:\.com|\.us)?\b
   - (?#StackrCasino)(?i)stackr(?:casino)?(?:\.com|\.us)?\b
   - (?#SunshineSweeps)(?i)sunshine[\s\-_\.]*sweeps(?:\.com|\.us)?\b
+  - (?#SweepShark)(?i)sweepshark(?:\.com|\.us)?\b
+  - (?#SweepSlots)(?i)sweepslots(?:\.com|\.us)?\b
+  - (?#SweepstakesMobi)(?i)sweepstakes\.mobi\b
+  - (?#TaoFortune)(?i)taofortune(?:\.com|\.us)?\b
+  - (?#Threelz)(?i)threelz(?:\.com|\.us)?\b
+  - (?#TigerIsHome)(?i)tigerishome(?:\.com|\.us)?\b
+  - (?#ToraTora)(?i)toratora(?:\.com|\.us)?\b
+  - (?#UltrapowerGames)(?i)ultrapower[\s\-_\.]*games(?:\.com|\.us)?\b
+  - (?#VegasX)(?i)vegas[\s\-_\.]*x(?:\.com|\.us)?\b
+  - (?#VPower)(?i)vpower(?:\.com|\.us)?\b
+  - (?#WebSweeps)(?i)websweeps(?:\.com|\.us)?\b
+  - (?#WildWorld)(?i)wild[\s\-_\.]*world(?:\.com|\.us)?\b
 action: remove
 action_reason: "[{{author}}] bypassing [{{match}}]"
 moderators_exempt: true
@@ -811,8 +824,9 @@ comment: |
   ### &#x1F916; /u/Automoderator says: “Nope.”
   
   > /u/{{author}} Maybe you should try again when your post is slightly less rebellious otherwise Automoderator might start sending passive-aggressive emails. Consider yourself warned.
-  
-  ^(125 words maximum)
+    
+    
+  # 125 words maximum
 comment_locked: true
 ---
 type: submission
