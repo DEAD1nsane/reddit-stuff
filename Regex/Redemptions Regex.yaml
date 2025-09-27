@@ -1,6 +1,6 @@
 # general chat
 
-(?i)\b(redemp?t(io?n)?s?|redems?|verif(y|icat(e|ion))|verifying|verfication|verficashun|verfy|verifys?|doc(uments?|umentation)?|paper[\s\-_\.]*work|forms?|formz|frms?|form completion|approv(al|ed|e)?|submiss(ion|n)?|process(ing|ed)?|claims?|claimed|claiming|cashed[\s\-_]*out|cashedout|cash[\s\-_]*outs?|withdrew|withdraw(als?|ing)?|pay[\s\-_]*outs?|paid[\s\-_]*out|collect(ing|ed|s)?\s+(?:my\s+)?winnings?)\b
+(?i)(?:how\s+long.*|when\s+(?:will|does|do).*?|time\s+it\s+(?:takes?|took).*?)\b(?:redempt(?:ion|ions?)?|redeem(?:ed|ing|s)?|verif(?:y|ication|ing|s|cashun|fy)|doc(?:uments?|umentation)?|paper[\s\-_\.]*work|approv(?:al|ed|e)?|submiss(?:ion|n)?|process(?:ing|ed)?|claim(?:s?|ed|ing)?|collect(?:ing|ed|s)?|time[\s\-_]*frame)\s+(?:my|their|the)\s+winnings?\b
 
 # Automoderator
 
