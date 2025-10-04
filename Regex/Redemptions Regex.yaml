@@ -1,8 +1,8 @@
 # general chat
 
-(?i)(?:how\s+long(?:\s+does|\s+will|\s+it)?(?:.*?\b(?:take|took|takes))?|when\s+(?:will|does|do)\b.*?\b(?:redeem|redempt|verif|approv|process|claim|collect|submit|paper|doc|time\s*frame))
+(?i)(?:how\s+long(?:\s+(?:does|will|it))?(?:.*?\b(?:take|took|takes))?|when\s+(?:will|does|do)\b.*?)(?:redemp?t(?:io?n)?s?|redeem(?:ed|ing|s)?|verif(?:y|icat(?:e|ion)|ying|ication|ications?|cashun|fy|ys?)|doc(?:uments?|umentation)?|paper[\s\-_\.]*work|approv(?:al|ed|e)?|submiss(?:ion|n)?|process(?:ing|ed)?|claims?|claimed|claiming|collect(?:ing|ed|s)?|time[\s\-_]*frame)\b
 
 # Automoderator
 
 title+body (regex, includes):   
-  - (?i)(?:how\s+long(?:\s+does|\s+will|\s+it)?(?:.*?\b(?:take|took|takes))?|when\s+(?:will|does|do)\b.*?\b)(?:redemp?t(?:io?n)?s?|redeem(?:ed|ing|s)?|verif(?:y|icat(?:e|ion)|ying|ication|ications?|cashun|fy|ys?)|doc(?:uments?|umentation)?|paper[\s\-_\.]*work|approv(?:al|ed|e)?|submiss(?:ion|n)?|process(?:ing|ed)?|claims?|claimed|claiming|collect(?:ing|ed|s)?|time[\s\-_]*frame)\b
+  - (?i)(?:how\s+long(?:\s+(?:does|will|it))?(?:.*?\b(?:take|took|takes))?|when\s+(?:will|does|do)\b.*?)(?:redemp?t(?:io?n)?s?|redeem(?:ed|ing|s)?|verif(?:y|icat(?:e|ion)|ying|ication|ications?|cashun|fy|ys?)|doc(?:uments?|umentation)?|paper[\s\-_\.]*work|approv(?:al|ed|e)?|submiss(?:ion|n)?|process(?:ing|ed)?|claims?|claimed|claiming|collect(?:ing|ed|s)?|time[\s\-_]*frame)\b
