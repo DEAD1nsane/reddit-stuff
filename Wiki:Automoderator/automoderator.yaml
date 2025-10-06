@@ -1636,7 +1636,7 @@ comment_locked: true
 ---
 type: any
 title+body (regex, includes):   
-  - (?i)(?:how\s+long(?:\s+(?:does|will|it))?(?:.*?\b(?:take|took|takes))?|when\s+(?:will|does|do)\b.*?)(?:redemp?t(?:io?n)?s?|redeem(?:ed|ing|s)?|verif(?:y|icat(?:e|ion)|ying|ication|ications?|cashun|fy|ys?)|doc(?:uments?|umentation)?|paper[\s\-_\.]*work|approv(?:al|ed|e)?|submiss(?:ion|n)?|process(?:ing|ed)?|claims?|claimed|claiming|collect(?:ing|ed|s)?|time[\s\-_]*frame)\b
+  - (?i)(?:(?:how\s+(?:long(?:\s+(?:does|will|it))?(?:.*?\b(?:take|took|takes))?|soon\b.*?|much\s+longer\b.*?|many\s+(?:days?|hours?)\b.*?|time\s+(?:left|til|until)\b.*?|far\b.*?(?:for|until|before|to)?.*?))|(?:when\s+(?:(?:will|does|do)\b.*?|i(?:['’]?ll| will)\b.*?))|(?:any\s+(?:idea|clue|info|information)\b.*?(?:when|how)\b.*?)|(?:still\s+wait(?:ing|ed)\b.*?(?:for|on)?)|(?:curious\b.*?(?:when|how)\b.*?))(?:redemp?t(?:io?n)?s?|redeem(?:ed|ing|s)?|verif(?:y|icat(?:e|ion)|ying|ication|ications?|cashun|fy|ys?)|doc(?:uments?|umentation)?|paper[\s\-_\.]*work|approv(?:al|ed|e)?|submiss(?:ion|n)?|process(?:ing|ed)?|claims?|claimed|claiming|collect(?:ing|ed|s)?|time[\s\-_]*frame)\b
 action: remove
 action_reason: "Redemptions/verification stuff"
 ---
