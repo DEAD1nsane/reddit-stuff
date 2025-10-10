@@ -265,8 +265,7 @@ type: any
 title+body (regex):
   - (?!(abuse|help|info|no-?reply|phishing|service|spoof)\@)[\w!#$%&\x27*+\-./=?\^\x60{|}~]+\@([\w-]{1,64}\.)+([a-z]{2,16}|xn--[a-z0-9-]{1,60})
 ~title+body#whitelist:
-#  - okay.address1@example.com
-#  - okay.address2@example.com
+  - support@
 action: remove
 action_reason: "Doxxing  [{{match}}]"
 modmail_subject: "Doxxing Alert: Email [{{match}}]"
