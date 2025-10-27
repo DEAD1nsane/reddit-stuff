@@ -416,7 +416,7 @@ comment: |
 ---
 # Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.
 author:
-  name: ["AutoModerator", "evasion-guard", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot", "Jon_Gains", "Jon_GamerGains", "spotlight-app", "drawing-app"]
+  name: ["AutoModerator", "evasion-guard", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot", "Jon_Gains", "Jon_GamerGains", "spotlight-app", "drawing-app", "CasinoFreebies-ModTeam"]
 reports: 1
 moderators_exempt: false
 action: approve
@@ -793,7 +793,7 @@ comment_locked: true
 ---
 type: any
 title+body (regex, includes):
-  - (?i)\b(?:(?:when\s+(?:can|do|does|did|will|should|would|could|is|are|was|were|have|has|had)|why|where|how(?:'s|s)?|what(?:'s|s)?|who(?:'s|s)?|does|did|is|are|was|were|have|has|had|will|do\s+you|can\s+you|should\s+you|would\s+you|could\s+you|anyone|someone|still\s*wait(?:ing)?|wait(?:ing)?\s*(?:on|for)|any\s*update|problem|issue|trouble|delay|pending)\b.{0,250}?\b(?:redemp?t(?:io?n)?s?|redeem(?:ed|ing|s)?(?:\s+\w+){0,2}\s+\b(?:can|can'?t|won'?t|unable|problem|issue|pending|delay|help|how|why|where|what|who|anyone|someone)\b|cash(?:ed)?[\s\-_]*out|cashout|(?:pay(?:ing|s)?[\s\-_]*out|paid[\s\-_]*out|payments?)|withdraw(?:al|ing|n|s)|payouts?(?:\s+(?:pending|delay|issue|problem|slow|late))?|pay(?:ments?|outs?|ing|s|ed)(?:\s+(?:pending|delay|issue|problem|slow|late))?|payment(?:\s*(?:request|status|processing|delay|pending)?)?|collect(?:ing|ed|s)?(?:\s+\w+){0,3}\s+(?:cash|money|payout|winnings?|reward|redemp?t(?:io?n)?s?)|claim(?:s|ed|ing)?(?:\s+\w+){0,3}\s+(?:cash|money|payout|winnings?|reward|redemp?t(?:io?n)?s?)|winn(?:er|ers)?)\b.{0,60}?\??)
+  - (?i)\b(?:(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't\s*redeem|unable\s*to\s*(?:withdraw|redeem)|won't\s*pay|still\s*wait(?:ing)?|any\s*update)\b.{0,60}?\b(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|cash[\s\-_]*out|withdraw(?:al|ing|n|s)?|payouts?|payments?)|(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|cash[\s\-_]*out|withdraw(?:al|ing|n|s)?|payouts?|payments?)\b.{0,60}?\b(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't|unable|won't|update))
 action: filter
 action_reason: "[{{match}}] Redemptions"
 moderators_exempt: true
