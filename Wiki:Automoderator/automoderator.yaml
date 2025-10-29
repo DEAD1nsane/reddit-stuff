@@ -433,7 +433,7 @@ action_reason: "Less than 5 word title"
 comment: |
   # Hey /u/{{author}},
   
-  Check your direct messages for why this post got removed.
+  Check your direct messages for more detail, but your post title has less than 5 words.
 comment_locked: true
 message: |
   # Hey /u/{{author}},
@@ -453,7 +453,7 @@ action_reason: "more than 10 word title"
 comment: |
   # Hey /u/{{author}},
   
-  Check your direct messages for why this post got removed.
+  Check your direct messages for more detail, but your post title has more than 10 words.
 comment_locked: true
 message: |
   # Hey /u/{{author}},
@@ -793,9 +793,9 @@ comment_locked: true
 ---
 type: any
 title+body (regex, includes):
-  - (?i)\b(?:(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't\s*redeem|unable\s*to\s*(?:withdraw|redeem)|won't\s*pay|still\s*wait(?:ing)?|any\s*update)\b.{0,60}?\b(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|cash[\s\-_]*out|withdraw(?:al|ing|n|s)?|payouts?|payments?)|(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|cash[\s\-_]*out|withdraw(?:al|ing|n|s)?|payouts?|payments?)\b.{0,60}?\b(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't|unable|won't|update))
+  - (?i)(?:(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't\s*redeem|unable\s*to\s*(?:withdraw|redeem)|won't\s*pay|still\s*wait(?:ing)?|any\s*update)\b.{0,60}?\b(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|payouts?|payments?)|(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|payouts?|payments?)\b.{0,60}?\b(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't|unable|won't|update))
 action: filter
-action_reason: "[{{match}}] Redemptions"
+action_reason: "Redeem - [{{match}}]"
 moderators_exempt: true
 comment: |
   &#9888;&#65039; **Reminder:**  
@@ -807,7 +807,11 @@ comment: |
   &#x1f4a1; **Tip:**  
   If you’re waiting on a payout, check the site’s own FAQ or support team — response times vary, and other members can’t speed that up for you.
 
-  Thanks for helping keep the feed clean and focused on the fun stuff — the actual **freebies.**
+  Thanks for helping keep the feed clean and focused on the fun stuff — the actual **freebies.**  
+    
+  ---  
+    
+  **[^(Click here to message the moderators if you believe this was in error)](https://www.reddit.com/message/compose?to=%2Fr%2F{community name}&subject=Querying mod action for this {content type}&message=I'm writing to you about %5Bthis {content type}%5D%28{community link}%29.%0D%0D---%0D%0DI%20believe%20this%20action%20was%20incorrect%20and%20would%20like%20further%20review%2E%20%20%0D%0A%20%20%0D%0A%20%20>%23%23%23replace%20this%20text%20with%20your%20message)**
 comment_locked: true
 ---
 type: comment
