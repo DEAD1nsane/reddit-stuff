@@ -655,61 +655,45 @@ modmail: |
 #Basic rule filtering users with <0 subreddit karma and CQS scores of "lowest"
 type: any
 author:
-  combined_subreddit_karma: "< 0"
-  contributor_quality: "< low"
-  ~name: ["Jon_Gains", "Jon_GamerGains"]
-action: filter
-action_reason: "Low CQS Filter - could be risky"
-comment: |
-  # Hey /u/{{author}},  you've been flagged by Reddit for having a Low CQS rating.  
-  
-  Check your messages for a message from Automoderator for more information regarding this removal. You'll have a notification also from Automoderator leading to that message.  
-comment_locked: true
-message: |
-  # Hey /u/{{author}}, thank you for being apart of /r/CasinoFreebies.  
-  
-  Your {{kind}} is currently not visible because of your **[CQS Ranking being Low](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)**, meaning your close to possibly getting [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion) & are labeled as a reputation risk. Please take the time to check out the hyperlinks so you understand more about this. This decision is not ours at /r/CasinoFreebies, it is Reddit alone that has flagged your account.  
-     
-  But the moderators will review this and either remove it officially, or reapprove it.
-  
-  Thank you for understanding, 
-  /r/CasinoFreebies Moderation Team
----
-type: any
-author:
   contributor_quality: "= lowest"
   ~name: ["Jon_Gains", "Jon_GamerGains"]
 action: filter
-action_reason: "LOWEST CQS BAN [{{author}}]"
+action_reason: "Lowest CQS | &#x1F528; ￫ [{{author}}]"
 comment: |
-  # Hey /u/{{author}}, you've been flagged by Reddit for having the lowest possible CQS rating.  
+  # Hey /u/{{author}}, you've been flagged by Reddit (not us) for having the lowest possible **[CQS Ranking](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)**.  
     
-  Check your messages for a message from Automoderator for more information regarding this removal. You'll have a notification also from Automoderator leading to that message.  
+  Check your DM (Private Messages) for a message from u/Automoderator for more information regarding this removal.  
+  
+  ---
+  
+  ^(Just keep in mind, your {{kind}} is what triggered the check, but the flag is not because of it)
 comment_locked: true
 message: |
-  # Hey /u/{{author}}, thank you for being apart of /r/CasinoFreebies.
-  
-  Your {{kind}} has been permanently removed.
-  
-  We hate to be the bearer of bad news but your account has the lowest **[CQS Ranking](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)** possible &/or your account is [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion), please check out these links so you understand. This decision is not ours at /r/CasinoFreebies, it is Reddit alone that has flagged your account.   
-  
-  For the safety of our community we are going to have to ban you, I myself as a bot cannot do this deed, the mods will when they get the chance.  
-  
-  All this means is you will not be able to post or comment anymore. you can still continue to collect all the freebies from the subreddit like normal.
-  
-  Thank you for understanding, 
-  /r/CasinoFreebies Moderation Team
-modmail_subject: "LOWEST CQS BAN [{{author}}]"
-modmail: |
-  To the attention of: /u/DEAD1nsane, /u/itsunamipunani, /u/Due_Poetry9235, /u/RedHeadTheyThem  
-  
-  # /u/{{author}} has been flagged as lowest CQS user.
-  
-  Ban immediately (if they're shadowbanned it'll say removed by reddit systems and you won't be able to ban them like you do normally..
-    - in this situation you need to manually go to mod tools > banned and add them manually.
-    - select rule Harassment/bullying then you can select ban message.
+  # Hey /u/{{author}}, thank you for being apart of /r/CasinoFreebies, but farewell.  
     
-    but don't worry about muting, we wanna hear their cries and excuses lol. 
+  Your {{kind}} has been permanently removed.
+    
+  We hate to be the bearer of bad news but your account has the lowest **[CQS Ranking](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)** possible &/or your account is [shadowbanned](https://support.reddithelp.com/hc/en-us/articles/360045734911-My-account-was-banned-for-spam-inauthentic-activity-or-ban-evasion), please check out these links so you understand. This decision is not ours at /r/CasinoFreebies, it is Reddit alone that has flagged your account.   
+    
+  For the safety of our community we are going to have to ban you, I myself as a bot cannot do this deed, the mods will when they get the chance.  
+    
+  All this means is you will not be able to post or comment anymore. you can still continue to collect all the freebies from the subreddit like normal.  
+    
+  Thank you for understanding,  
+  /r/CasinoFreebies Moderation Team
+modmail_subject: "Lowest CQS | &#x1F528; ￫ [{{author}}]"
+modmail: |
+  ### /u/{{author}} has been flagged as lowest CQS.  
+    
+  # Ban immediately!  
+  if they're shadowbanned it'll say:  
+  > `**Whoops**
+  > Something went wrong`  
+    
+  **and you won't be able to ban them like you do normally..**  
+    - in this situation you need to manually go to mod tools ￫ banned and add them manually (dont type the u/)  
+    - select rule `Harassment/bullying` then you can select ban message.  
+    - next i now mute them, if they're shadowbanned It'll say username doesn't exist. so unfortunately we can't mute shadowbanned but we can ban them.
 --- 
 # comments whenever someone mentions blacklist
 type: any
@@ -741,9 +725,14 @@ moderators_exempt: true
 comment: |
   # Hey /u/{{author}},
   
-  Congratulations for breaking [Rule 1](https://www.reddit.com/r/CasinoFreebies/wiki/the_rules/1). {{match}} is not allowed and nobody got to see it. 
+  You've violated [Rule 1](https://www.reddit.com/r/CasinoFreebies/wiki/the_rules/1). {{match}} is not allowed and nobody got to see it. 
   
-  Enjoy your ban.
+  Enjoy your ban, as soon as the mod team sees this!  
+  
+  ---
+  
+  **p.s.**
+  ╰ go ahead, delete this yourself, won't prevent the inevitable.
 comment_locked: true
 modmail_subject: "REFERRAL [{{author}}]"
 modmail: |
@@ -759,13 +748,14 @@ is_top_level: true
 parent_submission:
   flair_template_id: 751c650c-49ae-11ef-8db1-16f9fa17ff35
 body (regex):
-  - ^\s*!?\s*answers?ed?\s*$
+  - (?i)^\s*!+\s+(?:answers?|answered)\s*$
 action: remove
 action_reason: "[{{match}}] used wrong."
 comment: |
   # Hey /u/{{author}},
   
-  This isn't the right way to use {{match}}. You need to reply to the comment that you want to marked as the answer. 
+  `{{match}}` ￩This isn't the right way to trigger the answered command.  
+  You need to reply to the comment that you want to marked as the answer, with `!answered`.  
   
   Check out this image that shows the reply button you need to use before commenting `!answered`:
   ➤ [&#x1f4f7; Example Image](https://imgur.com/a/ZspdnE5#dCUIf8Q)
@@ -776,11 +766,11 @@ type: comment
 author:
   is_submitter: false
 body (regex):
-  - ^\s*!?\s*answers?ed?\s*$
+  - (?i)^\s*!+answered\s*$
 action: remove
-action_reason: "non-OP used [{{match}}]"
+action_reason: "non-OP [{{match}}]"
 comment: |
-  # Hey /u/{{author}}, this command only works for the OP.
+  # Hey /u/{{author}}, {{match}} only works for the OP (Original Poster aka Sumbitter).
 comment_locked: true
 ---
 type: any
@@ -791,14 +781,14 @@ action_reason: "Redeem - [{{match}}]"
 moderators_exempt: true
 comment: |
   &#9888;&#65039; **Reminder:**  
-  This is a **freebies** subreddit — not a *redemption support* or *“do they pay?”* help desk.
-
+  This is a **freebies** subreddit — not a *redemption support* or *“do they pay?”* help desk.  
+  
   Posts asking about payment delays, verifications, or “how long until I get it?” are automatically flagged.  
-  We focus on **finding and sharing new casino freebies**, not troubleshooting redemptions or payouts.
-
+  We focus on **finding and sharing new casino freebies**, not troubleshooting redemptions or payouts.  
+  
   &#x1f4a1; **Tip:**  
-  If you’re waiting on a payout, check the site’s own FAQ or support team — response times vary, and other members can’t speed that up for you.
-
+  If you’re waiting on a payout, check the site’s own FAQ or support team — response times vary, and other members can’t speed that up for you.  
+  
   Thanks for helping keep the feed clean and focused on the fun stuff — the actual **freebies.**  
     
   ---  
@@ -822,12 +812,15 @@ action: remove
 action_reason: more than 125 words.
 moderators_exempt: true
 comment: |
-  ### &#x1F916; /u/Automoderator says: “Nope.”
-  
-  > /u/{{author}} Maybe you should try again when your post is slightly less rebellious otherwise Automoderator might start sending passive-aggressive emails. Consider yourself warned.
+  ### &#x1F916; /u/Automoderator says: “TL;Nobody Will Read.”  
     
+  > /u/{{author}} Thank you for the story but unfortunately nobody really wants to read a novel when it comes to casinos. Please try again with  
+  no more than:  
+  **╰ 125 words**  
     
-  # 125 words maximum
+  Thank you for understanding,  
+  Yours Truly,  
+  &#x1F916; /u/Automoderator
 comment_locked: true
 ---
 type: submission
@@ -842,8 +835,26 @@ comment_locked: true
 ---
 type: any
 body+url (regex):
-  - (?i)^\s*https?:\/\/email\.(?:mail\.|)[a-z0-9.-]+
+  - (?i)^\s*(?:https?:\/\/)?(?:mail|email)(?:\.[a-z0-9-]+)+
 action: remove
-action_reason: "email.mail"
-comment: Check out [This Post](https://www.reddit.com/r/CasinoFreebies/s/C4XtZZIZ) and youll understand why this {{kind}} was removed. please use https://www.redirectdetective.com to get the exact url.
+action_reason: "email url"
+moderators_exempt: true
+comment: |  
+  Check out [This Post](https://www.reddit.com/r/CasinoFreebies/s/C4XtZZIZ) and youll understand why this {{kind}} was removed. please use https://www.redirectdetective.com to get the exact url.  
+  
+  ---
+  
+  **[^(Click here to message the moderators if you believe this was in error)](https://www.reddit.com/message/compose?to=%2Fr%2F{community name}&subject=Querying mod action for this {content type}&message=I'm writing to you about %5Bthis {content type}%5D%28{community link}%29.%0D%0D---%0D%0DI%20believe%20this%20action%20was%20incorrect%20and%20would%20like%20further%20review%2E%20%20%0D%0A%20%20%0D%0A%20%20>%23%23%23replace%20this%20text%20with%20your%20message)**
+---
+type: any
+title (regex): 
+  - (?:[A-Z\d]{1,3}\s+)*[A-Z\d]{4,}(?:\s+[A-Z\d]{1,3})*\s+[A-Z\d]{4,}
+action: remove
+action_reason: "CAPS TITLE ￫ [{{match}}]"
+comment: |
+  &#x1F916; /u/Automoderator says: "Beep-Boop, WHY CAPS?! NOW YOU MUST REPOST THIS WITH A LESS NOISY TITLE!"  
+    
+  ^(that's if you want your post to be seen :))  
+    
+  ## in other words: no FULLY CAPITAL TITLES and you’ll be okay.
 ---
