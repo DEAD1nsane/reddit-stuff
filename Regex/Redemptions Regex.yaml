@@ -1,8 +1,8 @@
 # general chat
 
-(?i)(?:(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't\s*redeem|unable\s*to\s*(?:withdraw|redeem)|won't\s*pay|still\s*wait(?:ing)?|any\s*update)\b.{0,60}?\b(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|payouts?|payments?)|(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|payouts?|payments?)\b.{0,60}?\b(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't|unable|won't|update))
+(?i)(?:(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't\s*(?:redeem|withdraw|cash\s*out)|unable\s*to\s*(?:withdraw|redeem)|won't\s*(?:pay|redeem|withdraw)|still\s*wait(?:ing)?|any\s*update|how\s*long|when|why|where|what|question)\b.{0,50}?\b(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash[\s\-_]*out|payouts?|payments?)|(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash[\s\-_]*out|payouts?|payments?)\b.{0,50}?\b(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't|unable|won't|update|how\s*long|when|why|where|what|question))
 
 # Automoderator
 
 title+body (regex, includes):
-  - (?i)(?:(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't\s*redeem|unable\s*to\s*(?:withdraw|redeem)|won't\s*pay|still\s*wait(?:ing)?|any\s*update)\b.{0,60}?\b(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|payouts?|payments?)|(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|payouts?|payments?)\b.{0,60}?\b(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't|unable|won't|update))
+  - (?i)(?:(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't\s*(?:redeem|withdraw|cash\s*out)|unable\s*to\s*(?:withdraw|redeem)|won't\s*(?:pay|redeem|withdraw)|still\s*wait(?:ing)?|any\s*update|how\s*long|when|why|where|what|question)\b.{0,50}?\b(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash[\s\-_]*out|payouts?|payments?)|(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash[\s\-_]*out|payouts?|payments?)\b.{0,50}?\b(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't|unable|won't|update|how\s*long|when|why|where|what|question))
