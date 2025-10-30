@@ -1,6 +1,5 @@
 **MOBILE USERS:**  
 THE CHART SLIDES TO THE LEFT  
-## [⚠️ Blacklist Disclaimer](https://www.reddit.com/r/CasinoFreebies/wiki/blacklisted_casinos/disclaimer)  
 
 ---
 
@@ -22,4 +21,8 @@ THE CHART SLIDES TO THE LEFT
 |Sixty6|Skill&nbsp;Quest|SkillMachine&#46;net|SkillMine&#46;net|Skills&nbsp;and&nbsp;Slots|Sky&nbsp;Sweeps|
 |Stackr|SunshineSweeps|SweepSlots|SweepShark|Sweepstakes&#46;mobi|TaoFortune|
 |The&nbsp;Money&nbsp;Factory&nbsp;(TMF)|Threelz|TigerIsHome|ToraTora|Ultrapower-Games|Vegas&nbsp;X|
-|VPower|WebSweeps|Wild&nbsp;World|
+|VPower|WebSweeps|Wild&nbsp;World|  
+
+---
+
+## [⚠️ Blacklist Disclaimer](https://www.reddit.com/r/CasinoFreebies/wiki/blacklisted_casinos/disclaimer)  
