@@ -816,10 +816,10 @@ comment_locked: true
 ---
 type: comment
 body (regex):
-  - (?i)(?:didn'?t\s+work|not\s+working|no\s+(?:luck|win|dice)|nothing\s+(?:worked|helped)|lost|fail(?:ed)?)[^\n\r]{0,40}?\b(?!no\s+thanks?\b)(?:thanks?|thank\s+you|thx|ty)(?:\s+(?:anyways?|anyway|tho|though|regardless))?\b
-  - (?i)(?:but|no|not|none|didn'?t|doesn'?t|don['’]t|won['’]t)[^\n\r]{0,40}?\b(?!no\s+thanks?\b)(?:thanks?|thank\s+you|thx|ty)(?:\s+(?:anyways?|anyway|tho|though|regardless))?\b
-  - (?i)\b(?!no\s+thanks?\b)(?:thanks?|thank\s+you|thx|ty)\s+(?:anyways?|anyway|tho|though|regardless)\b
-  - (?i)\banyways?[.,!]*\s+(?!no\s+thanks?\b)(?:thanks?|thank\s+you|thx|ty)\b
+  - (?i)(?:didn'?t\s+work|not\s+working|no\s+(?:luck|win|dice)|nothing\s+(?:worked|helped)|lost|fail(?:ed)?)[^\n\r]{0,40}?\b(?:thanks?|thank\s+you|thx|ty)(?:\s+(?:anyways?|anyway|tho|though|regardless))?\b
+  - (?i)(?:but|no|not|none|didn'?t|doesn'?t|don['’]t|won['’]t)[^\n\r]{0,40}?\b(?:thanks?|thank\s+you|thx|ty)(?:\s+(?:anyways?|anyway|tho|though|regardless))?\b
+  - (?i)\b(?:thanks?|thank\s+you|thx|ty)\s+(?:anyways?|anyway|tho|though|regardless)\b
+  - (?i)\banyways?[.,!]*\s+(?:thanks?|thank\s+you|thx|ty)\b
 action: remove
 action_reason: "[{{match}}] dismissive"
 ---
