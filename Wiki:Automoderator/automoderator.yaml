@@ -849,7 +849,6 @@ comment: |
 type: any
 title (regex):
   - ^[A-Z\d\s!?.]{10,}$
-  - (?=(?:.*[A-Z]){8,})(?!(?:.*[a-z]){5,}).*
   - (?:(?:\b[A-Z]{3,}\b.*){3,})
 action: remove
 action_reason: "Title contains excessive capitalization"
