@@ -630,7 +630,7 @@ message: |
 ---
 type: submission
 title+body (regex):
-  - (?i)\b(remov(?:ed|es|ing)\b|delet(?:ed|es|ing|ion)\b|tak(?:en|e)?\s*down\b|tried?\s+to\s+post\b|(?:won[’']?t|can[’']?t|cannot|not\s+able\s+to)\s+(?:post|submit)\b)
+  - (?i)(?:(?:post|thread|submission|comment|reply)[^\n\r]{0,40}?(?:remov(?:ed|es|ing)|delet(?:ed|es|ing|ion)|taken\s*down)|(?:remov(?:ed|es|ing)|delet(?:ed|es|ing|ion)|taken\s*down)[^\n\r]{0,40}?(?:post|thread|submission|comment|reply)|tried?\s+to\s+post|(?:won[’']?t|can[’']?t|cannot|not\s+able\s+to)\s+(?:post|submit))
 action: filter
 action_reason: "posting about not being able to post [{{match}}]"
 comment: |
@@ -638,6 +638,9 @@ comment: |
   1. check your direct messages for any messages from Automoderator.  
 
   2. if there isn't anything from Automoderator in your direct messages,  **[contact the moderators of this subreddit](/message/compose/?to=/r/CasinoFreebies)** so the issue can be addressed accordingly and fixed if needed.
+  ---
+  
+  **[^(Click here to message the moderators if you believe this was in error)](https://www.reddit.com/message/compose?to=%2Fr%2F{community name}&subject=Querying mod action for this {content type}&message=I'm writing to you about %5Bthis {content type}%5D%28{community link}%29.%0D%0D---%0D%0DI%20believe%20this%20action%20was%20incorrect%20and%20would%20like%20further%20review%2E%20%20%0D%0A%20%20%0D%0A%20%20>%23%23%23replace%20this%20text%20with%20your%20message)**
 comment_locked: true
 ---
 type: any
@@ -845,18 +848,4 @@ comment: |
   ---
   
   **[^(Click here to message the moderators if you believe this was in error)](https://www.reddit.com/message/compose?to=%2Fr%2F{community name}&subject=Querying mod action for this {content type}&message=I'm writing to you about %5Bthis {content type}%5D%28{community link}%29.%0D%0D---%0D%0DI%20believe%20this%20action%20was%20incorrect%20and%20would%20like%20further%20review%2E%20%20%0D%0A%20%20%0D%0A%20%20>%23%23%23replace%20this%20text%20with%20your%20message)**
----
-type: any
-title (regex):
-  - ^[A-Z\d\s!?.]{10,}$
-  - (?:(?:\b[A-Z]{3,}\b.*){3,})
-action: remove
-action_reason: "Title contains excessive capitalization"
-moderators_exempt: true
-comment: |
-  &#x1F916; /u/Automoderator says: "Beep-Boop, You have TOO MANY CAPS in your title! You don't wanna yell at everone (well you might, but we preferred if you don't).  
-  Repost with less caps please.  
-    
-  Thanks,  
-  /u/Automoderator &#x1F916;
 ---
