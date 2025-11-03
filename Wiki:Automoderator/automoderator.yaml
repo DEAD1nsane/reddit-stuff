@@ -718,10 +718,9 @@ comment_stickied: true
 ---
 type: any
 title+body+url (regex):
-  - (?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?\?(?:ref|ref_code|referral|invite|refer|refid|referralCode|referred_by_id|promo|partner|affiliate|bonus|reward|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|utm_campaign)=[\w-]+)
-  - (?i)\/(?:ref(?:=|\/)?|referral|invite|promo|partner|affiliate|bonus|reward|signup|track|campaign|source|id|uid|user|customer|member|friend|earn|ref_code|refer|refid|referralCode|referred_by_id|raf)\/[\w-]+(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)?$
-  - (?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?\?(?:ref|ref_code|referral|invite|refer|refid|referralCode|referred_by_id|promo|partner|affiliate|bonus|reward|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|utm_campaign)=[\w-]+)
-  - (?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref|invite|refer|raf)=[\w-]+)
+  - (?i)(?:[?&](?:r|ref|refid|ref_code|referral|affiliate|aff|affid|promo|partner|invite|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|utm_source|utm_campaign)=[\w-]+)
+  - (?i)\/(?:ref(?:erral)?|refid|ref_code|affiliate|aff|invite|promo|partner|track|campaign|source|id|uid|user|customer|member|friend|earn|raf)\/[\w-]+(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)?$
+  - (?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:r|ref|refid|ref_code|referral|invite|raf)=[\w-]+)
 action: filter
 action_reason: "REFERRAL [{{author}}]"
 moderators_exempt: true
@@ -778,7 +777,7 @@ comment_locked: true
 ---
 type: any
 title+body (regex, includes):
-  - (?i)(?:(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't\s*(?:redeem|withdraw|cash\s*out)|unable\s*to\s*(?:withdraw|redeem)|won't\s*(?:pay|redeem|withdraw)|still\s*wait(?:ing)?|any\s*update|how\s*long|when|why|where|what|question)\b.{0,50}?\b(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash[\s\-_]*out|payouts?|payments?)|(?:redemp?t(?:io?n)?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash[\s\-_]*out|payouts?|payments?)\b.{0,50}?\b(?:wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't|unable|won't|update|how\s*long|when|why|where|what|question))
+  - (?i)(?:(?:still\s*wait(?:ing)?\s*(?:on|for)?\s*(?:my|me|our|cash(?:ed)?[\s\-_]*out|withdraw|redemp?t?ion)|delay|problem|issue|pending|refuse|refused|can't\s*(?:redeem|withdraw|cash(?:ed)?\s*out)|unable\s*to\s*(?:withdraw|redeem)|won't\s*(?:pay|redeem|withdraw)|any\s*update|how\s*long|when|why|where|what|question)\b.{0,50}?\b(?:redemp?t?ion?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?)|(?:redemp?t?ion?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?)\b.{0,50}?\b(?:still\s*wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't|unable|won't|update|how\s*long|when|why|where|what|question))
 action: filter
 action_reason: "Redeem - [{{match}}]"
 moderators_exempt: true

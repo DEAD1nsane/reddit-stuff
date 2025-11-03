@@ -1,11 +1,10 @@
 # [CF] General Chat / automations
 
-(?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?(?:\?(?:ref|ref_code|referral|invite|refer|refid|referralCode|referred_by_id|promo|partner|affiliate|bonus|reward|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|utm_campaign)=[\w-]+|#(?:ref|invite|refer|raf)=[\w-]+|\/(?:ref(?:=|\/)?|referral|invite|promo|partner|affiliate|bonus|reward|signup|track|campaign|source|id|uid|user|customer|member|friend|earn|ref_code|refer|refid|referralCode|referred_by_id|raf)\/[\w-]+))
+(?i)(?:[?&](?:r|ref|refid|ref_code|referral|affiliate|aff|affid|promo|partner|invite|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|utm_source|utm_campaign)=[\w-]+)|(?i)\/(?:ref(?:erral)?|refid|ref_code|affiliate|aff|invite|promo|partner|track|campaign|source|id|uid|user|customer|member|friend|earn|raf)\/[\w-]+(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)?$|(?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:r|ref|refid|ref_code|referral|invite|raf)=[\w-]+)
 
 # Automoderator
 
 title+body+url (regex):
-  - (?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?\?(?:ref|ref_code|referral|invite|refer|refid|referralCode|referred_by_id|promo|partner|affiliate|bonus|reward|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|utm_campaign)=[\w-]+)
-  - (?i)\/(?:ref(?:=|\/)?|referral|invite|promo|partner|affiliate|bonus|reward|signup|track|campaign|source|id|uid|user|customer|member|friend|earn|ref_code|refer|refid|referralCode|referred_by_id|raf)\/[\w-]+(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)?$
-  - (?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?\?(?:ref|ref_code|referral|invite|refer|refid|referralCode|referred_by_id|promo|partner|affiliate|bonus|reward|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|utm_campaign)=[\w-]+)
-  - (?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref|invite|refer|raf)=[\w-]+)
+  - (?i)(?:[?&](?:r|ref|refid|ref_code|referral|affiliate|aff|affid|promo|partner|invite|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|utm_source|utm_campaign)=[\w-]+)
+  - (?i)\/(?:ref(?:erral)?|refid|ref_code|affiliate|aff|invite|promo|partner|track|campaign|source|id|uid|user|customer|member|friend|earn|raf)\/[\w-]+(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)?$
+  - (?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:r|ref|refid|ref_code|referral|invite|raf)=[\w-]+)
