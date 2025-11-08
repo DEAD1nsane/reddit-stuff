@@ -1,10 +1,10 @@
 # [CF] General Chat / automations
 
-(?i)(?:[?&](?:r|ref|refid|ref_code|referral|affiliate|aff|affid|promo|partner|invite|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|utm_source|utm_campaign)=[\w-]+)|(?i)\/(?:ref(?:erral)?|refid|ref_code|affiliate|aff|invite|promo|partner|track|campaign|source|id|uid|user|customer|member|friend|earn|raf)\/[\w-]+(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)?$|(?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:r|ref|refid|ref_code|referral|invite|raf)=[\w-]+)
+(?i)(?:[?&](?:r|ref|refid|ref_code|referral|affiliate|aff|affid|promo|partner|invite|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf)=[\w-]+|\/(?:ref(?:erral)?|refid|ref_code|affiliate|aff|invite|promo|partner|track|campaign|source|id|uid|user|customer|member|friend|earn|raf)\/[\w-]+(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)?$|https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:r|ref|refid|ref_code|referral|invite|raf)=[\w-]+)
 
 # Automoderator
 
 title+body+url (regex):
-  - (?i)(?:[?&](?:r|ref|refid|ref_code|referral|affiliate|aff|affid|promo|partner|invite|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|utm_source|utm_campaign)=[\w-]+)
+  - (?i)(?:[?&](?:r|ref|refid|ref_code|referral|affiliate|aff|affid|promo|partner|invite|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf)=[\w-]+)
   - (?i)\/(?:ref(?:erral)?|refid|ref_code|affiliate|aff|invite|promo|partner|track|campaign|source|id|uid|user|customer|member|friend|earn|raf)\/[\w-]+(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)?$
   - (?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:r|ref|refid|ref_code|referral|invite|raf)=[\w-]+)
