@@ -830,7 +830,7 @@ comment_locked: true
 ---
 type: any
 body+url (regex):
-  - (?i)^\s*(?:https?:\/\/)?(?:mail|email)(?:\.[a-z0-9-]+)+
+  - (?i)(?:https?:\/\/)?(?:mail|email)(?:\.[a-z0-9-]+){1,}
 action: remove
 action_reason: "email url"
 moderators_exempt: true
