@@ -658,7 +658,7 @@ author:
   contributor_quality: "= lowest"
   ~name: ["Jon_Gains", "Jon_GamerGains"]
 action: filter
-action_reason: "Lowest CQS | &#x1F528; ￫ [{{author}}]"
+action_reason: "Lowest CQS | BAN ￫ [{{author}}]"
 comment: |
   # Hey /u/{{author}}, you've been flagged by Reddit (not us) for having the lowest possible **[CQS Ranking](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)**.  
     
@@ -773,8 +773,8 @@ comment: |
 comment_locked: true
 ---
 type: any
-title+body (regex, includes):
-  - (?i)(?:(?:still\s*wait(?:ing)?\s*(?:on|for)?\s*(?:my|me|our|cash(?:ed)?[\s\-_]*out|withdraw|redemp?t?ion)|delay|problem|issue|pending|refuse|refused|can't\s*(?:redeem|withdraw|cash(?:ed)?\s*out)|unable\s*to\s*(?:withdraw|redeem)|won't\s*(?:pay|redeem|withdraw)|any\s*update|how\s*long|when|why|where|what|question)\b.{0,50}?\b(?:redemp?t?ion?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?)|(?:redemp?t?ion?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?)\b.{0,50}?\b(?:still\s*wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't|unable|won't|update|how\s*long|when|why|where|what|question))
+title+body (regex):
+  - (?i)(?:(?:still\s*wait(?:ing)?\s*(?:on|for)?\s*(?:my|me|our|cash(?:ed)?[\s\-_]*out|withdraw|rede+mp?t?ion?s?|verif(?:y|ying|ication)?)|delay|problem|issue|pending|refuse|refused|can't\s*(?:redeem|withdraw|cash(?:ed)?\s*out|verif(?:y|ying|ication)?)|unable\s*to\s*(?:withdraw|redeem|verif(?:y|ying|ication)?)|won't\s*(?:pay|redeem|withdraw)|any\s*update|how\s*long|when|why|where|what|question)\b.{0,50}?\b(?:rede+mp?t?ion?s?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?|verif(?:y|ying|ication)?)|(?:rede+mp?t?ion?s?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?|verif(?:y|ying|ication)?)\b.{0,50}?\b(?:still\s*wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't|unable|won't|update|how\s*long|when|why|where|what|question))
 action: filter
 action_reason: "Redeem - [{{match}}]"
 moderators_exempt: true
