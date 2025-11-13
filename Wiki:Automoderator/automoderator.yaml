@@ -715,9 +715,9 @@ comment_stickied: true
 ---
 type: any
 title+body+url (regex):
-  - (?i)(?:[?&](?:r|ref|refid|ref_code|referral|affiliate|aff|affid|promo|partner|invite|track|campaign|source|uid|user|customer|member|friend|earn|mid|signup|invited_by|raf|utm_source|utm_campaign)=[\w-]+)
-  - (?i)\/(?:ref(?:erral)?|refid|ref_code|affiliate|aff|invite|promo|partner|track|campaign|source|id|uid|user|customer|member|friend|earn|raf)\/[\w-]+(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)?$
-  - (?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:r|ref|refid|ref_code|referral|invite|raf)=[\w-]+)
+  - (?i)(?:[?&](?:ref(?:erral)?|refer|invite(?:_code)?|invited_by|aff(?:iliate)?|affid|partner|promo(?:code)?|code|referred_by_id|raf|signup|member|customer|friend|reward|earn|mid|uid|user|a|af|aid|pid|cid|sid|rid)=[\w-]+)
+  - (?i)\/(?:ref(?:erral)?|refer|invite|aff(?:iliate)?|partner|promo|code|raf)\/[\w-]+(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)?$
+  - (?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref(?:erral)?|refer|invite|raf)=[\w-]+)
 action: filter
 action_reason: "REFERRAL [{{author}}]"
 moderators_exempt: true
@@ -774,7 +774,8 @@ comment_locked: true
 ---
 type: any
 title+body (regex):
-  - (?i)(?:(?:still\s*wait(?:ing)?\s*(?:on|for)?\s*(?:my|me|our|cash(?:ed)?[\s\-_]*out|withdraw|rede+mp?t?ion?s?|verif(?:y|ying|ication)?)|delay|problem|issue|pending|refuse|refused|can't\s*(?:redeem|withdraw|cash(?:ed)?\s*out|verif(?:y|ying|ication)?)|unable\s*to\s*(?:withdraw|redeem|verif(?:y|ying|ication)?)|won't\s*(?:pay|redeem|withdraw)|any\s*update|how\s*long|when|why|where|what|question)\b.{0,50}?\b(?:rede+mp?t?ion?s?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?|verif(?:y|ying|ication)?)|(?:rede+mp?t?ion?s?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?|verif(?:y|ying|ication)?)\b.{0,50}?\b(?:still\s*wait(?:ing)?|delay|problem|issue|pending|refuse|refused|can't|unable|won't|update|how\s*long|when|why|where|what|question))
+  - (?i)(?:still\s*wait(?:ing)?\s*(?:on|for)?\s*(?:my|me|our|cash(?:ed)?[\s\-_]*out|withdraw|rede+mp?t?ion?s?|verif(?:y|ying|ication)?)|delay|problem|issue|pending|haven['’]t\s+(?:got|been)\s+paid|has\s+anyone\s+ever\s+withdra(?:w|wn|wed)|anyone\s+ever\s+withdra(?:w|wn|wed)|\d+\s*(?:hours?|hrs?)\s*(?:to\s*)?process|business\s+days|withdra(?:w|wn|wed|wl|wrl|wal)|refuse|refused|can't\s*(?:redeem|withdraw|cash(?:ed)?\s*out|verif(?:y|ying|ication)?)|unable\s*to\s*(?:withdraw|redeem|verif(?:y|ying|ication)?)|won't\s*(?:pay|redeem|withdraw)|any\s*update|how\s*long|when|why|where|what|question)\b.{0,50}?\b(?:rede+mp?t?ion?s?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?|verif(?:y|ying|ication)?)
+  - (?i)(?:rede+mp?t?ion?s?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?|verif(?:y|ying|ication)?)\b.{0,50}?\b(?:still\s*wait(?:ing)?|delay|problem|issue|pending|haven['’]t\s+(?:got|been)\s+paid|has\s+anyone\s+ever\s+withdra(?:w|wn|wed)|anyone\s+ever\s+withdra(?:w|wn|wed)|\d+\s*(?:hours?|hrs?)\s*(?:to\s*)?process|business\s+days|withdra(?:w|wn|wed|wl|wrl|wal)|refuse|refused|can't|unable|won't|update|how\s*long|when|why|where|what|question)
 action: filter
 action_reason: "Redeem - [{{match}}]"
 moderators_exempt: true
@@ -836,4 +837,14 @@ action_reason: "email url"
 moderators_exempt: true
 comment: |  
   Check out [This Post](https://www.reddit.com/r/CasinoFreebies/s/C4XtZZIZ) and youll understand why this {{kind}} was removed. please use https://www.redirectdetective.com to get the exact url.
+---
+type: submission
+---
+type: submission
+title+body+url (regex):
+  - (?i)\bG[\W_]*A[\W_]*I[\W_]*N[\W_]*S?\b
+  - (?i)(?:https?:\/\/)?(?:[\w-]+\.)*g[\W_]*a[\W_]*i[\W_]*n[\W_]*s?(?:\s*(?:\.|dot))?\s*(?:com|net|org|io|co)\b
+action: remove
+action_reason: "Gains.com casino (blocked)"
+moderators_exempt: true
 ---
