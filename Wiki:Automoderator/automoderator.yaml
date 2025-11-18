@@ -525,6 +525,7 @@ title+body+url (regex):
   - (?i)(?:magic[\s\-_\.]*city(?:\.com|\.us)?\b)
   - (?i)(?:mega[\s\-_\.]*bonanza(?:\.com|\.us)?\b)
   - (?i)(?:moozi(?:\.com|\.us)?\b)
+  - (?i)(?:mr[\s\-_\.]*goodwin(?:[\s\-_\.]*casino)?(?:\.com|\.us)?\b)
   - (?i)(?:mrallinone(?:\.com|\.us)?\b)
   - (?i)(?:noble(?:[\s\-_\.]*casino)?(?:\.com|\.us)?\b)
   - (?i)(?:nolimitcoins(?:\.com|\.us)?\b)
@@ -836,9 +837,11 @@ action: remove
 action_reason: "email url"
 moderators_exempt: true
 comment: |  
-  Check out [This Post](https://www.reddit.com/r/CasinoFreebies/s/C4XtZZIZ) and youll understand why this {{kind}} was removed. please use https://www.redirectdetective.com to get the exact url.
----
-type: submission
+  Check out [This Post](https://www.reddit.com/r/CasinoFreebies/s/C4XtZZIZ) and youll understand why this {{kind}} was removed. please use either  
+  1. **[Redirect-Checker](https://www.redirect-checker.org)**  
+  2. **[Redirect Detective](https://www.redirectdetective.com)**  
+  to get the exact url.
+comment_locked: true
 ---
 type: submission
 title+body+url (regex):
