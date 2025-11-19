@@ -659,7 +659,7 @@ author:
   contributor_quality: "= lowest"
   ~name: ["Jon_Gains", "Jon_GamerGains"]
 action: filter
-action_reason: "Lowest CQS | BAN ￫ [{{author}}]"
+action_reason: "Lowest CQS | BAN"
 comment: |
   # Hey /u/{{author}}, you've been flagged by Reddit (not us) for having the lowest possible **[CQS Ranking](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)**.  
     
@@ -669,6 +669,7 @@ comment: |
   
   ^(Just keep in mind, your {{kind}} is what triggered the check, but the flag is not because of it)
 comment_locked: true
+comment_stickied: true
 message: |
   # Hey /u/{{author}}, thank you for being apart of /r/CasinoFreebies, but farewell.  
     
