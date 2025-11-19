@@ -1,7 +1,3 @@
-# [CF] General Chat / automations
-
-(?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?(?:\?(?:[^#\s]*))?(?:#(?:ref|refer|invite|raf|referral|aff)[A-Za-z0-9_-]*)|[?&](?:r|ref(?:erral)?|refer|invite(?:_code)?|invited_by|aff(?:iliate)?|affid|promo(?:code)?|code|referred_by_id|raf|signup|member|customer|friend|reward|earn|mid|uid|user|a|af|aid|pid|cid|sid|rid)=[A-Za-z0-9_-]+|\/(?:ref(?:erral)?|refer|invite|aff(?:iliate)?|promo|code|raf)\/[A-Za-z0-9_-]+(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)?)
-
 title+body+url (regex):
   - (?i)(?!https?:\/\/(?:[^\/]+\.)?(?:hacksawgaming|pragmaticplay|softswiss|bgaming(?:-network)?|elk-studios|relax(?:gaming|-gaming)?|nolimitcity|pushgaming|booming-games|betsoft|thunderkick|playngo|isoftbet|quickspin|redtiger)\.[a-z]{2,})[?&](?:r|ref(?:erral)?|refer|invite(?:_code)?|invited_by|aff(?:iliate)?|affid|promo(?:code)?|code|referred_by_id|raf|signup|member|customer|friend|reward|earn|mid|uid|user|a|af|aid|pid|cid|sid|rid)=[A-Za-z0-9_-]+
   - (?i)(?!https?:\/\/(?:[^\/]+\.)?(?:hacksawgaming|pragmaticplay|softswiss|bgaming(?:-network)?|elk-studios|relax(?:gaming|-gaming)?|nolimitcity|pushgaming|booming-games|betsoft|thunderkick|playngo|isoftbet|quickspin|redtiger)\.[a-z]{2,})\/(?:ref(?:erral)?|refer|invite|aff(?:iliate)?|promo|code|raf)\/[A-Za-z0-9_-]+(?:\/(?:order|txn|user|product|post|item|profile)[\/\d]*)?$
