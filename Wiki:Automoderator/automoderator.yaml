@@ -795,10 +795,14 @@ comment_locked: true
 ---
 type: comment
 body (regex):
-  - (?i)(?:didn'?t\s+work|not\s+working|no\s+(?:luck|win|dice)|nothing\s+(?:worked|helped)|lost|fail(?:ed)?)[^\n\r]{0,40}?\b(?:thanks?|thank\s+you|thx|ty)(?:\s+(?:anyways?|anyway|tho|though|regardless))?\b
-  - (?i)(?:but|no|not|none|didn'?t|doesn'?t|don['’]t|won['’]t)[^\n\r]{0,40}?\b(?:thanks?|thank\s+you|thx|ty)(?:\s+(?:anyways?|anyway|tho|though|regardless))?\b
-  - (?i)\b(?:thanks?|thank\s+you|thx|ty)\s+(?:anyways?|anyway|tho|though|regardless)\b
-  - (?i)\banyways?[.,!]*\s+(?:thanks?|thank\s+you|thx|ty)\b
+  # Core dismissive pattern: "didn't work / not working / no luck" + dismissive gratitude
+  - (?i)\b(?:didn'?t\s+work|not\s+working|didn'?t\s+help|no\s+luck|no\s+win|no\s+dice|nothing\s+(?:worked|helped)|still\s+not\s+(?:working|fixed))\b[^\n\r]{0,50}?\b(?:thanks?|thank\s+you|thx|ty)\s+(?:anyways?|anyway|tho|though|regardless)\b
+
+  # Fuzzy dismissive: "thanks anyway" + negative result nearby
+  - (?i)\b(?:thanks?|thank\s+you|thx|ty)\s+(?:anyways?|anyway|tho|though|regardless)\b[^\n\r]{0,50}?\b(?:didn'?t\s+work|not\s+working|didn'?t\s+help|did\s+not\s+help|no\s+luck|no\s+dice|no\s+win|didn'?t\s+fix)\b
+
+  # Mild fuzzy catch: negative + soft dismissive gratitude (but NOT random negatives)
+  - (?i)\b(?:didn'?t|not|no)\s+(?:work|help|fix|solve)\b[^\n\r]{0,50}?\b(?:thanks?|thank\s+you|thx|ty)\b
 action: remove
 action_reason: "[{{match}}] dismissive"
 ---
