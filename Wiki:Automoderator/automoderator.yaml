@@ -755,8 +755,10 @@ action_reason: "[{{match}}] used wrong."
 comment: |
   # Hey /u/{{author}},
   
-  `{{match}}` ￩This isn't the right way to trigger the answered command.  
-  You need to reply to the comment that you want to marked as the answer, with `!answered`.  
+  This isn't the right way to trigger the answered command.  
+  **You need to reply to the comment** that you want to marked as the answer, with `!answered` or even with a space after `!`  `! answered`.  
+  
+  Check out this image that shows the reply button you need to use before commenting `!answered`:  
   
   Check out this image that shows the reply button you need to use before commenting `!answered`:
   ➤ [&#x1f4f7; Example Image](https://imgur.com/a/ZspdnE5#dCUIf8Q)
