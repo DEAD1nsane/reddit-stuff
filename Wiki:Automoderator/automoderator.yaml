@@ -747,9 +747,9 @@ author:
   is_submitter: true
 is_top_level: true
 parent_submission:
-  flair_template_id: 751c650c-49ae-11ef-8db1-16f9fa17ff35
+  flair_template_id: 751c650c-49ae-11ef-8db1-16f9fa17ff35:
 body (regex):
-  - (?i)^\s*!+\s+(?:answers?|answered)\s*$
+  - (?i)^\s*!+\s*(?:answers?|answered)\s*$
 action: remove
 action_reason: "[{{match}}] used wrong."
 comment: |
