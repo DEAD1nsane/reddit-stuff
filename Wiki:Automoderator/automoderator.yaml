@@ -55,7 +55,7 @@ flair_template_id: 751c650c-49ae-11ef-8db1-16f9fa17ff35
 comment: |
   # Hey /u/{{author}},  
   
-  You’re currently using the **Discussion|Q&A flair**,  so this is a quick reminder about the helpful tool /u/answeredbot. If your post is a **question** and someone provides a **satisfactory answer**, you can acknowledge it by replying to their comment with **!answered** ￩ exactly as you see it right here.
+  You’re currently using the **Discussion|Q&A flair**,  so this is a quick reminder about the helpful tool /u/answeredbot. If your post is a **question** and someone provides a **satisfactory answer**, you can acknowledge it by replying to their comment with **!answered** ￩ exactly as you see it right here. ^(**! answered** works too).
   
   This makes it easier for others with the same question to find the solution quickly and efficiently.
   
