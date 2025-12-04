@@ -719,7 +719,9 @@ comment_stickied: true
 ---
 type: any
 title+body+url (regex):
-  - (?i)(?:[?&](?:r|ref(?:erral)?|refer|invite(?:_code)?|invited_by|aff(?:iliate)?|affid|promo(?:code)?|code|referred_by_id|raf|signup|member|customer|friend|reward|earn|mid|uid|user|a|af|aid|pid|cid|sid|rid)(?:=|%3D)[A-Za-z0-9_%/-]+|\/(?:ref(?:erral)?|refer|invite|aff(?:iliate)?|promo|code|raf)\/[A-Za-z0-9_-]+)
+  - (?i)https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?[?&](?:r|ref(?:erral)?|refer|invite(?:_code)?|invited_by|aff(?:iliate)?|affid|promo(?:code)?|code|referred_by_id|raf|signup|member|customer|friend|reward|earn|mid|uid|user|a|af|aid|pid|cid|sid|rid)(?:=|%3D)[A-Za-z0-9_%/-]+
+  - (?i)https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref(?:erral)?|refer|invite|raf)(?:=|%3D)[A-Za-z0-9_%/-]+
+  - (?i)\/(?:ref(?:erral)?|refer|invite|aff(?:iliate)?|promo|code|raf)\/[A-Za-z0-9_-]+
 action: filter
 action_reason: "REFERRAL [{{author}}]"
 moderators_exempt: true
@@ -803,6 +805,19 @@ body (regex):
   - (?i)\b(?:didn'?t|not|no|can'?t|unable)\s+(?:work|help|fix|solve|get\s+.*?\s+to\s+work)\b[^\n\r]{0,50}?\b(?:thanks?|thank\s+you|thx|ty)\b
 action: remove
 action_reason: "[{{match}}] dismissive"
+---
+type: comment
+author:
+  is_submitter: false
+is_top_level: true
+parent_submission:
+  flair_template_id:
+    - f81b7808-fa48-11ef-8d0f-0623a1984aec
+    - 31fcece2-49ae-11ef-ac78-2a324a5df6e1
+body (regex):
+  - (?i)\b(?:didn'?t\s+work|not\s+working|doesn'?t\s+work|don'?t\s+work|no\s+work|isn'?t\s+working|won'?t\s+work|failed\s+to\s+work|still\s+not\s+working|never\s+worked)\b
+action: remove
+action_reason: "[{{match}}]"
 ---
 type: any
 body (regex):  
