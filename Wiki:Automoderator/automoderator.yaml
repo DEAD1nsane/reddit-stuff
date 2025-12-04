@@ -719,9 +719,7 @@ comment_stickied: true
 ---
 type: any
 title+body+url (regex):
-  - (?i)https?:\/\/(?![^\/]+\.(?:hacksawgaming|pragmaticplay|softswiss|bgaming(?:-network)?|elk-studios|relax(?:gaming|-gaming)?|nolimitcity|pushgaming|booming-games|betsoft|thunderkick|playngo|isoftbet|quickspin|redtiger)\.[a-z]{2,})[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?[?&](?:r|ref(?:erral)?|refer|invite(?:_code)?|invited_by|aff(?:iliate)?|affid|promo(?:code)?|code|referred_by_id|raf|signup|member|customer|friend|reward|earn|mid|uid|user|a|af|aid|pid|cid|sid|rid)(?:=|%3D)[A-Za-z0-9_%/-]+
-  - (?i)https?:\/\/(?![^\/]+\.(?:hacksawgaming|pragmaticplay|softswiss|bgaming(?:-network)?|elk-studios|relax(?:gaming|-gaming)?|nolimitcity|pushgaming|booming-games|betsoft|thunderkick|playngo|isoftbet|quickspin|redtiger)\.[a-z]{2,})[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref(?:erral)?|refer|invite|raf)(?:=|%3D)[A-Za-z0-9_%/-]+
-  - (?i)(?!https?:\/\/(?:[^\/]+\.)?(?:hacksawgaming|pragmaticplay|softswiss|bgaming(?:-network)?|elk-studios|relax(?:gaming|-gaming)?|nolimitcity|pushgaming|booming-games|betsoft|thunderkick|playngo|isoftbet|quickspin|redtiger)\.[a-z]{2,})\/(?:ref(?:erral)?|refer|invite|aff(?:iliate)?|promo|code|raf)\/[A-Za-z0-9_-]+8
+  - (?i)(?:[?&](?:r|ref(?:erral)?|refer|invite(?:_code)?|invited_by|aff(?:iliate)?|affid|promo(?:code)?|code|referred_by_id|raf|signup|member|customer|friend|reward|earn|mid|uid|user|a|af|aid|pid|cid|sid|rid)(?:=|%3D)[A-Za-z0-9_%/-]+|\/(?:ref(?:erral)?|refer|invite|aff(?:iliate)?|promo|code|raf)\/[A-Za-z0-9_-]+)
 action: filter
 action_reason: "REFERRAL [{{author}}]"
 moderators_exempt: true
@@ -749,7 +747,7 @@ author:
   is_submitter: true
 is_top_level: true
 parent_submission:
-  flair_template_id: 751c650c-49ae-11ef-8db1-16f9fa17ff35:
+  flair_template_id: 751c650c-49ae-11ef-8db1-16f9fa17ff35
 body (regex):
   - (?i)^\s*!+\s*(?:answers?|answered)\s*$
 action: remove
@@ -759,8 +757,6 @@ comment: |
   
   This isn't the right way to trigger the answered command.  
   **You need to reply to the comment** that you want to marked as the answer, with `!answered` or even with a space after `!`  `! answered`.  
-  
-  Check out this image that shows the reply button you need to use before commenting `!answered`:  
   
   Check out this image that shows the reply button you need to use before commenting `!answered`:
   ➤ [&#x1f4f7; Example Image](https://imgur.com/a/ZspdnE5#dCUIf8Q)
@@ -775,7 +771,9 @@ body (regex):
 action: remove
 action_reason: "non-OP [{{match}}]"
 comment: |
-  # Hey /u/{{author}}, {{match}} only works for the OP (Original Poster aka Sumbitter).
+  # Hey /u/{{author}}, 
+  
+  {{match}} only works for the OP (Original Poster aka Sumbitter).
 comment_locked: true
 ---
 type: any
@@ -800,14 +798,9 @@ comment_locked: true
 ---
 type: comment
 body (regex):
-  # Core dismissive pattern: "didn't work / not working / no luck" + dismissive gratitude
-  - (?i)\b(?:didn'?t\s+work|not\s+working|didn'?t\s+help|no\s+luck|no\s+win|no\s+dice|nothing\s+(?:worked|helped)|still\s+not\s+(?:working|fixed))\b[^\n\r]{0,50}?\b(?:thanks?|thank\s+you|thx|ty)\s+(?:anyways?|anyway|tho|though|regardless)\b
-
-  # Fuzzy dismissive: "thanks anyway" + negative result nearby
-  - (?i)\b(?:thanks?|thank\s+you|thx|ty)\s+(?:anyways?|anyway|tho|though|regardless)\b[^\n\r]{0,50}?\b(?:didn'?t\s+work|not\s+working|didn'?t\s+help|did\s+not\s+help|no\s+luck|no\s+dice|no\s+win|didn'?t\s+fix)\b
-
-  # Mild fuzzy catch: negative + soft dismissive gratitude (but NOT random negatives)
-  - (?i)\b(?:didn'?t|not|no)\s+(?:work|help|fix|solve)\b[^\n\r]{0,50}?\b(?:thanks?|thank\s+you|thx|ty)\b
+  - (?i)\b(?:didn'?t\s+work|not\s+working|didn'?t\s+help|no\s+luck|no\s+dice|no\s+win|nothing\s+(?:worked|helped)|still\s+not\s+(?:working|fixed)|haven'?t\s+been\s+able\s+to\s+get\s+.*?\s+to\s+work|unable\s+to\s+get\s+.*?\s+to\s+work|can'?t\s+get\s+.*?\s+to\s+work)\b[^\n\r]{0,50}?\b(?:thanks?|thank\s+you|thx|ty)\s+(?:anyways?|anyway|tho|though|regardless)\b
+  - (?i)\b(?:thanks?|thank\s+you|thx|ty)\s+(?:anyways?|anyway|tho|though|regardless)\b[^\n\r]{0,50}?\b(?:didn'?t\s+work|not\s+working|didn'?t\s+help|did\s+not\s+help|no\s+luck|no\s+dice|no\s+win|didn'?t\s+fix|haven'?t\s+been\s+able\s+to\s+get\s+.*?\s+to\s+work|can'?t\s+get\s+.*?\s+to\s+work)\b
+  - (?i)\b(?:didn'?t|not|no|can'?t|unable)\s+(?:work|help|fix|solve|get\s+.*?\s+to\s+work)\b[^\n\r]{0,50}?\b(?:thanks?|thank\s+you|thx|ty)\b
 action: remove
 action_reason: "[{{match}}] dismissive"
 ---
