@@ -1,9 +1,10 @@
 title+body+url (regex):
-  - (?i)https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?[?&](?:r|ref(?:erral)?|refer|invite(?:_code)?|invited_by|aff(?:iliate)?|affid|promo(?:code)?|code|referred_by_id|raf|signup|member|customer|friend|reward|earn|mid|uid|user|a|af|aid|pid|cid|sid|rid)(?:=|%3D)[A-Za-z0-9_%/-]+
-  - (?i)https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref(?:erral)?|refer|invite|raf)(?:=|%3D)[A-Za-z0-9_%/-]+
-  - (?i)\/(?:ref(?:erral)?|refer|invite|aff(?:iliate)?|promo|code|raf)\/[A-Za-z0-9_-]+
+  - (?i)https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?[?&](?:r|ref|referral|refer|invite|invite_code|invited_by|aff|affiliate|affid|promo|promocode|code|referred_by_id|raf|signup|member|customer|friend|reward|earn|mid|uid|user|a|af|aid|pid|cid|sid|rid)(?:=|%3D)[A-Za-z0-9_%/-]+
+  - (?i)https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref|referral|refer|invite|raf)(?:=|%3D)[A-Za-z0-9_%/-]+
+  - (?i)\/(?:ref|referral|refer|invite|aff|affiliate|promo|code|raf)\/[A-Za-z0-9_-]+
+  - (?i)\b(?:referral|refer|ref)\b
   
 
 # automations
 
-(?i)(?:https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?[?&](?:r|ref(?:erral)?|refer|invite(?:_code)?|invited_by|aff(?:iliate)?|affid|promo(?:code)?|code|referred_by_id|raf|signup|member|customer|friend|reward|earn|mid|uid|user|a|af|aid|pid|cid|sid|rid)(?:=|%3D)[A-Za-z0-9_%/-]+|https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref(?:erral)?|refer|invite|raf)(?:=|%3D)[A-Za-z0-9_%/-]+|\/(?:ref(?:erral)?|refer|invite|aff(?:iliate)?|promo|code|raf)\/[A-Za-z0-9_-]+)
+(?i)(?:\breferral\b|\brefer\b|\bref\b|https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?[?&](?:r|ref|referral|refer|invite|invite_code|invited_by|aff|affiliate|affid|promo|promocode|code|referred_by_id|raf|signup|member|customer|friend|reward|earn|mid|uid|user|a|af|aid|pid|cid|sid|rid)(?:=|%3D)[A-Za-z0-9_%/-]+|https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref|referral|refer|invite|raf)(?:=|%3D)[A-Za-z0-9_%/-]+|\/(?:ref|referral|refer|invite|aff|affiliate|promo|code|raf)\/[A-Za-z0-9_-]+)

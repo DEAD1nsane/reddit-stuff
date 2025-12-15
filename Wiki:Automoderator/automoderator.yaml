@@ -514,8 +514,8 @@ title+body+url (regex):
   - (?i)(?:funz[\s\-_\.]*(?:city|points)(?:\.com|\.us)?\b)
   - (?i)(?:galaxy[\s\-_\.]*world(?:\.com|\.us)?\b)
   - (?i)(?:gambulls(?:\.com|\.us)?\b)
-  - (?i)(?:gogogoldwin(?:\.com|\.us)?\b)
   - (?i)(?:gamesroom777(?:\.com|\.us)?\b)
+  - (?i)(?:gogogoldwin(?:\.com|\.us)?\b)
   - (?i)(?:gold[\s\-_\.]*rush[\s\-_\.]*city)
   - (?i)(?:gold[\s\-_\.]*star)
   - (?i)(?:golden[\s\-_\.]*(?:dragon|reel|treasure)(?:\.com|\.us)?\b)
@@ -526,7 +526,8 @@ title+body+url (regex):
   - (?i)(?:luck[y1][\s\-_\.]*(?:6|777|charms|plinko)(?:[\s\-_\.]?casino)?(?:\.com|\.us)?\b)
   - (?i)(?:lucky\.me\b)
   - (?i)(?:magic[\s\-_\.]*city(?:\.com|\.us)?\b)
-  - (?i)(?:mega[\s\-_\.]*bonanza(?:\.com|\.us)?\b)
+  - (?i)(?:megabonanza(?:\.com|\.us)?\b)
+  - (?i)(?:mega[\s\-_\.]*win(?:\.com|\.us)?\b)
   - (?i)(?:moozi(?:\.com|\.us)?\b)
   - (?i)(?:mr[\s\-_\.]*goodwin(?:[\s\-_\.]*casino)?(?:\.com|\.us)?\b)
   - (?i)(?:mrallinone(?:\.com|\.us)?\b)
@@ -791,7 +792,11 @@ comment: |
   &#9888;&#65039; **Reminder:**  
   This is a **freebies** subreddit — not a *redemption support* or *“do they pay?”* help desk.  
   
-  Posts asking about payment delays, verifications, or “how long until I get it?” are automatically flagged.  
+  Posts asking about payment delaystitle+body+url (regex):
+  - (?i)https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?[?&](?:r|ref|referral|refer|invite|invite_code|invited_by|aff|affiliate|affid|promo|promocode|code|referred_by_id|raf|signup|member|customer|friend|reward|earn|mid|uid|user|a|af|aid|pid|cid|sid|rid)(?:=|%3D)[A-Za-z0-9_%/-]+
+  - (?i)https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref|referral|refer|invite|raf)(?:=|%3D)[A-Za-z0-9_%/-]+
+  - (?i)\/(?:ref|referral|refer|invite|aff|affiliate|promo|code|raf)\/[A-Za-z0-9_-]+
+  - (?i)\b(?:referral|refer|ref)\bverifications, or “how long until I get it?” are automatically flagged.  
   We focus on **finding and sharing new casino freebies**, not troubleshooting redemptions or payouts.  
   
   &#x1f4a1; **Tip:**  
