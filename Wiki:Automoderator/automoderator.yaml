@@ -792,11 +792,7 @@ comment: |
   &#9888;&#65039; **Reminder:**  
   This is a **freebies** subreddit — not a *redemption support* or *“do they pay?”* help desk.  
   
-  Posts asking about payment delaystitle+body+url (regex):
-  - (?i)https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?[?&](?:r|ref|referral|refer|invite|invite_code|invited_by|aff|affiliate|affid|promo|promocode|code|referred_by_id|raf|signup|member|customer|friend|reward|earn|mid|uid|user|a|af|aid|pid|cid|sid|rid)(?:=|%3D)[A-Za-z0-9_%/-]+
-  - (?i)https?:\/\/[\w.-]+\.[a-z]{2,}(?:\/[\w\/-]*)?#(?:ref|referral|refer|invite|raf)(?:=|%3D)[A-Za-z0-9_%/-]+
-  - (?i)\/(?:ref|referral|refer|invite|aff|affiliate|promo|code|raf)\/[A-Za-z0-9_-]+
-  - (?i)\b(?:referral|refer|ref)\bverifications, or “how long until I get it?” are automatically flagged.  
+  Posts asking about payment delays, verifications or “how long until I get it?” are automatically flagged.  
   We focus on **finding and sharing new casino freebies**, not troubleshooting redemptions or payouts.  
   
   &#x1f4a1; **Tip:**  
