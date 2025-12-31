@@ -417,7 +417,7 @@ comment: |
 ---
 # Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.
 author:
-  name: ["AutoModerator", "evasion-guard", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot", "Jon_Gains", "Jon_GamerGains", "spotlight-app", "drawing-app", "CasinoFreebies-ModTeam"]
+  name: ["AutoModerator", "evasion-guard", "RedHeadTheyThem", "Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "RemindMeBot", "answeredbot", "timee_bot", "Jon_Gains", "Jon_GamerGains", "spotlight-app", "drawing-app", "CasinoFreebies-ModTeam", "AngelPainjel"]
 reports: 1
 moderators_exempt: false
 action: approve
@@ -427,7 +427,7 @@ type: any
 ~title (regex):
   - ^(?:[^\s]+[.,!?]*\s+){4,}[^\s]+[.,!?]*$
 author: 
-  ~name: ["Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "automoderator"]
+  ~name: ["Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "automoderator", "AngelPainjel"]
 moderators_exempt: false
 action: remove
 action_reason: "Less than 5 word title"
@@ -467,7 +467,7 @@ type: any
 ~title (regex):
   - ^(?:[^\s]+[.,!?]*\s+){4,}[^\s]+[.,!?]*$
 author: 
-  ~name: ["Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "automoderator"]
+  ~name: ["Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "automoderator", "AngelPainjel"]
 moderators_exempt: false
 action: remove
 action_reason: "Less than 5 word title"
@@ -662,7 +662,7 @@ modmail: |
 type: any
 author:
   contributor_quality: "= lowest"
-  ~name: ["Jon_Gains", "Jon_GamerGains"]
+  ~name: ["Jon_Gains", "Jon_GamerGains", "suhancou"]
 action: filter
 action_reason: "Lowest CQS | BAN"
 comment: |
