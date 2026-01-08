@@ -496,6 +496,7 @@ title+body+url (regex):
   - (?i)(?:gambulls(?:\.com|\.us)?\b)
   - (?i)(?:gamesroom777(?:\.com|\.us)?\b)
   - (?i)(?:gogogoldwin(?:\.com|\.us)?\b)
+  - (?i)(?:good[\s\-_\.]*vibes(?:[\s\-_\.]*casino)?(?:\.com|\.us)?\b)
   - (?i)(?:gold[\s\-_\.]*rush[\s\-_\.]*city)
   - (?i)(?:gold[\s\-_\.]*star)
   - (?i)(?:golden[\s\-_\.]*(?:dragon|reel|treasure)(?:\.com|\.us)?\b)
