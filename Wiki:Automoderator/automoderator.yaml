@@ -427,7 +427,7 @@ type: any
 ~title (regex):
   - ^(?:[^\s]+[.,!?]*\s+){4,}[^\s]+[.,!?]*$
 author: 
-  ~name: ["Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "automoderator", "AngelPainjel"]
+  ~name: ["Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "automoderator"]
 moderators_exempt: false
 action: remove
 action_reason: "Less than 5 word title"
@@ -462,26 +462,6 @@ message: |
   Your {{kind}} by was removed because somehow you were able to submit a post with more than **10 words** which is the **maximum** amount of words in title required to post.
   
   Please repost with a title of no fewer than 5 words and no more than **10 words**.
----
-type: any
-~title (regex):
-  - ^(?:[^\s]+[.,!?]*\s+){4,}[^\s]+[.,!?]*$
-author: 
-  ~name: ["Due_Poetry9235", "DEAD1nsane", "itsunamipunan", "automoderator", "AngelPainjel"]
-moderators_exempt: false
-action: remove
-action_reason: "Less than 5 word title"
-comment: |
-  # Hey /u/{{author}},
-  
-  Check your direct messages for why this post got removed.
-comment_locked: true
-message: |
-  # Hey /u/{{author}},
-  
-  Your {{kind}} was removed because somehow you were able to submit a post with less than **5 words** which is the **minimum** requirement to post.
-  
-  please repost with a title of no less than **5 words** and no more than **10 words**.
 ---
 type: any
 title+body+url (regex):
