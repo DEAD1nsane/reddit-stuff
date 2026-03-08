@@ -839,10 +839,10 @@ action: remove
 action_reason: "email url"
 moderators_exempt: true
 comment: |  
-  Check out [This Post](https://www.reddit.com/r/CasinoFreebies/s/C4XtZZIZ) and youll understand why this {{kind}} was removed. please use either  
+  Check out [This Post](https://www.reddit.com/r/CasinoFreebies/s/zdeJH9E3VA) and youll understand why this {{kind}} was removed. please use either  
   1. **[Redirect-Checker](https://www.redirect-checker.org)**  
   2. **[Redirect Detective](https://www.redirectdetective.com)**  
-  to get the exact url.
+  to get the exact url. then feel free to post it again, if done correctly the post will not be removed by automoderator
 comment_locked: true
 ---
 type: submission
