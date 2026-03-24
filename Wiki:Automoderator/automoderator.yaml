@@ -667,7 +667,28 @@ parent_submission:
 body (regex):
   - (?i)\b(?:code\s*(?:is|=|:)?\s*[A-Z0-9]{4,}|use\s+[A-Z0-9]{4,}|[A-Z0-9]{6,})\b
 action: remove
-action_reason: "[{{match}}]"
+action_reason: "chanced/punt code"
+---
+# removes comments asking for codes
+type: comment
+author:
+  is_submitter: false
+is_top_level: true
+parent_submission:
+  flair_template_id:
+    - f81b7808-fa48-11ef-8d0f-0623a1984aec
+    - 31fcece2-49ae-11ef-ac78-2a324a5df6e1
+  title (regex):
+  - (?i)\b(?:chanced|punt)\b
+body (regex):
+  - (?i)(?:(?=.*\b(?:url|link).{0,50}?(?:doesn'?t\s+work|not\s+working|broken|won'?t\s+load|cannot\s+access|can'?t\s+open|just\s+goes))(?=.*\b(?:code|promo|bonus))|(?=.*\b(?:code|promo|bonus)))
+comment: | 
+  # hey /u/{{author}}, 
+  
+  sorry you're experiencing this issue, please open {{url}} in another browser, **make sure you're logged in before opening the link**, otherwise it will continue to not work.
+comment_locked: true
+action: remove
+action_reason: "asking for code"
 ---
 # removes any non-link submissions for punt codes OR if its a text post without the punt.com in the body
 type: submission
@@ -893,7 +914,7 @@ parent_submission:
     - f81b7808-fa48-11ef-8d0f-0623a1984aec
     - 31fcece2-49ae-11ef-ac78-2a324a5df6e1
 body (regex):
-  - (?i)\b(?:didn'?t\s+work|not\s+working|doesn'?t\s+work|don'?t\s+work|no\s+work|isn'?t\s+working|won'?t\s+work|failed\s+to\s+work|still\s+not\s+working|never\s+worked)\b
+  - (?i)\b(?:didn'?t\s+work|didn'?t\s+help|doesn'?t\s+work|don'?t\s+work|no\s+work|isn'?t\s+working|won'?t\s+work|failed\s+to\s+work|still\s+not\s+working|never\s+worked|does\s+nothing|doesnt\s+work|didnt\s+work)\b
 action: remove
 action_reason: "[{{match}}]"
 ---
