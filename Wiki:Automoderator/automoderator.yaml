@@ -576,7 +576,6 @@ author:
 action: approve
 action_reason: "approved mod bit.ly"
 ---
-#gnore
 # removes any non-link submissions for carnival citi free sc codes OR if its a text post without the carnivalciti.com in the body
 type: submission
 title (regex): 
@@ -595,6 +594,84 @@ message: |
 
   `https://www.carnivalciti.com/home/bonusing/code/`
 
+  If you're unsure how to do a link submission, check out the examples below.
+
+  ### Mobile Phones:  
+  Use the &#x1f517; icon when submitting your link.  
+    
+  ➤ [&#x1f4f7; Example Image](https://imgur.com/a/QSF4etg#DJvbFrh)
+
+  - You **can** add text to the body when using the &#x1f517; method.
+
+  ### Desktop:  
+  Use the link submission option.  
+    
+  ➤ [&#x1f4f7; Example Image](https://imgur.com/sKBJg4n#sKBJg4n)  
+  - If you want to include body text, use a **text post** instead, and paste the full URL along with your text.
+  ➤ [&#x1f4f7; Example Image](https://imgur.com/yiB7S5g#yiB7S5g)
+
+  We appreciate you sharing freebies with the community and look forward to your next submission!
+
+  —The /r/CasinoFreebies Moderation Team
+---
+# removes any non-link submissions for chanced codes OR if its a text post without the chanced.com in the body
+type: submission
+title (regex): 
+  - (?i)^(?=.*\bchanced\b)(?=.*\b(?:fs|free\s*spins?|sc)\b).*
+~url+body (regex): 
+  - 'chanced.com/settings/offers?code='
+action: remove
+action_reason: "Chanced code no url"
+moderators_exempt: false
+message: |
+  # Hey /u/{{author}},
+  
+  We're trying something new at /r/CasinoFreebies for Chanced code posts.
+  
+  Simply **repost using the URL below**, placing the code **in all CAPITALS** directly after `?code=`:
+
+  `https://chanced.com/settings/offers?code=`  
+  example: `https://chanced.com/settings/offers?code=XXXXXXX`  
+  
+  If you're unsure how to do a link submission, check out the examples below.
+
+  ### Mobile Phones:  
+  Use the &#x1f517; icon when submitting your link.  
+    
+  ➤ [&#x1f4f7; Example Image](https://imgur.com/a/QSF4etg#DJvbFrh)
+
+  - You **can** add text to the body when using the &#x1f517; method.
+
+  ### Desktop:  
+  Use the link submission option.  
+    
+  ➤ [&#x1f4f7; Example Image](https://imgur.com/sKBJg4n#sKBJg4n)  
+  - If you want to include body text, use a **text post** instead, and paste the full URL along with your text.
+  ➤ [&#x1f4f7; Example Image](https://imgur.com/yiB7S5g#yiB7S5g)
+
+  We appreciate you sharing freebies with the community and look forward to your next submission!
+
+  —The /r/CasinoFreebies Moderation Team
+---
+# removes any non-link submissions for punt codes OR if its a text post without the punt.com in the body
+type: submission
+title (regex): 
+  - (?i)^(?=.*\bpunt\b)(?=.*\b(?:fs|free\s*spins?|sc)\b).*
+~url+body (regex): 
+  - 'punt.com/settings/offers?code='
+action: remove
+action_reason: "Punt code no url"
+moderators_exempt: false
+message: |
+  # Hey /u/{{author}},
+  
+  We're trying something new at /r/CasinoFreebies for Punt code posts.
+  
+  Simply **repost using the URL below**, placing the code **in all CAPITALS** directly after `?code=`:
+
+  `https://punt.com/settings/offers?code=`  
+  example: `https://punt.com/settings/offers?code=XXXXXXX`  
+  
   If you're unsure how to do a link submission, check out the examples below.
 
   ### Mobile Phones:  
