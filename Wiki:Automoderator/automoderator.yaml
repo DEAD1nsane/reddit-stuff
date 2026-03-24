@@ -653,6 +653,22 @@ message: |
 
   —The /r/CasinoFreebies Moderation Team
 ---
+# removes comments regarding codes
+type: comment
+author:
+  is_submitter: false
+is_top_level: true
+parent_submission:
+  flair_template_id:
+    - f81b7808-fa48-11ef-8d0f-0623a1984aec
+    - 31fcece2-49ae-11ef-ac78-2a324a5df6e1
+  title (regex):
+  - (?i)\b(?:chanced|punt)\b
+body (regex):
+  - (?i)\b(?:code\s*(?:is|=|:)?\s*[A-Z0-9]{4,}|use\s+[A-Z0-9]{4,}|[A-Z0-9]{6,})\b
+action: remove
+action_reason: "[{{match}}]"
+---
 # removes any non-link submissions for punt codes OR if its a text post without the punt.com in the body
 type: submission
 title (regex): 
