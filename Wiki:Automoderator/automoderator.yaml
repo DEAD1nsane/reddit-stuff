@@ -587,7 +587,7 @@ action_reason: "Carnivalciti code no url"
 moderators_exempt: false  
 comment_locked: true  
 comment: |  
-  # Hey /u/{{author}},  
+  # Hey,  
   
   We're trying something new at /r/CasinoFreebies for Punt code posts.  
     
@@ -661,7 +661,7 @@ action_reason: "Chanced code no url"
 moderators_exempt: false  
 comment_locked: true  
 comment: |  
-  # Hey /u/{{author}},  
+  # Hey,  
   
   We're trying something new at /r/CasinoFreebies for Punt code posts.  
     
@@ -735,7 +735,7 @@ action_reason: "Punt code no url"
 moderators_exempt: false  
 comment_locked: true  
 comment: |  
-  # Hey /u/{{author}},  
+  # Hey,
   
   We're trying something new at /r/CasinoFreebies for Punt code posts.  
     
