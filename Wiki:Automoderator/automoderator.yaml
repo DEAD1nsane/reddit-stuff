@@ -653,7 +653,7 @@ message: |
 ---  
 # removes any non-link submissions for chanced codes OR if its a text post without the chanced.com in the body
 type: submission  
-title (regex): ['(?i)chanced(\.com)?', '(?i)\b(fs|free|spins|sc)\b']  
+title (regex): ['(?i)(chanced(\.com)?.*?\b(fs|free\s+spins|sc)\b|\b(fs|free\s+spins|sc)\b.*?chanced(\.com)?)']  
 ~url+body (regex):  
   - 'chanced\.com/settings/offers\?code='  
 action: remove  
@@ -727,7 +727,7 @@ message: |
 ---  
 # removes any non-link submissions for punt codes OR if its a text post without the punt.com in the body  
 type: submission  
-title (regex): ['(?i)punt(\.com)?', '(?i)\b(fs|free|spins|sc)\b']  
+title (regex): ['(?i)(punt(\.com)?.*?\b(fs|free\s+spins|sc)\b|\b(fs|free\s+spins|sc)\b.*?punt(\.com)?)']  
 ~url+body (regex):  
   - 'punt\.com/settings/offers\?code='
 action: remove  
