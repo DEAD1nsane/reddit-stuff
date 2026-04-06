@@ -1,4 +1,4 @@
-(?i)(?:100[\s\-_\.]*plu[s5]\b|7[\s\-_\.]*cali(?:[\s\-_\.]*casino)?\b|ace[\s\-_\.]*revea[l1](?:[\s\-_\.]*casino)?\b|admiral(?:\.com|\.us)?\b|betcoin[\s\-_\.]*social\b|bigcashsweeps(?:\.com|\.us)?\b|b[i1!][t7][b8][e3][t7][wv][i1!l]n(?:\.com|\.us)?\b|bit[\s\-_\.]*of[\s\-_\.]*gold(?:\.cc)?\b|bucks[\s\-_\.]*jet(?:\.com|\.us)?\b|cash[\s\-_\.]*bridge(?:\.com|\.us)?\b|casino[\s\-_\.]*royale(?:\.com|\.us)?\b|chicago[\s\-_\.]*sweeps(?:\.com|\.us)?\b|chip['\s\-_]?n[\s\-_\.]*win(?:\.com|\.us)?\b|circle[\s\-_\.]*sweeps(?:\.com|\.us)?\b|classic[\s\-_\.]*evolution(?:[\s\-_\.]*casino)?\b|coin[\s\-_\.]*keeper(?:\.com|\.us)?\b|coins[\s\-_\.]*bucks(?:\.com|\.us)?\b|cosmo[\s\-_\.]*slots(?:\.com|\.us)?\b|dollar[\s\-_\.]*mills(?:\.com|\.us)?\b|enchanted(?:[\s\-_\.]*casino)?\b|fire[\s\-_\.]*phoenix(?:\.com|\.us)?\b|fish[\s\-_\.]*glory(?:\.com|\.us)?\b|flamingo7(?:\.com|\.us)?\b|fortune[\s\-_\.]*(?:slots|wave)\b|fortun[e3][\s\-_\.]*wheelz(?:\.com|\.us)?\b|funrize\b|funz[\s\-_\.]*(?:city|points)(?:\.com|\.us)?\b|galaxy[\s\-_\.]*world(?:\.com|\.us)?\b|gambulls(?:\.com|\.us)?\b|gamesroom777(?:\.com|\.us)?\b|gogogoldwin(?:\.com|\.us)?\b|good[\s\-_\.]*vibes(?:[\s\-_\.]*casino)?(?:\.com|\.us)?\b|gold[\s\-_\.]*rush[\s\-_\.]*city\b|gold[\s\-_\.]*star\b|golden[\s\-_\.]*(?:dragon|reel|treasure)(?:\.com|\.us)?\b|ice8(?:\.com|\.us)?\b|joker[\s\-_\.]*gaming[\s\-_\.]*usa(?:\.com|\.us)?\b|live[\s\-_\.]?play[\s\-_\.]?casino(?:\.com|\.us)?\b|lonestar\.pro\b|luck[y1][\s\-_\.]*(?:6|777|charms|plinko)(?:[\s\-_\.]?casino)?(?:\.com|\.us)?\b|lucky\.me\b|magic[\s\-_\.]*city(?:\.com|\.us)?\b|megabonanza(?:\.com|\.us)?\b|mega[\s\-_\.]*win(?:\.com|\.us)?\b|moozi(?:\.com|\.us)?\b|mr[\s\-_\.]*goodwin(?:[\s\-_\.]*casino)?(?:\.com|\.us)?\b|mrallinone(?:\.com|\.us)?\b|noble(?:[\s\-_\.]*casino)?(?:\.com|\.us)?\b|nolimitcoins(?:\.com|\.us)?\b|nutcracker(?:\.com|\.us)?\b|one\-slots\.top\b|paradise(?:[\s\-_\.]*casino)?(?:\.com|\.us)?\b|payday[\s\-_\.]*sweeps(?:\.com|\.us)?\b|playnet[\s\-_\.]*fun(?:\.com|\.us)?\b|playfina(?:\.com|\.us)?\b|pot[\s\-_\.]*of[\s\-_\.]*gold(?:\.com|\.us)?\b|riches[\s\-_\.]*flow(?:\.com|\.us)?\b|river[\s\-_\.]*dragon\b|riversweeps(?:\.com|\.us)?\b|roll[\s\-_\.]*royale(?:\.com|\.us)?\b|scarlet[\s\-_\.]*sands\b|scrooge(?:\.com|\.us)?\b|shamrock[\s\-_\.]*games(?:\.com|\.us)?\b|sidepot\.us\b|sixty6(?:\.com|\.us)?\b|skill(?:mine|machine)\.net\b|skill[\s\-_\.]*(?:quest|s|and[\s\-_\.]*slots)(?:\.com|\.us)?\b|sky[\s\-_\.]*sweeps(?:\.com|\.us)?\b|stackr(?:casino)?(?:\.com|\.us)?\b|sunshine[\s\-_\.]*sweeps(?:\.com|\.us)?\b|sweeps(?:hark|lots)(?:\.com|\.us)?\b|sweepstakes\.mobi\b|taofortune(?:\.com|\.us)?\b|(?:the[\s\-_\.]*)?money[\s\-_\.]*factory\b|t[\s\-_\.]*m[\s\-_\.]*f\b|threelz\b|tigerishome\b|toratora(?:\.com|\.us)?\b|ultrapower[\s\-_\.]*games(?:\.com|\.us)?\b|vegas[\s\-_\.]*x\b|vpower(?:\.com|\.us)?\b|websweeps\b|wild[\s\-_\.]*world(?:\.com|\.us)?\b)
+(?i)(?:100[\s\-_\.]*plu[s5]\b|7[\s\-_\.]*cali(?:[\s\-_\.]*casino)?\b|ace[\s\-_\.]*revea[l1](?:[\s\-_\.]*casino)?\b|admiral(?:\.com)?\b|betcoin[\s\-_\.]*social\b|bigcashsweeps(?:\.com)?\b|b[i1!][t7][b8][e3][t7][wv][i1!l]n(?:\.com)?\b|bit[\s\-_\.]*of[\s\-_\.]*gold(?:\.cc)?\b|bucks[\s\-_\.]*jet(?:\.com)?\b|cash[\s\-_\.]*bridge(?:\.com)?\b|casino[\s\-_\.]*royale(?:\.com)?\b|chicago[\s\-_\.]*sweeps(?:\.com)?\b|chip['\s\-_]?n[\s\-_\.]*win(?:\.com)?\b|circle[\s\-_\.]*sweeps(?:\.com)?\b|classic[\s\-_\.]*evolution(?:[\s\-_\.]*casino)?\b|coin[\s\-_\.]*keeper(?:\.com)?\b|coins[\s\-_\.]*bucks(?:\.com)?\b|cosmo[\s\-_\.]*slots(?:\.com)?\b|dollar[\s\-_\.]*mills(?:\.com)?\b|enchanted(?:[\s\-_\.]*casino)?\b|fire[\s\-_\.]*phoenix(?:\.com)?\b|fish[\s\-_\.]*glory(?:\.com)?\b|flamingo7(?:\.com)?\b|fortune[\s\-_\.]*(?:slots|wave)\b|fortun[e3][\s\-_\.]*wheelz(?:\.com)?\b|funrize\b|funz[\s\-_\.]*(?:city|points)(?:\.com)?\b|galaxy[\s\-_\.]*world(?:\.com)?\b|gambulls(?:\.com)?\b|gamesroom777(?:\.com)?\b|gogogoldwin(?:\.com)?\b|good[\s\-_\.]*vibes(?:[\s\-_\.]*casino)?(?:\.com)?\b|gold[\s\-_\.]*rush[\s\-_\.]*city\b|gold[\s\-_\.]*star\b|golden[\s\-_\.]*(?:dragon|reel|treasure)(?:\.com)?\b|ice8(?:\.com)?\b|joker[\s\-_\.]*gaming[\s\-_\.]*usa(?:\.com)?\b|live[\s\-_\.]?play[\s\-_\.]?casino(?:\.com)?\b|lonestar\.pro\b|luck[y1][\s\-_\.]*(?:6|777|charms|plinko)(?:[\s\-_\.]?casino)?(?:\.com)?\b|lucky\.me\b|magic[\s\-_\.]*city(?:\.com)?\b|megabonanza(?:\.com)?\b|mega[\s\-_\.]*win(?:\.com)?\b|moozi(?:\.com)?\b|mr[\s\-_\.]*goodwin(?:[\s\-_\.]*casino)?(?:\.com)?\b|mrallinone(?:\.com)?\b|noble(?:[\s\-_\.]*casino)?(?:\.com)?\b|nolimitcoins(?:\.com)?\b|nutcracker(?:\.com)?\b|one\-slots\.top\b|paradise(?:[\s\-_\.]*casino)?(?:\.com)?\b|payday[\s\-_\.]*sweeps(?:\.com)?\b|playnet[\s\-_\.]*fun(?:\.com)?\b|playfina(?:\.com)?\b|pot[\s\-_\.]*of[\s\-_\.]*gold(?:\.com)?\b|riches[\s\-_\.]*flow(?:\.com)?\b|river[\s\-_\.]*dragon\b|riversweeps(?:\.com)?\b|roll[\s\-_\.]*royale(?:\.com)?\b|scarlet[\s\-_\.]*sands\b|scrooge(?:\.com)?\b|shamrock[\s\-_\.]*games(?:\.com)?\b|sidepot\.us\b|spree\.com\b|sixty6(?:\.com)?\b|skill(?:mine|machine)\.net\b|skill[\s\-_\.]*(?:quest|s|and[\s\-_\.]*slots)(?:\.com)?\b|sky[\s\-_\.]*sweeps(?:\.com)?\b|stackr(?:casino)?(?:\.com)?\b|sunshine[\s\-_\.]*sweeps(?:\.com)?\b|sweeps(?:hark|lots)(?:\.com)?\b|sweepstakes\.mobi\b|taofortune(?:\.com)?\b|(?:the[\s\-_\.]*)?money[\s\-_\.]*factory\b|t[\s\-_\.]*m[\s\-_\.]*f\b|threelz\b|tigerishome\b|toratora(?:\.com)?\b|ultrapower[\s\-_\.]*games(?:\.com)?\b|vegas[\s\-_\.]*x\b|vpower(?:\.com)?\b|websweeps\b|wild[\s\-_\.]*world(?:\.com)?\b)
 
 
 title+body+url (regex):
@@ -7,81 +7,82 @@ title+body+url (regex):
   - (?i)ace[\s\-_\.]*revea[l1](?:[\s\-_\.]*casino)?\b
   - (?i)admiral(?:\.com|\.us)?\b
   - (?i)betcoin[\s\-_\.]*social\b
-  - (?i)bigcashsweeps(?:\.com|\.us)?\b
-  - (?i)b[i1!][t7][b8][e3][t7][wv][i1!l]n(?:\.com|\.us)?\b
+  - (?i)bigcashsweeps(?:\.com)?\b
+  - (?i)b[i1!][t7][b8][e3][t7][wv][i1!l]n(?:\.com)?\b
   - (?i)bit[\s\-_\.]*of[\s\-_\.]*gold(?:\.cc)?\b
-  - (?i)bucks[\s\-_\.]*jet(?:\.com|\.us)?\b
-  - (?i)cash[\s\-_\.]*bridge(?:\.com|\.us)?\b
-  - (?i)casino[\s\-_\.]*royale(?:\.com|\.us)?\b
-  - (?i)chicago[\s\-_\.]*sweeps(?:\.com|\.us)?\b
-  - (?i)chip['\s\-_]?n[\s\-_\.]*win(?:\.com|\.us)?\b
-  - (?i)circle[\s\-_\.]*sweeps(?:\.com|\.us)?\b
+  - (?i)bucks[\s\-_\.]*jet(?:\.com)?\b
+  - (?i)cash[\s\-_\.]*bridge(?:\.com)?\b
+  - (?i)casino[\s\-_\.]*royale(?:\.com)?\b
+  - (?i)chicago[\s\-_\.]*sweeps(?:\.com)?\b
+  - (?i)chip['\s\-_]?n[\s\-_\.]*win(?:\.com)?\b
+  - (?i)circle[\s\-_\.]*sweeps(?:\.com)?\b
   - (?i)classic[\s\-_\.]*evolution(?:[\s\-_\.]*casino)?\b
-  - (?i)coin[\s\-_\.]*keeper(?:\.com|\.us)?\b
-  - (?i)coins[\s\-_\.]*bucks(?:\.com|\.us)?\b
-  - (?i)cosmo[\s\-_\.]*slots(?:\.com|\.us)?\b
-  - (?i)dollar[\s\-_\.]*mills(?:\.com|\.us)?\b
+  - (?i)coin[\s\-_\.]*keeper(?:\.com)?\b
+  - (?i)coins[\s\-_\.]*bucks(?:\.com)?\b
+  - (?i)cosmo[\s\-_\.]*slots(?:\.com)?\b
+  - (?i)dollar[\s\-_\.]*mills(?:\.com)?\b
   - (?i)enchanted(?:[\s\-_\.]*casino)?\b
-  - (?i)fire[\s\-_\.]*phoenix(?:\.com|\.us)?\b
-  - (?i)fish[\s\-_\.]*glory(?:\.com|\.us)?\b
-  - (?i)flamingo7(?:\.com|\.us)?\b
+  - (?i)fire[\s\-_\.]*phoenix(?:\.com)?\b
+  - (?i)fish[\s\-_\.]*glory(?:\.com)?\b
+  - (?i)flamingo7(?:\.com)?\b
   - (?i)fortune[\s\-_\.]*(?:slots|wave)\b
-  - (?i)fortun[e3][\s\-_\.]*wheelz(?:\.com|\.us)?\b
+  - (?i)fortun[e3][\s\-_\.]*wheelz(?:\.com)?\b
   - (?i)funrize\b
-  - (?i)funz[\s\-_\.]*(?:city|points)(?:\.com|\.us)?\b
-  - (?i)galaxy[\s\-_\.]*world(?:\.com|\.us)?\b
-  - (?i)gambulls(?:\.com|\.us)?\b
-  - (?i)gamesroom777(?:\.com|\.us)?\b
-  - (?i)gogogoldwin(?:\.com|\.us)?\b
-  - (?i)good[\s\-_\.]*vibes(?:[\s\-_\.]*casino)?(?:\.com|\.us)?\b
+  - (?i)funz[\s\-_\.]*(?:city|points)(?:\.com)?\b
+  - (?i)galaxy[\s\-_\.]*world(?:\.com)?\b
+  - (?i)gambulls(?:\.com)?\b
+  - (?i)gamesroom777(?:\.com)?\b
+  - (?i)gogogoldwin(?:\.com)?\b
+  - (?i)good[\s\-_\.]*vibes(?:[\s\-_\.]*casino)?(?:\.com)?\b
   - (?i)gold[\s\-_\.]*rush[\s\-_\.]*city\b
   - (?i)gold[\s\-_\.]*star\b
-  - (?i)golden[\s\-_\.]*(?:dragon|reel|treasure)(?:\.com|\.us)?\b
-  - (?i)ice8(?:\.com|\.us)?\b
-  - (?i)joker[\s\-_\.]*gaming[\s\-_\.]*usa(?:\.com|\.us)?\b
-  - (?i)live[\s\-_\.]?play[\s\-_\.]?casino(?:\.com|\.us)?\b
+  - (?i)golden[\s\-_\.]*(?:dragon|reel|treasure)(?:\.com)?\b
+  - (?i)ice8(?:\.com)?\b
+  - (?i)joker[\s\-_\.]*gaming[\s\-_\.]*usa(?:\.com)?\b
+  - (?i)live[\s\-_\.]?play[\s\-_\.]?casino(?:\.com)?\b
   - (?i)lonestar\.pro\b
-  - (?i)luck[y1][\s\-_\.]*(?:6|777|charms|plinko)(?:[\s\-_\.]?casino)?(?:\.com|\.us)?\b
+  - (?i)luck[y1][\s\-_\.]*(?:6|777|charms|plinko)(?:[\s\-_\.]?casino)?(?:\.com)?\b
   - (?i)lucky\.me\b
-  - (?i)magic[\s\-_\.]*city(?:\.com|\.us)?\b
-  - (?i)megabonanza(?:\.com|\.us)?\b
-  - (?i)mega[\s\-_\.]*win(?:\.com|\.us)?\b
-  - (?i)moozi(?:\.com|\.us)?\b
-  - (?i)mr[\s\-_\.]*goodwin(?:[\s\-_\.]*casino)?(?:\.com|\.us)?\b
-  - (?i)mrallinone(?:\.com|\.us)?\b
-  - (?i)noble(?:[\s\-_\.]*casino)?(?:\.com|\.us)?\b
-  - (?i)nolimitcoins(?:\.com|\.us)?\b
-  - (?i)nutcracker(?:\.com|\.us)?\b
+  - (?i)magic[\s\-_\.]*city(?:\.com)?\b
+  - (?i)megabonanza(?:\.com)?\b
+  - (?i)mega[\s\-_\.]*win(?:\.com)?\b
+  - (?i)moozi(?:\.com)?\b
+  - (?i)mr[\s\-_\.]*goodwin(?:[\s\-_\.]*casino)?(?:\.com)?\b
+  - (?i)mrallinone(?:\.com)?\b
+  - (?i)noble(?:[\s\-_\.]*casino)?(?:\.com)?\b
+  - (?i)nolimitcoins(?:\.com)?\b
+  - (?i)nutcracker(?:\.com)?\b
   - (?i)one\-slots\.top\b
-  - (?i)paradise(?:[\s\-_\.]*casino)?(?:\.com|\.us)?\b
-  - (?i)payday[\s\-_\.]*sweeps(?:\.com|\.us)?\b
-  - (?i)playnet[\s\-_\.]*fun(?:\.com|\.us)?\b
-  - (?i)playfina(?:\.com|\.us)?\b
-  - (?i)pot[\s\-_\.]*of[\s\-_\.]*gold(?:\.com|\.us)?\b
-  - (?i)riches[\s\-_\.]*flow(?:\.com|\.us)?\b
+  - (?i)paradise(?:[\s\-_\.]*casino)?(?:\.com)?\b
+  - (?i)payday[\s\-_\.]*sweeps(?:\.com)?\b
+  - (?i)playnet[\s\-_\.]*fun(?:\.com)?\b
+  - (?i)playfina(?:\.com)?\b
+  - (?i)pot[\s\-_\.]*of[\s\-_\.]*gold(?:\.com)?\b
+  - (?i)riches[\s\-_\.]*flow(?:\.com)?\b
   - (?i)river[\s\-_\.]*dragon\b
-  - (?i)riversweeps(?:\.com|\.us)?\b
-  - (?i)roll[\s\-_\.]*royale(?:\.com|\.us)?\b
+  - (?i)riversweeps(?:\.com)?\b
+  - (?i)roll[\s\-_\.]*royale(?:\.com)?\b
   - (?i)scarlet[\s\-_\.]*sands\b
-  - (?i)scrooge(?:\.com|\.us)?\b
-  - (?i)shamrock[\s\-_\.]*games(?:\.com|\.us)?\b
+  - (?i)scrooge(?:\.com)?\b
+  - (?i)shamrock[\s\-_\.]*games(?:\.com)?\b
   - (?i)sidepot\.us\b
-  - (?i)sixty6(?:\.com|\.us)?\b
+  - (?i)spree\.com\b
+  - (?i)sixty6(?:\.com)?\b
   - (?i)skill(?:mine|machine)\.net\b
-  - (?i)skill[\s\-_\.]*(?:quest|s|and[\s\-_\.]*slots)(?:\.com|\.us)?\b
-  - (?i)sky[\s\-_\.]*sweeps(?:\.com|\.us)?\b
-  - (?i)stackr(?:casino)?(?:\.com|\.us)?\b
-  - (?i)sunshine[\s\-_\.]*sweeps(?:\.com|\.us)?\b
-  - (?i)sweeps(?:hark|lots)(?:\.com|\.us)?\b
+  - (?i)skill[\s\-_\.]*(?:quest|s|and[\s\-_\.]*slots)(?:\.com)?\b
+  - (?i)sky[\s\-_\.]*sweeps(?:\.com)?\b
+  - (?i)stackr(?:casino)?(?:\.com)?\b
+  - (?i)sunshine[\s\-_\.]*sweeps(?:\.com)?\b
+  - (?i)sweeps(?:hark|lots)(?:\.com)?\b
   - (?i)sweepstakes\.mobi\b
-  - (?i)taofortune(?:\.com|\.us)?\b
+  - (?i)taofortune(?:\.com)?\b
   - (?i)(?:the[\s\-_\.]*)?money[\s\-_\.]*factory\b
   - (?i)t[\s\-_\.]*m[\s\-_\.]*f\b
   - (?i)threelz\b
   - (?i)tigerishome\b
-  - (?i)toratora(?:\.com|\.us)?\b
-  - (?i)ultrapower[\s\-_\.]*games(?:\.com|\.us)?\b
+  - (?i)toratora(?:\.com)?\b
+  - (?i)ultrapower[\s\-_\.]*games(?:\.com)?\b
   - (?i)vegas[\s\-_\.]*x\b
-  - (?i)vpower(?:\.com|\.us)?\b
+  - (?i)vpower(?:\.com)?\b
   - (?i)websweeps\b
-  - (?i)wild[\s\-_\.]*world(?:\.com|\.us)?\b
+  - (?i)wild[\s\-_\.]*world(?:\.com)?\b
