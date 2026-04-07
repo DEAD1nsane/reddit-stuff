@@ -1010,7 +1010,7 @@ parent_submission:
     - f81b7808-fa48-11ef-8d0f-0623a1984aec  
     - 31fcece2-49ae-11ef-ac78-2a324a5df6e1  
 body (regex):  
-  - (?i)(?<!\S)(?:d(?:idn'?t|on'?t) work|d(?:idn'?t|on'?t) help|doesn'?t work|no work|isn'?t working|won'?t work|failed to work|still not working|never worked|does nothing)(?!\S)  
+  - (?i)(?<!\\S)(?:d(?:idn'?t|on'?t)\\s+(?:work|help)|doesn'?t\\s+work|no\\s+work|isn'?t\\s+working|won'?t\\s+work|failed\\s+to\\s+work|still\\s+not\\s+working|never\\s+worked|does\\s+nothing|none\\s+(?:of\\s+them\\s+)?(?:are\\s+)?working(?:\\s+for\\s+me)?|none\\s+worked)(?!\\S)
 action: remove  
 action_reason: "[{{match}}]"  
 ---  
