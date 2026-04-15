@@ -850,9 +850,8 @@ modmail: |
 type: any  
 author:  
   contributor_quality: "= lowest"  
-  ~name: ["Jon_Gains", "Jon_GamerGains", "suhancou"]  
-action: filter  
-action_reason: "Lowest CQS | BAN"  
+action: remove
+action_reason: "Lowest CQS"  
 comment: |  
   # Hey /u/{{author}}, you've been flagged by Reddit (not us) for having the lowest possible **[CQS Ranking](https://www.reddit.com/r/modnews/s/nEpUJU31Hi)**.    
       
@@ -980,7 +979,7 @@ body (regex):
   - (?i)\b(?:nope|nothing|didn'?t\s+work|not\s+working|didn'?t\s+help|no\s+luck|still\s+not\s+fixed|unable\s+to\s+get\s+.*?\s+to\s+work|can'?t\s+get\s+.*?\s+to\s+work|tried\s+everything|all\s+x\s*\d+|failed|did\s+not\s+succeed|didn'?t\s+manage)\b[^\n\r]{0,150}?\b(?:t(?:hanks?|y|ks)|thank\s+you|appreciate(?:d)?|props|cheers|good\s+effort|grateful|much\s+appreciated|kudos|acknowledge(?:d)?)\b  
   - (?i)\b(?:t(?:hanks?|y|ks)|thank\s+you|appreciate(?:d)?|props|cheers|good\s+effort|grateful|much\s+appreciated|kudos|acknowledge(?:d)?)\b[^\n\r]{0,150}?\b(?:nope|nothing|didn'?t\s+work|not\s+working|didn'?t\s+help|no\s+luck|still\s+not\s+fixed|unable\s+to\s+get\s+.*?\s+to\s+work|can'?t\s+get\s+.*?\s+to\s+work|tried\s+everything|all\s+x\s*\d+|failed|did\s+not\s+succeed|didn'?t\s+manage)\b  
 action: remove  
-action_reason: "[{{match}}] dismissive"  
+action_reason: "[{{match}}] dismissive"
 ---  
 type: comment  
 author:  
@@ -997,7 +996,7 @@ action_reason: "[{{match}}]"
 ---  
 type: any  
 body (regex):    
-  - ^(?:\S+[.,!?]*\s+){124,}\S+[.,!?]*$  
+  - ^(?:\S+[.,!?]*\s+){124,}\S+[.,!?]*$
 action: remove  
 action_reason: more than 125 words.  
 moderators_exempt: true  
