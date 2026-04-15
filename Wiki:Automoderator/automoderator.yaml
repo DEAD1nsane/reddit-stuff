@@ -985,7 +985,7 @@ body+url (regex):
   - (?i)(?:https?:\/\/)?(?:mail|email)(?:\.[a-z0-9-]+){1,}  
 action: remove  
 action_reason: "email url"  
-moderators_exempt:   
+moderators_exempt: true  
 comment: |    
   Check out [This Post](https://www.reddit.com/r/CasinoFreebies/s/r0HC9QJmdt) and youll understand why this {{kind}} was removed. please use **[Redirect-Checker](https://www.redirect-checker.org)** to get the exact url. then feel free to post it again, if done correctly the post will not be removed by automoderator  
 comment_locked: true  
