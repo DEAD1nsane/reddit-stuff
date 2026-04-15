@@ -702,7 +702,7 @@ message: |
   `https://chanced.com/settings/offers?code=CODEHERE`  
   
   ---
-
+  
 ---  
 # removes any non-link submissions for punt codes OR if its a text post without the punt.com in the body  
 type: submission  
@@ -960,7 +960,7 @@ title+body (regex):
   - (?i)(?:still\s*wait(?:ing)?\s*(?:on|for)?\s*(?:my|me|our|cash(?:ed)?[\s\-_]*out|withdraw|rede+mp?t?ion?s?|verif(?:y|ying|ication)?)|delay|problem|issue|pending|haven['’]t\s+(?:got|been)\s+paid|has\s+anyone\s+cashed\s+out(?:\b|[^a-z]|.{0,20})|anyone\s+cashed\s+out(?:\b|[^a-z]|.{0,20})|has\s+anyone\s+ever\s+withdra(?:w|wn|wed)|anyone\s+ever\s+withdra(?:w|wn|wed)|actually\s+gotten\s+it|actually\s+got\s+it|actually\s+pays?|legit.{0,20}pay|reliable.{0,20}withdra|reliab.{0,20}payout|withdrawals?\s*(?:reliable|trustworthy|legit)|fair.{0,20}payout|redeemed?\s+\$?\d+|redemption(?:\s+limit|\s+request|\s+hold|\s+time|\s+issue|\s+delay)|takes?\s+\d+\s*(?:day|days|hrs?|hours)|withdrawal\s+(?:my|me|the|money)|has\s+anybody\s+else\s+had\s+this\s+issue|redeemed?\s+\d+\s*(?:day|days|hrs?|hours?)\s+ago|\d+\s*(?:hours?|hrs?)\s*(?:to\s*)?process|business\s+days|withdra(?:w|wn|wed|wl|wrl|wal)|(?:what|which|who|any).{0,20}fast\s+withdra(?:w|wl|wrl|wal|wed|wn)s?|worried|hype(?:d|ing)?.*nothing|hype(?:d|ing)?.*myself|get\s+(?:all\s+of\s+)?my\s+deposits?\s+back|get\s+my\s+money\s+back|refund(?:ed)?|charge\s*back|chargeback|charge\s+back\s+department|bank\s+charge\s*back|never\s+redeemed?\s+anything|ask\s+support\s+to\s+assist|support\s+to\s+assist|assist\s+with\s+this|refuse|refused|can't|unable|won't|update|how\s*long|when|why|where|what|question)\b.{0,50}?\b(?:rede+mp?t?ion?s?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?|verif(?:y|ying|ication)?)  
   - (?i)(?:rede+mp?t?ion?s?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?|verif(?:y|ying|ication)?)\b.{0,50}?\b(?:still\s*wait(?:ing)?|delay|problem|issue|pending|haven['’]t\s+(?:got|been)\s+paid|has\s+anyone\s+cashed\s+out(?:\b|[^a-z]|.{0,20})|anyone\s+cashed\s+out(?:\b|[^a-z]|.{0,20})|has\s+anyone\s+ever\s+withdra(?:w|wn|wed)|anyone\s+ever\s+withdra(?:w|wn|wed)|actually\s+gotten\s+it|actually\s+got\s+it|actually\s+pays?|legit.{0,20}pay|reliable.{0,20}withdra|reliab.{0,20}payout|withdrawals?\s*(?:reliable|trustworthy|legit)|fair.{0,20}payout|redeemed?\s+\$?\d+|redemption(?:\s+limit|\s+request|\s+hold|\s+time|\s+issue|\s+delay)|takes?\s+\d+\s*(?:day|days|hrs?|hours)|withdrawal\s+(?:my|me|the|money)|has\s+anybody\s+else\s+had\s+this\s+issue|redeemed?\s+\d+\s*(?:day|days|hrs?|hours?)\s+ago|\d+\s*(?:hours?|hrs?)\s*(?:to\s*)?process|business\s+days|withdra(?:w|wn|wed|wl|wrl|wal)|(?:what|which|who|any).{0,20}fast\s+withdra(?:w|wl|wrl|wal|wed|wn)s?|worried|hype(?:d|ing)?.*nothing|hype(?:d|ing)?.*myself|get\s+(?:all\s+of\s+)?my\s+deposits?\s+back|get\s+my\s+money\s+back|refund(?:ed)?|charge\s*back|chargeback|charge\s+back\s+department|bank\s+charge\s*back|never\s+redeemed?\s+anything|ask\s+support\s+to\s+assist|support\s+to\s+assist|assist\s+with\s+this|refuse|refused|can't|unable|won't|update|how\s*long|when|why|where|what|question)  
 action: filter  
-action_reason: "Redeem - [{{match}}]"  
+action_reason: "Redeem - [{{match}}]" 
 moderators_exempt: true  
 comment: |  
   &#9888;&#65039; **Reminder:**    
@@ -1020,6 +1020,6 @@ action: remove
 action_reason: "email url"  
 moderators_exempt: true  
 comment: |    
-  Check out [This Post]() and youll understand why this {{kind}} was removed. please use **[Redirect-Checker](https://www.redirect-checker.org)** to get the exact url. then feel free to post it again, if done correctly the post will not be removed by automoderator  
+  Check out [This Post](https://www.reddit.com/r/CasinoFreebies/s/r0HC9QJmdt) and youll understand why this {{kind}} was removed. please use **[Redirect-Checker](https://www.redirect-checker.org)** to get the exact url. then feel free to post it again, if done correctly the post will not be removed by automoderator  
 comment_locked: true  
 --- 
