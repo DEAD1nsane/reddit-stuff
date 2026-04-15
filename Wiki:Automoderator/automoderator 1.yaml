@@ -822,18 +822,6 @@ title+body (regex):
 action: filter
 action_reason: "code"  
 ---
-type: submission  
-title+body (regex):  
-  - (?i)(?:(?:post|thread|submission|comment|reply)[^\n\r]{0,40}?(?:remov(?:ed|es|ing)|delet(?:ed|es|ing|ion)|taken\s*down)|(?:remov(?:ed|es|ing)|delet(?:ed|es|ing|ion)|taken\s*down)[^\n\r]{0,40}?(?:post|thread|submission|comment|reply)|tried?\s+to\s+post|(?:won[’']?t|can[’']?t|cannot|not\s+able\s+to)\s+(?:post|submit))  
-action: filter  
-action_reason: "posting about not being able to post [{{match}}]"  
-comment: |  
-  instead of spamming the subreddit with a offtopic post about why your post keeps getting removed, you should    
-    
-  1. check your direct messages for any messages from Automoderator.    
-  2. if there isn't anything from Automoderator in your direct messages,  **[contact the moderators of this subreddit](/message/compose/?to=/r/CasinoFreebies)** so the issue can be addressed accordingly and fixed if needed.  
-comment_locked: true  
----  
 type: any  
 body+url (regex):  
   - (?:https?:\/\/)?(?:[a-z0-9-]+\.)?(?:discord(?:\.com|\.gg|\.gift|\.new)|discordapp\.com)\/[^\s"']+  
@@ -953,26 +941,6 @@ comment: |
   # Hey /u/{{author}},   
     
   {{match}} only works for the OP (Original Poster aka Sumbitter).  
-comment_locked: true  
----  
-type: any  
-title+body (regex):  
-  - (?i)(?:still\s*wait(?:ing)?\s*(?:on|for)?\s*(?:my|me|our|cash(?:ed)?[\s\-_]*out|withdraw|rede+mp?t?ion?s?|verif(?:y|ying|ication)?)|delay|problem|issue|pending|haven['’]t\s+(?:got|been)\s+paid|has\s+anyone\s+cashed\s+out(?:\b|[^a-z]|.{0,20})|anyone\s+cashed\s+out(?:\b|[^a-z]|.{0,20})|has\s+anyone\s+ever\s+withdra(?:w|wn|wed)|anyone\s+ever\s+withdra(?:w|wn|wed)|actually\s+gotten\s+it|actually\s+got\s+it|actually\s+pays?|legit.{0,20}pay|reliable.{0,20}withdra|reliab.{0,20}payout|withdrawals?\s*(?:reliable|trustworthy|legit)|fair.{0,20}payout|redeemed?\s+\$?\d+|redemption(?:\s+limit|\s+request|\s+hold|\s+time|\s+issue|\s+delay)|takes?\s+\d+\s*(?:day|days|hrs?|hours)|withdrawal\s+(?:my|me|the|money)|has\s+anybody\s+else\s+had\s+this\s+issue|redeemed?\s+\d+\s*(?:day|days|hrs?|hours?)\s+ago|\d+\s*(?:hours?|hrs?)\s*(?:to\s*)?process|business\s+days|withdra(?:w|wn|wed|wl|wrl|wal)|(?:what|which|who|any).{0,20}fast\s+withdra(?:w|wl|wrl|wal|wed|wn)s?|worried|hype(?:d|ing)?.*nothing|hype(?:d|ing)?.*myself|get\s+(?:all\s+of\s+)?my\s+deposits?\s+back|get\s+my\s+money\s+back|refund(?:ed)?|charge\s*back|chargeback|charge\s+back\s+department|bank\s+charge\s*back|never\s+redeemed?\s+anything|ask\s+support\s+to\s+assist|support\s+to\s+assist|assist\s+with\s+this|refuse|refused|can't|unable|won't|update|how\s*long|when|why|where|what|question)\b.{0,50}?\b(?:rede+mp?t?ion?s?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?|verif(?:y|ying|ication)?)  
-  - (?i)(?:rede+mp?t?ion?s?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?|verif(?:y|ying|ication)?)\b.{0,50}?\b(?:still\s*wait(?:ing)?|delay|problem|issue|pending|haven['’]t\s+(?:got|been)\s+paid|has\s+anyone\s+cashed\s+out(?:\b|[^a-z]|.{0,20})|anyone\s+cashed\s+out(?:\b|[^a-z]|.{0,20})|has\s+anyone\s+ever\s+withdra(?:w|wn|wed)|anyone\s+ever\s+withdra(?:w|wn|wed)|actually\s+gotten\s+it|actually\s+got\s+it|actually\s+pays?|legit.{0,20}pay|reliable.{0,20}withdra|reliab.{0,20}payout|withdrawals?\s*(?:reliable|trustworthy|legit)|fair.{0,20}payout|redeemed?\s+\$?\d+|redemption(?:\s+limit|\s+request|\s+hold|\s+time|\s+issue|\s+delay)|takes?\s+\d+\s*(?:day|days|hrs?|hours)|withdrawal\s+(?:my|me|the|money)|has\s+anybody\s+else\s+had\s+this\s+issue|redeemed?\s+\d+\s*(?:day|days|hrs?|hours?)\s+ago|\d+\s*(?:hours?|hrs?)\s*(?:to\s*)?process|business\s+days|withdra(?:w|wn|wed|wl|wrl|wal)|(?:what|which|who|any).{0,20}fast\s+withdra(?:w|wl|wrl|wal|wed|wn)s?|worried|hype(?:d|ing)?.*nothing|hype(?:d|ing)?.*myself|get\s+(?:all\s+of\s+)?my\s+deposits?\s+back|get\s+my\s+money\s+back|refund(?:ed)?|charge\s*back|chargeback|charge\s+back\s+department|bank\s+charge\s*back|never\s+redeemed?\s+anything|ask\s+support\s+to\s+assist|support\s+to\s+assist|assist\s+with\s+this|refuse|refused|can't|unable|won't|update|how\s*long|when|why|where|what|question)  
-action: filter  
-action_reason: "Redeem - [{{match}}]"  
-moderators_exempt: true  
-comment: |  
-  &#9888;&#65039; **Reminder:**    
-  This is a **freebies** subreddit — not a *redemption support* or *“do they pay?”* help desk.    
-    
-  Posts asking about payment delays, verifications or “how long until I get it?” are automatically flagged.    
-  We focus on **finding and sharing new casino freebies**, not troubleshooting redemptions or payouts.    
-    
-  &#x1f4a1; **Tip:**    
-  If you’re waiting on a payout, check the site’s own FAQ or support team — response times vary, and other members can’t speed that up for you.    
-    
-  Thanks for helping keep the feed clean and focused on the fun stuff — the actual **freebies.**  
 comment_locked: true  
 ---  
 type: comment  
