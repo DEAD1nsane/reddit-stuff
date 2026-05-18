@@ -1024,3 +1024,10 @@ comment: |
   Check out [This Post](https://www.reddit.com/r/CasinoFreebies/s/r0HC9QJmdt) and youll understand why this {{kind}} was removed. please use **[Redirect-Checker](https://www.redirect-checker.org)** to get the exact url. then feel free to post it again, if done correctly the post will not be removed by automoderator  
 comment_locked: true  
 ---
+# Spanish and Portuguese - no é or 'que', words don't match the regex
+type: submission
+title+body (regex, includes, case-sensitive): ['[ÇÁÉÍÓÚÂÊÔÃÕÀçáíñóúâêôãõà]']
+body+title (regex): ['(^|[^A-Za-zÀ-ÿ])(algo|casa|como|esta|estamos|estar|este|lugar|nada|nos|nunca|parece|por|porque|sobre|todo|todos|vamos|ver|vez|vida|ahora|alguien|bueno|cosa|cosas|creo|cuando|decir|desde|después|dije|dijo|dios|donde|ellos|entonces|eres|esa|ese|eso|espera|estaba|estas|esto|estoy|fue|fuera|gente|gracias|hablar|hace|hacer|hecho|hijo|hola|hombre|los|mejor|mierda|mis|mismo|momento|mucho|mundo|muy|nadie|noche|nosotros|otra|otro|pasa|pero|podemos|puede|puedes|puedo|quiere|quieres|quiero|quién|qué|sabes|seguro|siempre|siento|también|tenemos|tengo|tiempo|tiene|tienes|tipo|trabajo|tus|uno|usted|verdad|voy|acha|acho|ainda|alguém|anos|apenas|aqui|assim|até|bem|certo|coisa|coisas|depois|deus|deve|dia|disse|dizer|dois|ela|ele|eles|essa|esse|estava|estou|falar|faz|fazendo|fazer|ficar|foi|homem|isso|isto|lhe|mais|melhor|mesmo|meu|minha|muito|nem|noite|obrigado|onde|pai|pelo|pessoas|pode|posso|pouco|pra|preciso|qual|quando|quem|quer|quero|sei|sem|sempre|senhor|seu|seus|sua|talvez|também|tem|temos|tenho|ter|tinha|tudo|uma|verdade|vou)([^A-Za-zÀ-ÿ]|$)']
+action: remove
+action_reason: "Non-English spam (Spanish and Portuguese)"
+---
