@@ -550,11 +550,22 @@ message: |
 type: submission  
 url+body+domain (includes):  
   - bit.ly  
+  - my.manychat.com
 author:  
-  is_moderator: true  
+  is_moderator: true
 action: approve  
-action_reason: "approved mod bit.ly"  
+action_reason: "Mod [{{match}}]"  
 ---  
+type: submission  
+url+body+domain (includes):  
+  - bit.ly
+  - my.manychat.com 
+author:
+  is_contributor: true
+  is_moderator: false
+action: approve  
+action_reason: "Approved User [{{match}}]" 
+---
 # removes any non-link submissions for carnival citi free sc codes OR if its a text post without the carnivalciti.com in the body  
 type: submission  
 title (regex):   
