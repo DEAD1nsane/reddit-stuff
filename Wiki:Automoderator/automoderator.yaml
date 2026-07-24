@@ -36,17 +36,7 @@ comment: |
     
   If you wanna flex you're going to need to repost this as either a picture submission, or video submission. If you want to flex the replay URL, you can add it to the body. — **why you ask? because a flex should be visual.**  
 comment_locked: true  
----  
-# comments on any submission using giveaway/stream post flair a caution about external links.  
-type: submission  
-title (regex): '.*'   
-flair_template_id: 33ea2762-707e-11ef-b23f-46b622795ce3  
-comment: |  
-  ### ATTENTION EVERYBODY:    
-  Use external links with caution and never share personal information or banking numbers on third-party sites that are not reputable casinos  
-comment_stickied: true  
-comment_locked: true  
----  
+---
 # comments on any submission using Discussion|Q&A  
 type: submission  
 title (regex): '.*'  
