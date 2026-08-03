@@ -900,7 +900,7 @@ title+body+url (regex):
   - (?i)\/(?:ref|referral|refer|invite|aff|affiliate|promo|raf)\/[A-Za-z0-9_-]+
   - (?i)metawin\.us\/[a-f0-9]{8}
   - (?i)https?:\/\/[\w.-]+\.[a-z]{2,}\/ch_[A-Za-z0-9_]+(?:\/|$)
-  - (?i)\b(?:(?:use|using|get|need|drop|share|have|got)\s+(?:my|your|a)?\s*(?:referral|refer|ref|code)s?(?:\s+(?:code|link))?|(?:dm|pm|msg|message|hmu)\s+(?:me)?\s*(?:for)?\s*(?:referral|ref|code)s?)\b
+  - (?i)\b(?:(?:use|using|used|get|need|drop|share|have|got|take|grab|click|join|signup|sign\s*up|register|registering)\s+(?:with\s+)?(?:my|your|a)?\s*(?:referral|refer|ref|code|link|url)s?(?:\s+(?:code|link|url))?|(?:my|your)\s+(?:referral|refer|ref|code|link|url)|(?:join|signup|sign\s*up|register)(?:\s+(?:using|with))?\s+(?:my|your)\s+(?:referral|refer|ref|code|link|url)|(?:dm|pm|msg|message|hmu)\s+(?:me)?\s*(?:for)?\s*(?:my|a)?\s*(?:referral|refer|ref|code|link|url)s?)\b
 action: filter  
 action_reason: "REFERRAL [{{author}}]"
 moderators_exempt: true  
@@ -978,7 +978,7 @@ comment_locked: true
 ---  
 type: comment  
 body (regex):  
-  - (?i)\b(?:nope|nothing|didn'?t\s+work|not\s+working|didn'?t\s+help|no\s+luck|still\s+not\s+fixed|unable\s+to\s+get\s+.*?\s+to\s+work|can'?t\s+get\s+.*?\s+to\s+work|tried\s+everything|all\s+x\s*\d+|failed|did\s+not\s+succeed|didn'?t\s+manage)\b[^\n\r]{0,150}?\b(?:t(?:hanks?|y|ks)|thank\s+you|appreciate(?:d)?|props|cheers|good\s+effort|grateful|much\s+appreciated|kudos|acknowledge(?:d)?)\b  
+  - (?i)\b(?:nope|nothing|didn['’]?\s*t\s+work|didnt\s+work|doesn['’]?\s*t\s+work|doesnt\s+work|don['’]?\s*t\s+work|dont\s+work|not\s+working|isn['’]?\s*t\s+working|isnt\s+working|won['’]?\s*t\s+work|wont\s+work|still\s+not\s+working|didn'?t\s+help|no\s+luck|still\s+not\s+fixed|unable\s+to\s+get\s+.*?\s+to\s+work|can'?t\s+get\s+.*?\s+to\s+work|tried\s+everything|all\s+x\s*\d+|failed|did\s+not\s+succeed|didn'?t\s+manage)\b[^\n\r]{0,150}?\b(?:t(?:hanks?|y|ks)|thank\s+you|appreciate(?:d)?|props|cheers|good\s+effort|grateful|much\s+appreciated|kudos|acknowledge(?:d)?)\b  
   - (?i)\b(?:t(?:hanks?|y|ks)|thank\s+you|appreciate(?:d)?|props|cheers|good\s+effort|grateful|much\s+appreciated|kudos|acknowledge(?:d)?)\b[^\n\r]{0,150}?\b(?:nope|nothing|didn'?t\s+work|not\s+working|didn'?t\s+help|no\s+luck|still\s+not\s+fixed|unable\s+to\s+get\s+.*?\s+to\s+work|can'?t\s+get\s+.*?\s+to\s+work|tried\s+everything|all\s+x\s*\d+|failed|did\s+not\s+succeed|didn'?t\s+manage)\b  
 action: remove  
 action_reason: "[{{match}}] dismissive"
@@ -994,7 +994,7 @@ parent_submission:
     - 31fcece2-49ae-11ef-ac78-2a324a5df6e1  
     - f7f3253e-465e-11f1-9ceb-8a0fcc134962     
 body (regex):
-  - (?i)\b(?:didn'?t\s+(?:work|help)|doesn'?t\s+work|isn'?t\s+working|won'?t\s+work|not\s+working(?:\s+for\s+me)?|still\s+not\s+working|never\s+worked|failed\s+to\s+work|does\s+nothing|no\s+work|none\s+(?:of\s+them\s+)?(?:are\s+)?working(?:\s+for\s+me)?|none\s+worked)\b
+  - (?i)\b(?:didn?'?\s+work|didn?'?\s+help|doesn?'?\s+work|isn?'?\s+working|won'?t\s+work|not\s+working(?:\s+for\s+me)?|still\s+not\+working|never\s+worked|failed\s+to\s+work|does\s+nothing|no\s+work|none\s+(?:of\s+them\s+)?(?:are\s+)?working(?:\s+for\s+me)?|none\s+worked)\b
 action: remove  
 action_reason: "[{{match}}]"  
 ---  
