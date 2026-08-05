@@ -199,13 +199,13 @@ comment: |
   The moderators of r/{{subreddit}} will investigate if this action was taken correctly.  
 comment_locked: true  
 ---  
-# removes posts & comments from accounts less than 7 days old and sends user a message.  
+# removes posts & comments from accounts less than 30 days old and sends user a message.  
 type: any  
 author:  
   account_age: "< 30 days"
 moderators_exempt: true  
 action: remove  
-action_reason: "New Account - 7 days or below"  
+action_reason: "New Account - 30 days or below"  
 message: |  
   # Hey /u/{{author}},  
     
@@ -355,9 +355,19 @@ modmail: |
 type: text submission  
 body (regex):  
   - ^(?:\[([^\]]+)\]\((https?:\/\/)?(www\.)?[^\s]+(\.[^\s]+)+\)$|(https?:\/\/)?(www\.)?[^\s]+(\.[^\s]+)+)$  
-comment_locked: true  
 moderators_exempt: true  
 comment: |  
+  # Hey /u/{{author}},    
+       
+  I noticed you only posted a link without any text, Next time you post a url without text please do it like this:    
+       
+  ### Mobile Phones:    
+  Use the &#x1f517; for your url submissions. [Example](https://imgur.com/a/QSF4etg#DJvbFrh).    
+   - If you decide you need to add text to the body of the post you're able to do so while using the &#x1f517;.  
+  ### Desktop:    
+   Use the link submission [img](https://imgur.com/sKBJg4n#sKBJg4n).  
+   - If you decide you need to add text to the body of the post you'll need to use the text submission and paste your URL in the body along with any text instead of Link submission. [img](https://imgur.com/yiB7S5g#yiB7S5g).  
+message: |  
   # Hey /u/{{author}},    
        
   I noticed you only posted a link without any text, Next time you post a url without text please do it like this:    
@@ -374,10 +384,18 @@ comment: |
 # explains how to do a link post submission  
 type: text submission  
 body (regex):  
-  - ^(?=.*(?:https?://|www\.)[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&//=]*))(?=.*[a-zA-Z0-9])(?!^(?:https?://|www\.)[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&//=]*)$).*$  
-comment_locked: true  
+  - ^(?=.*(?:https?://|www\.)[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&//=]*))(?=.*[a-zA-Z0-9])(?!^(?:https?://|www\.)[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&//=]*)$).*$   
 moderators_exempt: true  
 comment: |  
+  # Hey /u/{{author}},    
+       
+  I noticed you didn't submit a link post, instead you just posted a url and text, This is fine if you're posting on reddit from **desktop**, or posting multiple links.  
+  
+  If you're posting from **mobile device** it's best if you submit like this:  
+   - Use the &#x1f517; for your link submissions. [Example](https://imgur.com/a/QSF4etg#DJvbFrh) and then add the text in the body.  
+  
+  You're not in trouble and won't be banned or anything crazy it just helps when posts look cleaner.  
+message: |  
   # Hey /u/{{author}},    
        
   I noticed you didn't submit a link post, instead you just posted a url and text, This is fine if you're posting on reddit from **desktop**, or posting multiple links.  
