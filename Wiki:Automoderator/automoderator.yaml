@@ -998,6 +998,7 @@ type: comment
 body (regex):  
   - (?i)\b(?:nope|nothing|didn['’]?\s*t\s+work|didnt\s+work|doesn['’]?\s*t\s+work|doesnt\s+work|don['’]?\s*t\s+work|dont\s+work|not\s+working|isn['’]?\s*t\s+working|isnt\s+working|won['’]?\s*t\s+work|wont\s+work|still\s+not\s+working|didn'?t\s+help|no\s+luck|still\s+not\s+fixed|unable\s+to\s+get\s+.*?\s+to\s+work|can'?t\s+get\s+.*?\s+to\s+work|tried\s+everything|all\s+x\s*\d+|failed|did\s+not\s+succeed|didn'?t\s+manage)\b[^\n\r]{0,150}?\b(?:t(?:hanks?|y|ks)|thank\s+you|appreciate(?:d)?|props|cheers|good\s+effort|grateful|much\s+appreciated|kudos|acknowledge(?:d)?)\b  
   - (?i)\b(?:t(?:hanks?|y|ks)|thank\s+you|appreciate(?:d)?|props|cheers|good\s+effort|grateful|much\s+appreciated|kudos|acknowledge(?:d)?)\b[^\n\r]{0,150}?\b(?:nope|nothing|didn'?t\s+work|not\s+working|didn'?t\s+help|no\s+luck|still\s+not\s+fixed|unable\s+to\s+get\s+.*?\s+to\s+work|can'?t\s+get\s+.*?\s+to\s+work|tried\s+everything|all\s+x\s*\d+|failed|did\s+not\s+succeed|didn'?t\s+manage)\b  
+  - (?i)\b(?:t(?:hanks?|y|ks)|thank\s+you|appreciate(?:d)?|much\s+appreciated)\s+(?:anyway|anyways|tho|though|regardless)\b
 action: remove  
 action_reason: "[{{match}}] dismissive"
 ---  
