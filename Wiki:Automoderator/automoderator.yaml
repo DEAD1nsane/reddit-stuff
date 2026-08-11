@@ -1013,7 +1013,7 @@ parent_submission:
     - 31fcece2-49ae-11ef-ac78-2a324a5df6e1  
     - f7f3253e-465e-11f1-9ceb-8a0fcc134962     
 body (regex):
-  - (?i)\b(?:didn?'?\s+work|didn?'?\s+help|doesn?'?\s+work|isn?'?\s+working|won'?t\s+work|not\s+working(?:\s+for\s+me)?|still\s+not\+working|never\s+worked|failed\s+to\s+work|does\s+nothing|no\s+work|none\s+(?:of\s+them\s+)?(?:are\s+)?working(?:\s+for\s+me)?|none\s+worked)\b
+  - (?i)\b(?:didn['’]?t\s+work|didn['’]?t\s+help|doesn['’]?t\s+work|isn['’]?t\s+working|won['’]?t\s+work|not\s+working(?:\s+for\s+me)?|still\s+not\s+working|never\s+worked|failed\s+to\s+work|does\s+nothing|no\s+work|none\s+(?:of\s+them\s+)?(?:are\s+)?working(?:\s+for\s+me)?|none\s+worked)\b
 action: remove  
 action_reason: "[{{match}}]"  
 ---  
