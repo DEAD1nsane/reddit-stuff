@@ -67,7 +67,7 @@ type: any
 moderators_exempt: false  
 type: submission
 title+body (regex):
-  - (?i)\b(?:is\s+(?:this|it)\s+(?:actually\s+)?(?:a\s+)?(?:legit|scam)(?:\s+(?:site|casino))?\??|(?:can\s+someone\s+tell\s+me\s+if|anyone\s+know\s+if)\s+(?:this|it)\s+is\s+(?:legit|a\s+scam)\??|(?:does|do)\s+(?:this|it)\s+look\s+(?:legit|like\s+a\s+scam)\??|(?:legit\s+or\s+scam)\??|(?:is\s+it\s+safe)\??)\b
+  - (?i)\b(?:is\s+(?:this|it)\s+(?:actually\s+)?(?:a\s+)?(?:legit|scam)(?:\s+(?:site|casino))?\??|(?:can\s+someone\s+tell\s+me\s+if|anyone\s+know\s+if)\s+(?:this|it)\s+is\s+(?:legit|a\s+scam)\??|(?:does|do)\s+(?:this|it)\s+look\s+(?:legit|like\s+a\s+scam)\??|(?:legit\s+or\s+scam)\??|(?:is\s+it\s+safe)\??)
 comment: |  
   Excuse me, /u/{{author}},    
   Did I hear you say {{match}}?  
