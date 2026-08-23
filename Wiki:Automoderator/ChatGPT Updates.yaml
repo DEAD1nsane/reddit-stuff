@@ -1,0 +1,16 @@
+# ============================================================
+# AUTOMODERATOR UPDATE
+# Location: Wiki:Automoderator/automoderator.yaml
+# Find the existing legit/scam response rule.
+#
+# Change the ending of the first regex alternative from:
+#   \??)\b
+# to:
+#   \??)
+#
+# Reason: the trailing \b prevents matches when the title ends
+# immediately after ? (for example: "Is victory sweeps casino legit?").
+# ============================================================
+
+title+body (regex):
+  - (?i)\b(?:is\s+(?:this|it)\s+(?:actually\s+)?(?:a\s+)?(?:legit|scam)(?:\s+(?:site|casino))?\??|(?:can\s+someone\s+tell\s+me\s+if|anyone\s+know\s+if)\s+(?:this|it)\s+is\s+(?:legit|a\s+scam)\??|(?:does|do)\s+(?:this|it)\s+look\s+(?:legit|like\s+a\s+scam)\??|(?:legit\s+or\s+scam)\??|(?:is\s+it\s+safe)\??)
