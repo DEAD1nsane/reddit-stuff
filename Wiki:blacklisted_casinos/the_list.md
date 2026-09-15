@@ -19,7 +19,7 @@ THE CHART SLIDES TO THE LEFT
 |Noble|NoLimitCoins|NutCracker|One-slots&#46;top|Paradise|PayDay&nbsp;Sweeps|
 |PlayFina|PlayNet&nbsp;Fun|Pot&nbsp;of&nbsp;Gold|Riches&nbsp;Flow|River&nbsp;Dragon|Riversweeps|
 |Roll&nbsp;Royale|Scarlet&nbsp;Sands|Scrooge|Shamrock&nbsp;Games|SidePot&#46;us|Spree|
-|Sixty6|Skill&nbsp;Quest|SkillMachine&#46;net|SkillMine&#46;net|Skills&nbsp;and&nbsp;Slots|Sky&nbsp;Sweeps|
+|Skill&nbsp;Quest|SkillMachine&#46;net|SkillMine&#46;net|Skills&nbsp;and&nbsp;Slots|Sky&nbsp;Sweeps|
 |Stackr|SunshineSweeps|SweepSlots|SweepShark|Sweepstakes&#46;mobi|TaoFortune|
 |The&nbsp;Money&nbsp;Factory&nbsp;(TMF)|Threelz|TigerIsHome|ToraTora|Ultrapower-Games|Vegas&nbsp;X|
 |VPower|WebSweeps|Wild&nbsp;World|

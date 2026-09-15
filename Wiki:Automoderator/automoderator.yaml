@@ -516,7 +516,6 @@ title+body+url (regex):
   - (?i)shamrock[\s\-_\.]*games(?:\.com)?\b
   - (?i)sidepot\.us\b
   - (?i)spree\.com\b
-  - (?i)sixty6(?:\.com)?\b
   - (?i)skill(?:mine|machine)\.net\b
   - (?i)skill[\s\-_\.]*(?:quest|s|and[\s\-_\.]*slots)(?:\.com)?\b
   - (?i)sky[\s\-_\.]*sweeps(?:\.com)?\b
