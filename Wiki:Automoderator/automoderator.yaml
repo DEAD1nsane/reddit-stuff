@@ -64,8 +64,7 @@ modmail: |
 ---  
 # Automod comments in response to keywords about deposit to redeem, or if it's a scam with link to info hub & what FAQ to read  
 type: any  
-moderators_exempt: false  
-type: submission
+moderators_exempt: true
 title+body (regex):
   - (?i)\b(?:is\s+(?:this|it)\s+(?:actually\s+)?(?:a\s+)?(?:legit|scam)(?:\s+(?:site|casino))?\??|(?:can\s+someone\s+tell\s+me\s+if|anyone\s+know\s+if)\s+(?:this|it)\s+is\s+(?:legit|a\s+scam)\??|(?:does|do)\s+(?:this|it)\s+look\s+(?:legit|like\s+a\s+scam)\??|(?:legit\s+or\s+scam)\??|(?:is\s+it\s+safe)\??)
 comment: |  
@@ -76,6 +75,7 @@ comment: |
     
   **tl;dr**  
   **[Scam-Detector](https://www.scam-detector.com)** you can check here ... remember, lower the trust index the worst off it is.
+comment_locked: true
 ---  
 # Emoji(s) in Title  
 # Using unicode syntax, automod will remove posts that have emojis in the title and/or unicode symbols  
@@ -407,7 +407,7 @@ message: |
 ---  
 # Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.  
 author:  
-  name: ["AutoModerator", "evasion-guard", "DEAD1nsane", "RemindMeBot", "answeredbot", "timee_bot", , "CasinoFreebies-ModTeam", "AngelPainjel", "HumanSeat_"]  
+  name: ["AutoModerator", "evasion-guard", "DEAD1nsane", "RemindMeBot", "answeredbot", "timee_bot",  "CasinoFreebies-ModTeam", "AngelPainjel", "HumanSeat_"]  
 reports: 1  
 moderators_exempt: false  
 action: approve  
