@@ -407,12 +407,17 @@ message: |
 ---  
 # Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.  
 author:  
-  name: ["AutoModerator", "evasion-guard", "DEAD1nsane", "RemindMeBot", "answeredbot", "timee_bot", "drawing-app", "CasinoFreebies-ModTeam", "AngelPainjel", "10YrCrustyUnderwear", "HumanSeat_"]  
+  name: ["AutoModerator", "evasion-guard", "DEAD1nsane", "RemindMeBot", "answeredbot", "timee_bot", , "CasinoFreebies-ModTeam", "AngelPainjel", "HumanSeat_"]  
 reports: 1  
 moderators_exempt: false  
 action: approve  
 action_reason: "Approved reported post [{{author}}]"  
----  
+---
+# Bypasses all reputation and spam filters for timee_bot
+author:
+    name: ["timee_bot", "CasinoFreebies-ModTeam", "RemindMeBot", "answeredbot", "automoderator", "evasion-guard"]
+action: approve
+---
 type: any  
 ~title (regex):  
   - ^(?:[^\s]+[.,!?]*\s+){4,}[^\s]+[.,!?]*$  
