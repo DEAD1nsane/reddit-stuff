@@ -867,7 +867,8 @@ modmail: |
 #Basic rule filtering users with <0 subreddit karma and CQS scores of "lowest"  
 type: any  
 author:  
-  contributor_quality: "= lowest"  
+  contributor_quality: "= lowest"
+  ~name: "timee_bot"
 action: remove
 action_reason: "Lowest CQS"  
 comment: |  
