@@ -37,21 +37,6 @@ comment: |
   If you wanna flex you're going to need to repost this as either a picture submission, or video submission. If you want to flex the replay URL, you can add it to the body. — **why you ask? because a flex should be visual.**  
 comment_locked: true  
 ---
-# comments on any submission using Discussion|Q&A  
-# type: submission  
-#   (regex): '.*'  
-# moderators_exempt: true  
-# flair_template_id: 751c650c-49ae-11ef-8db1-16f9fa17ff35  
-# comment: |  
-#   # Hey /u/{{author}},    
-    
-#   You’re currently using the **Discussion|Q&A flair**,  so this is a quick reminder about the helpful tool /u/answeredbot. If your post is a **question** and someone provides a **satisfactory answer**, you can acknowledge it by replying to their comment with **!answered** ￩ exactly as you see it right here. ^(**! answered** works too).  
-    
-#   This makes it easier for others with the same question to find the solution quickly and efficiently.  
-    
-#   If your post is intended purely for **discussion** and not seeking a specific answer, feel free to disregard this message and continue the conversation.   
-# comment_locked: true  
-# ---  
 type: any  
 title+body+url (includes, regex):  
   - (?i)\b(?:[bB8][iI1!][tT7][bB8][eE3][tT7][wWv][iI1!lL][nN]{1,3}|bit\s*bet\s*w(?:i1!l)?n{1,3}|b[iI1!][tT7][bB8][eE3][tT7]w(?:i1!l)?n{1,3}|bitbetw(?:[ei]n{1,3}|un{1,3}|in{1,3}|ynn?|ine|ln|rn)|b[iI1!][tT7][bB8][eE3][tT7]w(?:i1!l)?(?:n{1,3}|m|rn|ln|nm|ne))\b(?:\s*\.cc)?  
@@ -65,24 +50,70 @@ modmail: |
 # Automod comments in response to keywords about deposit to redeem, or if it's a scam with link to info hub & what FAQ to read  
 type: any  
 moderators_exempt: false  
-type: submission
 title+body (regex):
-  - (?i)\b(?:is\s+(?:this|it)\s+(?:actually\s+)?(?:a\s+)?(?:legit|scam)(?:\s+(?:site|casino))?\??|(?:can\s+someone\s+tell\s+me\s+if|anyone\s+know\s+if)\s+(?:this|it)\s+is\s+(?:legit|a\s+scam)\??|(?:does|do)\s+(?:this|it)\s+look\s+(?:legit|like\s+a\s+scam)\??|(?:legit\s+or\s+scam)\??|(?:is\s+it\s+safe)\??)
-comment: |  
-  Excuse me, /u/{{author}},    
-  Did I hear you say {{match}}?  
-  
-  Please have a look at our [Rules & FAQ](https://www.reddit.com/r/CasinoFreebies/s/zyItb68tvK) and read **Is it a scam?**  
-    
-  **tl;dr**  
-  **[Scam-Detector](https://www.scam-detector.com)** you can check here ... remember, lower the trust index the worst off it is.
----  
+  - '(?i)\b(?:is|are)\s+(?:this|that|it|they)\s+(?:(?:even|actually|really|just)\s+)?(?:(?:(?:a|an|the)\s+)?(?:legit(?:imate)?|scam(?:my)?|safe)\b(?:\s+(?:site|casino|app|platform|operator))*|(?:site|casino|app|platform|operator)\s+(?:a|an|the)?\s*(?:legit(?:imate)?|scam(?:my)?|safe)\b)'
+  - '(?i)\b(?:(?:can|could)\s+(?:someone|anyone|anybody|you)\s+(?:please\s+)?(?:tell\s+me|know)|does\s+(?:anyone|anybody)\s+know|(?:anyone|anybody)\s+know)\s+if\s+(?:this|that|it|they)\s+(?:(?:a|an|the)\s+)?(?:site|casino|app|platform)?\s*(?:is|are)\s+(?:(?:a|an|the)\s+)?(?:legit(?:imate)?|scam(?:my)?|safe)\b(?:\s+(?:site|casino|app|platform|operator))*'
+  - '(?i)\b(?:does|do)\s+(?:this|that|it|they)\s+(?:(?:actually|really)\s+)?look\s+(?:(?:like\s+)?(?:a|an|the)\s+)?(?:legit(?:imate)?|scam(?:my)?|safe)\b'
+  - '(?i)\b(?:legit(?:imate)?|scam(?:my)?|safe)\s+or\s+(?:(?:an?|the)\s+)?(?:not\b|real\b|trustworthy\b|unsafe\b|legit(?:imate)?\b|scam(?:my)?\b)'
+comment: |
+  Hi /u/{{author}} — here’s how to verify an offer before acting on it:
+
+  1. Read **“Is it a scam?”** in our [Rules & FAQ](https://www.reddit.com/r/CasinoFreebies/s/mN6jKtTbmL).
+  2. For U.S. offers, check the operator against your [state or territory regulator](https://www.usa.gov/state-governments). Tribal operators should appear in the [NIGC gaming-locations list](https://www.nigc.gov/downloads/gaming-locations/).
+  3. Use [Scam Detector](https://www.scam-detector.com) as one trust signal and [Google Safe Browsing](https://transparencyreport.google.com/safe-browsing/search) to check for phishing or malware warnings.
+  4. Review independent reviews and recent complaints. A low trust score is a warning, not proof either way.
+
+  There is no single U.S. license database for every commercial casino. If the domain, company, or license details do not match, do not deposit.
+
+  Never send personal or financial details through Discord or DMs, and never pay gift-card, cryptocurrency, or wire-transfer fees to “unlock” or “release” winnings.
+---
+type: comment
+moderators_exempt: false
+body (regex):
+  - '(?i)\b(?:is|are)\s+(?:this|that|it|they)\s+(?:(?:even|actually|really|just)\s+)?(?:(?:(?:a|an|the)\s+)?(?:legit(?:imate)?|scam(?:my)?|safe)\b(?:\s+(?:site|casino|app|platform|operator))*|(?:site|casino|app|platform|operator)\s+(?:a|an|the)?\s*(?:legit(?:imate)?|scam(?:my)?|safe)\b)'
+  - '(?i)\b(?:(?:can|could)\s+(?:someone|anyone|anybody|you)\s+(?:please\s+)?(?:tell\s+me|know)|does\s+(?:anyone|anybody)\s+know|(?:anyone|anybody)\s+know)\s+if\s+(?:this|that|it|they)\s+(?:(?:a|an|the)\s+)?(?:site|casino|app|platform)?\s*(?:is|are)\s+(?:(?:a|an|the)\s+)?(?:legit(?:imate)?|scam(?:my)?|safe)\b(?:\s+(?:site|casino|app|platform|operator))*'
+  - '(?i)\b(?:does|do)\s+(?:this|that|it|they)\s+(?:(?:actually|really)\s+)?look\s+(?:(?:like\s+)?(?:a|an|the)\s+)?(?:legit(?:imate)?|scam(?:my)?|safe)\b'
+  - '(?i)\b(?:legit(?:imate)?|scam(?:my)?|safe)\s+or\s+(?:(?:an?|the)\s+)?(?:not\b|real\b|trustworthy\b|unsafe\b|legit(?:imate)?\b|scam(?:my)?\b)'
+comment: |
+  Hi /u/{{author}} — here’s how to verify an offer before acting on it:
+
+  1. Read **“Is it a scam?”** in our [Rules & FAQ](https://www.reddit.com/r/CasinoFreebies/s/mN6jKtTbmL).
+  2. For U.S. offers, check the operator against your [state or territory regulator](https://www.usa.gov/state-governments). Tribal operators should appear in the [NIGC gaming-locations list](https://www.nigc.gov/downloads/gaming-locations/).
+  3. Use [Scam Detector](https://www.scam-detector.com) as one trust signal and [Google Safe Browsing](https://transparencyreport.google.com/safe-browsing/search) to check for phishing or malware warnings.
+  4. Review independent reviews and recent complaints. A low trust score is a warning, not proof either way.
+
+  There is no single U.S. license database for every commercial casino. If the domain, company, or license details do not match, do not deposit.
+
+  Never send personal or financial details through Discord or DMs, and never pay gift-card, cryptocurrency, or wire-transfer fees to “unlock” or “release” winnings.
+---
+type: submission
+moderators_exempt: true
+title+body (regex):
+  - '(?i)\b(?:need|needs|needed|require|requires|required|has\s+to|have\s+to|must|mandatory)\s+(?:to\s+)?(?:pay|make\s+a\s+payment|(?:an?\s+)?(?:minimum\s+)?(?:deposit|payment|fee|charge|cost|money|balance|funds|gift\s+cards?)|add\s+(?:money|funds)|put\s+in\s+(?:money|funds)|spend)\b.{0,50}\b(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b'
+  - '(?i)\b(?:pay|paid|paying|payment|payments|deposit|deposits|funds?|money|balance|cost(?:\s+money)?|charges?|fees?|spend(?:ing)?|minimum|gift\s+cards?)\s+(?:to|for|before|when|in\s+order\s+to)\s+(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b'
+  - '(?i)\b(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b.{0,25}\b(?:without\s+(?:paying|any\s+(?:money|funds)|an?\s+(?:deposit|payment|fee|charge))|for\s+free)\b'
+  - '(?i)\b(?:free|no\s+(?:deposit|payment|fee|charge|minimum))\s+to\s+(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b'
+  - '(?i)\b(?:deposit|payment|fee|charge|cost|minimum|gift\s+cards?)\b.{0,20}\b(?:required|needed|necessary)\b.{0,20}\b(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b|\b(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b.{0,20}\b(?:requires?|required|needs?|needed)\b.{0,20}\b(?:deposit|payment|fee|charge|money|funds?|balance|gift\s+cards?)\b'
+set_locked: true
+comment: |
+  Hi /u/{{author}} — here’s how to verify an offer before acting on it:
+
+  1. Read **“Is it a scam?”** in our [Rules & FAQ](https://www.reddit.com/r/CasinoFreebies/s/mN6jKtTbmL).
+  2. For U.S. offers, check the operator against your [state or territory regulator](https://www.usa.gov/state-governments). Tribal operators should appear in the [NIGC gaming-locations list](https://www.nigc.gov/downloads/gaming-locations/).
+  3. Use [Scam Detector](https://www.scam-detector.com) as one trust signal and [Google Safe Browsing](https://transparencyreport.google.com/safe-browsing/search) to check for phishing or malware warnings.
+  4. Review independent reviews and recent complaints. A low trust score is a warning, not proof either way.
+
+  There is no single U.S. license database for every commercial casino. If the domain, company, or license details do not match, do not deposit.
+
+  Never send personal or financial details through Discord or DMs, and never pay gift-card, cryptocurrency, or wire-transfer fees to “unlock” or “release” winnings.
+comment_locked: true
+---
 # Emoji(s) in Title  
 # Using unicode syntax, automod will remove posts that have emojis in the title and/or unicode symbols  
 type: submission  
 moderators_exempt: true  
 title (regex, includes):  
-  - (?i)[\uD800-\uDFFF]  
+  - (?i)[©®™\U00002190-\U00002BFF\U0000FE00-\U0000FE0F\U0001F000-\U0001FAFF]  
 action: remove  
 action_reason: "emoji(s) in title - /u/{{author}}"  
 comment: |  
@@ -98,7 +129,7 @@ moderators_exempt: true
 title (regex): '.*'  
 comment: |  
   ### ATTENTION EVERYBODY:    
-  [Please report](https://www.reddit.com/r/CasinoFreebies/s/qGMcLftOP7) any rule breaking posts and posts that are not relevant to the subreddit. If you do not know how to do this, please follow the URL embedded in this comment. Thank you :) (The embeded link above, not the one below)  
+  [Please report](https://www.reddit.com/r/CasinoFreebies/s/qGMcLftOP7) any rule breaking posts and posts that are not relevant to the subreddit. If you do not know how to do this, please follow the URL embedded in this comment. Thank you :) (The embedded link above, not the one below)  
 comment_stickied: true  
 comment_locked: true  
 ---  
@@ -194,7 +225,7 @@ modmail: |
 comment: |  
   Thank you for your post in r/{{subreddit}}.  
     
-  Unfortunately, your post has been automatically removed because it has received an undisclosed number of reports.  
+  Unfortunately, your post has been automatically filtered because it has received an undisclosed number of reports.  
     
   The moderators of r/{{subreddit}} will investigate if this action was taken correctly.  
 comment_locked: true  
@@ -407,7 +438,7 @@ message: |
 ---  
 # Approve all AutoModerator comments/submissions (or those of any other user of your choosing) automatically on report.  
 author:  
-  name: ["AutoModerator", "evasion-guard", "DEAD1nsane", "RemindMeBot", "answeredbot", "timee_bot", "drawing-app", "CasinoFreebies-ModTeam", "AngelPainjel", "10YrCrustyUnderwear", "HumanSeat_"]  
+  name: ["AutoModerator", "evasion-guard", "DEAD1nsane", "RemindMeBot", "timee_bot", "drawing-app", "CasinoFreebies-ModTeam", "AngelPainjel", "HumanSeat_"]
 reports: 1  
 moderators_exempt: false  
 action: approve  
@@ -445,7 +476,7 @@ comment_locked: true
 message: |  
   # Hey /u/{{author}},  
     
-  Your {{kind}} by was removed because somehow you were able to submit a post with more than **10 words** which is the **maximum** amount of words in title required to post.  
+  Your {{kind}} was removed because somehow you were able to submit a post with more than **10 words** which is the **maximum** amount of words in title required to post.  
     
   Please repost with a title of no fewer than 5 words and no more than **10 words**.  
 ---  
@@ -586,7 +617,7 @@ comment_locked: true
 comment: |  
   # Hey,  
   
-  We're trying something new at /r/CasinoFreebies for Punt code posts.  
+  We're trying something new at /r/CasinoFreebies for Carnival Citi code posts.  
     
   Simply **repost using the URL below**, replacing `CODEHERE` with the actual code
     
@@ -617,7 +648,7 @@ comment: |
   ---
   
 message: |  
-  We're trying something new at /r/CasinoFreebies for Punt code posts.  
+  We're trying something new at /r/CasinoFreebies for Carnival Citi code posts.  
     
   Simply **repost using the URL below**, replacing `CODEHERE` with the actual code
     
@@ -660,7 +691,7 @@ comment_locked: true
 comment: |  
   # Hey,  
   
-  We're trying something new at /r/CasinoFreebies for Punt code posts.  
+  We're trying something new at /r/CasinoFreebies for Chanced code posts.  
     
   Simply **repost using the URL below**, replacing `CODEHERE` with the actual code
     
@@ -689,9 +720,9 @@ comment: |
   `https://chanced.com/settings/offers?code=CODEHERE`  
   
   ---
-
+  
 message: |  
-  We're trying something new at /r/CasinoFreebies for Punt code posts.  
+  We're trying something new at /r/CasinoFreebies for Chanced code posts.  
     
   Simply **repost using the URL below**, replacing `CODEHERE` with the actual code
     
@@ -846,7 +877,7 @@ title+body (regex):
 action: filter  
 action_reason: "posting about not being able to post [{{match}}]"  
 comment: |  
-  instead of spamming the subreddit with a offtopic post about why your post keeps getting removed, you should    
+  instead of spamming the subreddit with an offtopic post about why your post keeps getting removed, you should    
     
   1. check your direct messages for any messages from Automoderator.    
   2. if there isn't anything from Automoderator in your direct messages,  **[contact the moderators of this subreddit](/message/compose/?to=/r/CasinoFreebies)** so the issue can be addressed accordingly and fixed if needed.  
@@ -940,61 +971,24 @@ modmail: |
   # /u/{{author}} is ready to be banned!    
     
   {{match}}  
----  
-# removes and shows how to correctly use !answered  
-# type: comment  
-# author:  
-#   is_submitter: true  
-# is_top_level: true  
-# parent_submission:  
-#   flair_template_id: 751c650c-49ae-11ef-8db1-16f9fa17ff35  
-# body (regex):  
-#   - (?i)^\s*!+\s*(?:answers?|answered)\s*$  
-# action: remove  
-# action_reason: "[{{match}}] used wrong."  
-# comment: |  
-#   # Hey /u/{{author}},  
-    
-#   This isn't the right way to trigger the answered command.    
-#   **You need to reply to the comment** that you want to marked as the answer, with `!answered` or even with a space after `!`  `! answered`.    
-    
-#   Check out this image that shows the reply button you need to use before commenting `!answered`:  
-#   ➤ [&#x1f4f7; Example Image](https://imgur.com/a/ZspdnE5#dCUIf8Q)  
-# comment_locked: true  
-# ---  
-# removes comments that use !answered if they're not OP  
-# type: comment  
-# author:  
-#   is_submitter: false  
-# body (regex):  
-#   - (?i)^\s*!+answered\s*$  
-# action: remove  
-# action_reason: "non-OP [{{match}}]"  
-# moderators_exempt: false
-# comment: |  
-#   # Hey /u/{{author}},   
-    
-#   {{match}} only works for the OP (Original Poster aka Sumbitter).  
-# comment_locked: true  
-# ---  
+---
 type: any  
 title+body (regex):
-  - (?i)(?:(?:still\s*(?:wait(?:ing)?|nothing|processing)|delay|problem|issue|pending|processing\s+(?:for|since|after)|worried|hype(?:d|ing)?.*?(?:nothing|myself)|refuse|refused|(?:can't|unable)\s*(?:redeem|withdraw|cash(?:ed)?\s*out|verif(?:y|ying|ication)?)|won't\s*(?:pay|redeem|withdraw)|has\s+any(?:one)?\s+(?:ever\s+)?(?:withdra[a-z]*|cashed\s+out(?:\b|[^a-z]|.{0,20}))|anyone\s+cashed\s+out(?:\b|[^a-z]|.{0,20})|actually\s+(?:got(?:ten)?|pays?)|withdrawals?\s*(?:stuck|delayed|missing|issue|problem)|has\s+anybody\s+else\s+had\s+this\s+issue|has\s+anyone\s+had\s+trouble|had\s+trouble\s+get(?:ting|tin|t)|prize\s+(?:money|payouts?|funds?|redemptions?|request(?:s)?)|trouble\s+getting\s+prize|get(?:ting)?\s+prize\s+money|get\s+(?:all\s+of\s+)?my\s+deposits?\s+back|get\s+my\s+money\s+back|refund(?:ed)?|charge\s*back|chargeback|bank\s+charge\s*back|withdraw(?:al|ing|n|s)?\s*(?:stuck|missing|delayed)|cash(?:ed)?\s*out\s*(?:missing|delayed|not\s+received))\b.{0,60}?\b(?:rede+mp?t?ion?s?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?|verif(?:y|ying|ication)?))
-  - (?i)(?:rede+mp?t?ion?s?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed)?[\s\-_]*out|payouts?|payments?|verif(?:y|ying|ication)?)\b.{0,60}?\b(?:still\s*(?:waiting|nothing|processing)|delay|problem|issue|pending|processing|has\s+any(?:one)?\s+(?:ever\s+)?(?:withdra[a-z]*|cashed\s+out(?:\b|[^a-z]|.{0,20}))|anyone\s+cashed\s+out(?:\b|[^a-z]|.{0,20})|had\s+trouble\s+get(?:ting|tin|t)|prize\s+(?:money|payouts?|funds?|redemptions?|request(?:s)?)|trouble\s+getting\s+prize|get(?:ting)?\s+prize\s+money|refund(?:ed)?|charge\s*back|chargeback|bank\s+charge\s*back|withdraw(?:al|ing|n|s)?\s*(?:stuck|missing|delayed)|cash(?:ed)?\s*out\s*(?:missing|delayed|not\s+received))
+  - (?i)(?:(?:\b(?:redeem(?:ed|ing|s)?|redemption|withdraw(?:al|ing|n|s)?|cash(?:ed|ing)?\s*out|cashout|payouts?|payments?|verif(?:y|ies|ied|ying|ication|ications)?)\b[\s\S]{0,60}\b(?:still\s+(?:waiting|nothing|processing)|pending|delay(?:ed|ing)?|problems?|issues?|errors?|fail(?:ed|ing|ure)?|missing|stuck|not\s+(?:been\s+)?(?:received|credited|working|processed)|trouble|help|support|how\s+long|can(?:not|\x27t)|unable|won\x27t|actually\s+(?:got|paid))\b)|(?:\b(?:still\s+(?:waiting|nothing|processing)|pending|delay(?:ed|ing)?|problems?|issues?|errors?|fail(?:ed|ing|ure)?|missing|stuck|not\s+(?:been\s+)?(?:received|credited|working|processed)|trouble|help|support|how\s+long|can(?:not|\x27t)|unable|won\x27t|actually\s+(?:got|paid))\b[\s\S]{0,60}\b(?:redeem(?:ed|ing|s)?|redemption|withdraw(?:al|ing|n|s)?|cash(?:ed|ing)?\s*out|cashout|payouts?|payments?|verif(?:y|ies|ied|ying|ication|ications)?)\b)|(?:\b(?:do|does|did|will|would)\s+(?:(?:the|this)\s+)?(?:casino|site|operator|brand|company|they|it)\s+(?:actually\s+)?pay(?:\s+(?:out|me))?\b)|(?:\b(?:has\s+)?(?:anyone|anybody)\s+(?:(?:ever|actually)\s+)?(?:cashed\s+out|withdrew|got\s+paid|gotten\s+paid|get\s+paid)\b)|(?:(?:still\s*(?:wait(?:ing)?|nothing|processing)|delay|problem|issue|pending|processing\s+(?:for|since|after)|worried|hype(?:d|ing)?.*?(?:nothing|myself)|refuse|refused|(?:can't|unable)\s*(?:redeem|withdraw|cash(?:ed|ing)?\s*out|verif(?:y|ied|ies|ying|ication|ications)?)|won't\s*(?:pay|redeem|withdraw)|has\s+any(?:one)?\s+(?:ever\s+)?(?:withdra[a-z]*|cashed\s+out(?:\b|[^a-z]|.{0,20}))|anyone\s+cashed\s+out(?:\b|[^a-z]|.{0,20})|actually\s+(?:got(?:ten)?|pays?)|withdrawals?\s*(?:stuck|delayed|missing|issue|problem)|has\s+anybody\s+else\s+had\s+this\s+issue|has\s+anyone\s+had\s+trouble|had\s+trouble\s+get(?:ting|tin|t)|prize\s+(?:money|payouts?|funds?|redemptions?|request(?:s)?)|trouble\s+getting\s+prize|get(?:ting)?\s+prize\s+money|get\s+(?:all\s+of\s+)?my\s+deposits?\s+back|get\s+my\s+money\s+back|refund(?:ed)?|charge\s*back|chargeback|bank\s+charge\s*back|withdraw(?:al|ing|n|s)?\s*(?:stuck|missing|delayed)|cash(?:ed|ing)?\s*out\s*(?:missing|delayed|not\s+received))\b.{0,60}?\b(?:redemptions?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed|ing)?[\s\-_]*out|payouts?|payments?|verif(?:y|ied|ies|ying|ication|ications)?)))
+  - (?i)(?:redemptions?|redeem(?:ed|ing|s)?|withdraw(?:al|ing|n|s)?|cash(?:ed|ing)?[\s\-_]*out|payouts?|payments?|verif(?:y|ied|ies|ying|ication|ications)?)\b.{0,60}?\b(?:still\s*(?:waiting|nothing|processing)|delay|problem|issue|pending|processing|has\s+any(?:one)?\s+(?:ever\s+)?(?:withdra[a-z]*|cashed\s+out(?:\b|[^a-z]|.{0,20}))|anyone\s+cashed\s+out(?:\b|[^a-z]|.{0,20})|had\s+trouble\s+get(?:ting|tin|t)|prize\s+(?:money|payouts?|funds?|redemptions?|request(?:s)?)|trouble\s+getting\s+prize|get(?:ting)?\s+prize\s+money|refund(?:ed)?|charge\s*back|chargeback|bank\s+charge\s*back|withdraw(?:al|ing|n|s)?\s*(?:stuck|missing|delayed)|cash(?:ed|ing)?\s*out\s*(?:missing|delayed|not\s+received))
+~title+body (regex):
+  - '(?i)\b(?:need|needs|needed|require|requires|required|has\s+to|have\s+to|must|mandatory)\s+(?:to\s+)?(?:pay|make\s+a\s+payment|(?:an?\s+)?(?:minimum\s+)?(?:deposit|payment|fee|charge|cost|money|balance|funds|gift\s+cards?)|add\s+(?:money|funds)|put\s+in\s+(?:money|funds)|spend)\b.{0,50}\b(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b'
+  - '(?i)\b(?:pay|paid|paying|payment|payments|deposit|deposits|funds?|money|balance|cost(?:\s+money)?|charges?|fees?|spend(?:ing)?|minimum|gift\s+cards?)\s+(?:to|for|before|when|in\s+order\s+to)\s+(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b'
+  - '(?i)\b(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b.{0,25}\b(?:without\s+(?:paying|any\s+(?:money|funds)|an?\s+(?:deposit|payment|fee|charge))|for\s+free)\b'
+  - '(?i)\b(?:free|no\s+(?:deposit|payment|fee|charge|minimum))\s+to\s+(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b'
+  - '(?i)\b(?:deposit|payment|fee|charge|cost|minimum|gift\s+cards?)\b.{0,20}\b(?:required|needed|necessary)\b.{0,20}\b(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b|\b(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b.{0,20}\b(?:requires?|required|needs?|needed)\b.{0,20}\b(?:deposit|payment|fee|charge|money|funds?|balance|gift\s+cards?)\b'
 action: filter  
 action_reason: "Redeem - [{{match}}]" 
 moderators_exempt: true  
-comment: |  
-  &#9888;&#65039; **Reminder:**    
-  This is a **freebies** subreddit — not a *redemption support* or *“do they pay?”* help desk.    
-    
-  Posts asking about payment delays, verifications or “how long until I get it?” are automatically flagged.    
-  We focus on **finding and sharing new casino freebies**, not troubleshooting redemptions or payouts.    
-    
-  &#x1f4a1; **Tip:**    
-  If you’re waiting on a payout, check the site’s own FAQ or support team — response times vary, and other members can’t speed that up for you.    
-    
-  Thanks for helping keep the feed clean and focused on the fun stuff — the actual **freebies.**  
+comment: |
+  Hi /u/{{author}} — this {{kind}} was filtered because this community is for sharing freebies, not troubleshooting redemptions, withdrawals, or payments.
+
+  For account-specific help, please contact the casino through its official support channels. Keep passwords, IDs, card details, and verification documents private.
 comment_locked: true  
 ---  
 type: comment  
@@ -1048,11 +1042,15 @@ comment: |
   Check out [This Post](https://www.reddit.com/r/CasinoFreebies/s/r0HC9QJmdt) and youll understand why this {{kind}} was removed. please use **[Redirect-Checker](https://www.redirect-checker.org)** to get the exact url. then feel free to post it again, if done correctly the post will not be removed by automoderator  
 comment_locked: true  
 ---
-# Spanish and Portuguese - no é or 'que', words don't match the regex
+# Non-English spam: non-Latin scripts, Latin-script diacritics, and common stopwords.
+# Regex cannot identify every unaccented Latin-script language, so this is broad but not exhaustive.
 type: submission
 title+body (regex):
-  - '[ÇÁÉÍÓÚÂÊÔÃÕÀçáíñóúâêôãõà]'
+  - '(?i)[\U00000370-\U000003FF\U00000400-\U000004FF\U00000500-\U0000052F\U00000530-\U0000058F\U00000590-\U000005FF\U00000600-\U000006FF\U00000700-\U0000074F\U00000750-\U0000077F\U00000780-\U000007BF\U000008A0-\U000008FF]'
+  - '(?i)[\U00000900-\U00000DFF\U00000E00-\U00000EFF\U00000F00-\U00000FFF\U00001000-\U0000109F\U000010A0-\U000010FF\U00001200-\U0000137F\U000013A0-\U000013FF\U00001400-\U0000167F\U00001780-\U000017FF\U00001800-\U000018AF]'
+  - '(?i)[\U00001100-\U000011FF\U00002E80-\U00002EFF\U00003000-\U0000303F\U00003040-\U0000309F\U000030A0-\U000030FF\U00003100-\U0000312F\U00003130-\U0000318F\U00003400-\U00004DBF\U00004E00-\U00009FFF\U0000AC00-\U0000D7AF\U0000F900-\U0000FAFF\U00020000-\U0002A6DF]'
+  - '[\U000000C0-\U0000012F\U00000132-\U0000017E\U00000180-\U0000024F\U00001E00-\U00001EFF]'
   - '(^|[^A-Za-zÀ-ÿ])(algo|casa|como|esta|estamos|estar|este|lugar|nada|nos|nunca|parece|por|porque|sobre|todo|todos|vamos|ver|vez|vida|ahora|alguien|bueno|cosa|cosas|creo|cuando|decir|desde|después|dije|dijo|dios|donde|ellos|entonces|eres|esa|ese|eso|espera|estaba|estas|esto|estoy|fue|fuera|gente|gracias|hablar|hace|hacer|hecho|hijo|hola|hombre|los|mejor|mierda|mis|mismo|momento|mucho|mundo|muy|nadie|noche|nosotros|otra|otro|pasa|pero|podemos|puede|puedes|puedo|quiere|quieres|quiero|quién|qué|sabes|seguro|siempre|siento|también|tenemos|tengo|tiempo|tiene|tienes|tipo|trabajo|tus|uno|usted|verdad|voy|acha|acho|ainda|alguém|anos|apenas|aqui|assim|até|bem|certo|coisa|coisas|depois|deus|deve|dia|disse|dizer|dois|ela|ele|eles|essa|esse|estava|estou|falar|faz|fazendo|fazer|ficar|foi|homem|isso|isto|lhe|mais|melhor|mesmo|meu|minha|muito|nem|noite|obrigado|onde|pai|pelo|pessoas|pode|posso|pouco|pra|preciso|qual|quando|quem|quer|quero|sei|sem|sempre|senhor|seu|seus|sua|talvez|também|tem|temos|tenho|ter|tinha|tudo|uma|verdade|vou)([^A-Za-zÀ-ÿ]|$)'
+  - '(^|[^A-Za-zÀ-ÿ])(avec|merci|bonjour|bonsoir|vous|voici|très|être|où|parce|pourquoi|quand|combien|toujours|jamais|nicht|danke|bitte|warum|welche|welcher|welches|diese|dieser|dieses|auch|noch|schon|immer|keine|kein|keinen|meine|deine|seine|ihre|unsere|grazie|questo|questa|questi|queste|molto|anche|della|dello|nella|nello|siamo|abbiamo|hanno|puoi|bedankt|alleen|omdat|wanneer|waarom|welke|deze|heeft|hebben|worden|wordt|kunnen|moeten|graag)([^A-Za-zÀ-ÿ]|$)'
 action: remove
-action_reason: "Non-English spam (Spanish and Portuguese)"
----
+action_reason: "Non-English spam"
