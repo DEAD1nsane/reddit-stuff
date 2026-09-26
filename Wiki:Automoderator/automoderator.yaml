@@ -98,16 +98,11 @@ title+body (regex):
   - '(?i)\b(?:deposit|payment|fee|charge|cost|minimum|gift\s+cards?)\b.{0,20}\b(?:required|needed|necessary)\b.{0,20}\b(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b|\b(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b.{0,20}\b(?:requires?|required|needs?|needed)\b.{0,20}\b(?:deposit|payment|fee|charge|money|funds?|balance|gift\s+cards?)\b'
 set_locked: true
 comment: |
-  Hi /u/{{author}} — here’s how to verify an offer before acting on it:
+  Hi /u/{{author}} — this post was locked because it asks about paying, depositing, or adding funds in order to redeem, claim, or cash out.
 
-  1. Read **“Is it a scam?”** in our [Rules & FAQ](https://www.reddit.com/r/CasinoFreebies/s/mN6jKtTbmL).
-  2. For U.S. offers, check the operator against your [state or territory regulator](https://www.usa.gov/state-governments). Tribal operators should appear in the [NIGC gaming-locations list](https://www.nigc.gov/downloads/gaming-locations/).
-  3. Use [Scam Detector](https://www.scam-detector.com) as one trust signal and [Google Safe Browsing](https://transparencyreport.google.com/safe-browsing/search) to check for phishing or malware warnings.
-  4. Review independent reviews and recent complaints. A low trust score is a warning, not proof either way.
+  Legitimate freebies should never require you to pay a fee, deposit, or send gift cards or crypto to “unlock” or “release” winnings. If a site is asking for money before you can redeem, treat it as a likely scam and do not deposit.
 
-  There is no single U.S. license database for every commercial casino. If the domain, company, or license details do not match, do not deposit.
-
-  Never send personal or financial details through Discord or DMs, and never pay gift-card, cryptocurrency, or wire-transfer fees to “unlock” or “release” winnings.
+  Read **“Is it a scam?”** in our [Rules & FAQ](https://www.reddit.com/r/CasinoFreebies/s/mN6jKtTbmL) before going further. For account-specific questions, contact the casino through its official support channels — and never share passwords, IDs, card details, or verification documents here.
 comment_locked: true
 ---
 # Emoji(s) in Title  
