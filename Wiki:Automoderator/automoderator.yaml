@@ -840,9 +840,12 @@ parent_submission:
     - 31fcece2-49ae-11ef-ac78-2a324a5df6e1  
   title (regex):  
   - (?i)\b(?:chanced|punt)\b  
-body (regex):  
-  - (?i)\b(?:code\s*(?:is|=|:)?\s*[A-Z0-9]{4,}|use\s+[A-Z0-9]{4,}|[A-Z0-9]{6,})\b  
-action: remove  
+body (regex):
+  - '(?i)\bcode\s*(?:is|=|:)?\s*[A-Z0-9]{4,}\b'
+  - '(?i)\buse\s+(?:code\s+)?(?=[A-Z0-9]*[0-9])[A-Z0-9]{4,}\b'
+  - '\b(?=[A-Z0-9]*[0-9])[A-Z0-9]{6,}\b'
+  - '\b[A-Z]{6,}\b'
+action: remove
 action_reason: "chanced/punt code"  
 ---  
 # removes comments asking for codes or complaining about links  
@@ -857,7 +860,7 @@ parent_submission:
   title (regex):  
     - (?i)\b(?:chanced|punt)\b  
 body (regex):  
-  - (?i)(?<!\S)(?:.*\b(?:code|promo|bonus)\b.*|.*\b(?:url|link)\b.*\b(?:doesn'?t\s+work|not\s+working|doing\s+nothing|broken|won'?t\s+load|cannot\s+access|can'?t\s+open|just\s+goes)\b.*)  
+  - (?i)(?<!\S)(?:.*\b(?:promocode|promo\s*code|code|promo|bonus)\b.*|.*\b(?:url|link)\b.*\b(?:doesn'?t\s+work|not\s+working|doing\s+nothing|broken|won'?t\s+load|cannot\s+access|can'?t\s+open|just\s+goes)\b.*)
 comment: |   
   # hey /u/{{author}},   
     
