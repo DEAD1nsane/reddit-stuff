@@ -89,7 +89,7 @@ comment: |
 comment_locked: true
 ---
 type: submission
-moderators_exempt: ftrue
+moderators_exempt: true
 title+body (regex):
   - '(?i)\b(?:need|needs|needed|require|requires|required|has\s+to|have\s+to|must|mandatory)\s+(?:to\s+)?(?:pay|make\s+a\s+payment|(?:an?\s+)?(?:minimum\s+)?(?:deposit|payment|fee|charge|cost|money|balance|funds|gift\s+cards?)|add\s+(?:money|funds)|put\s+in\s+(?:money|funds)|spend)\b.{0,50}\b(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b'
   - '(?i)\b(?:pay|paid|paying|payment|payments|deposit|deposits|funds?|money|balance|cost(?:\s+money)?|charges?|fees?|spend(?:ing)?|minimum|gift\s+cards?)\s+(?:to|for|before|when|in\s+order\s+to)\s+(?:redeem(?:ed|ing|s)?|redemption|claim(?:ed|ing|s)?|cash\s*out|activate(?:d|ion)?)\b'
