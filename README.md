@@ -1,1 +1,1 @@
-[Recommended Casinos](https://dead1nsane.github.io/reddit-stuff/Recommended%20Casinos/)
+# [Recommended Casinos](https://dead1nsane.github.io/reddit-stuff/Recommended%20Casinos/)
