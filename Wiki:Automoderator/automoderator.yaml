@@ -1059,3 +1059,4 @@ title+body (regex):
   - '(^|[^A-Za-zÀ-ÿ])(avec|merci|bonjour|bonsoir|vous|voici|très|être|où|parce|pourquoi|quand|combien|toujours|jamais|nicht|danke|bitte|warum|welche|welcher|welches|diese|dieser|dieses|auch|noch|schon|immer|keine|kein|keinen|meine|deine|seine|ihre|unsere|grazie|questo|questa|questi|queste|molto|anche|della|dello|nella|nello|siamo|abbiamo|hanno|puoi|bedankt|alleen|omdat|wanneer|waarom|welke|deze|heeft|hebben|worden|wordt|kunnen|moeten|graag)([^A-Za-zÀ-ÿ]|$)'
 action: remove
 action_reason: "Non-English spam"
+---
